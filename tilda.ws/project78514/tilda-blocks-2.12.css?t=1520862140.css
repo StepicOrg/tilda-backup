@@ -10933,6 +10933,172 @@ img:not([src]) {
     margin-bottom: 15px;
   }
 }
+.uploadcare-dialog.uploadcare-active {
+  z-index: 9999999;
+}
+.t702__body_popupshowed {
+  -webkit-overflow-scrolling: touch !important;
+}
+.t702__wrapper {
+  padding: 40px 45px;
+}
+.t702__title {
+  margin-bottom: 11px;
+}
+.t702__text-wrapper {
+  margin-bottom: 24px;
+}
+.t702__text {
+  margin-top: 20px;
+}
+.t702__img {
+  width: 100%;
+  display: block;
+}
+@media screen and (max-width: 640px) {
+  .t702__title {
+    margin-bottom: 6px;
+  }
+  .t702__text-wrapper {
+    margin-bottom: 14px;
+  }
+  .t702__wrapper {
+    padding: 20px;
+  }
+}
+.t702 .t-form__inputsbox {
+  -webkit-transition: max-height 0.3s cubic-bezier(0.19,1,0.22,1);
+  transition: max-height 0.3s cubic-bezier(0.19,1,0.22,1);
+  max-height: 10000px;
+}
+.t702__inputsbox_hidden.t-form__inputsbox {
+  overflow: hidden;
+  max-height: 0px;
+  opacity: 0;
+}
+.t702 .t-input-group {
+  margin-bottom: 25px;
+}
+.t702 .t-input {
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+.t702 .t-input-block textarea {
+  padding-top: 17px;
+  background-color: transparent;
+}
+.t702 .t-input-block textarea.t-input_pvis {
+  padding-top: 26px;
+}
+.t702 .t-input-title {
+  padding-bottom: 5px;
+}
+.t702 .t-input-subtitle {
+  padding-bottom: 15px;
+}
+.t702 .t-input-group_rd .t-input-subtitle {
+  padding-bottom: 5px;
+}
+.t702 .t-inputtime,
+.t702 .t-datepicker__wrapper {
+  max-width: 245px;
+}
+.t702 .t-form__submit {
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+  margin-top: 25px;
+}
+.t702 .t-submit {
+  width: 100%;
+  height: 54px;
+  -webkit-appearance: none;
+}
+.t702 .t-form_bbonly .t-input-title {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.t702 .t-form_bbonly .t-input-subtitle {
+  padding-bottom: 0;
+  padding-top: 5px;
+}
+.t702__form-bottom-text {
+  margin-top: 20px;
+}
+@media screen and (max-width: 640px) {
+  .t702 .t-input-group {
+    margin-bottom: 20px;
+  }
+  .t702 .t-input-block textarea {
+    padding-top: 12px;
+  }
+  .t702 .t-submit,
+  .t702 .t-input {
+    height: 50px;
+    font-size: 16px;
+  }
+  .t702 .t-input {
+    padding: 0 14px;
+  }
+  .t702 .t-input__vis-ph {
+    top: 17px;
+  }
+  .t702 .t-input_pvis {
+    padding: 22px 20px 10px 20px;
+  }
+  .t702 .t-input-block textarea.t-input_pvis {
+    padding-top: 22px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .t702 .t-inputtime,
+  .t702 .t-datepicker__wrapper {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .t702 .t-popup_show .t-popup__container {
+    max-width: 100%;
+    right: 0;
+    left: 0;
+    top: 0px;
+    bottom: 0px;
+    padding-top: 50px;
+    margin: 0px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    position: relative;
+  }
+  .t702 .t-popup {
+    padding: 0px;
+  }
+  .t702 .t-popup__close {
+    width: 100%;
+    height: 50px;
+    background: #000;
+    position: fixed;
+    display: table;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  .t702 .t-popup__close-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    width: 100%;
+    padding-right: 20px;
+    font-size: 0;
+  }
+  .t702 .t-popup__close-icon {
+    width: 16px;
+  }
+}
 .t726 .t-section__topwrapper {
   margin-bottom: 90px;
 }
