@@ -2670,6 +2670,34 @@ img:not([src]) {
     height: 320px;
   }
 }
+.t145__title {
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: bold;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  margin-right: 20px;
+}
+.t145__line {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  border: 0;
+  border-top: 3px solid #000000;
+  margin-right: 20px;
+}
+.t145__text {
+  padding-top: 4px;
+  padding-bottom: 6px;
+  font-size: 16px;
+  line-height: 25px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 960px) {
+  .t145 .t145__col {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 .t146 {
   text-align: center;
 }
@@ -9507,6 +9535,103 @@ img:not([src]) {
   .t580__btn-size_lg,
   .t580__btn-size_xl,
   .t580__btn-size_xxl {
+    height: 60px;
+    font-size: 18px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+.t581 {
+  text-align: center;
+}
+.t581 .js-payment-systembox {
+  bottom: -50px;
+  top: initial;
+}
+.t581__wrapper {
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+.t581__title {
+  color: #fff;
+  margin-bottom: 25px;
+}
+.t581__descr {
+  color: #fff;
+}
+.t581__buttons {
+  margin-top: 70px;
+}
+.t581__buttons-wrapper {
+  display: table;
+  position: relative;
+}
+.t581__arrow-icon {
+  width: 45px;
+  position: absolute;
+  left: -30px;
+  transform: translateX(-100%);
+  fill: #fff;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.t581__arrow-icon_mobile {
+  display: none;
+}
+.t581__arrow-icon_right {
+  right: -30px;
+  transform: scaleX(-1);
+  transform-origin: right;
+  left: auto;
+}
+.t581__btn-size_lg {
+  height: 70px;
+  font-size: 22px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.t581__btn-size_xl {
+  height: 80px;
+  font-size: 26px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.t581__btn-size_xxl {
+  height: 100px;
+  font-size: 30px;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+.t581__marginleft20px {
+  margin-left: 20px;
+}
+@media screen and (max-width: 960px) {
+  .t581__buttons {
+    margin-top: 30px;
+  }
+  .t581__arrow-icon {
+    display: none;
+  }
+  .t581__arrow-icon_mobile {
+    display: block;
+    width: 20px;
+    margin: 0 auto 20px;
+    fill: #fff;
+  }
+}
+@media screen and (max-width: 640px) {
+  .t581__marginleft20px {
+    margin-left: 0px;
+  }
+  .t581__btn,
+  .t581__buttons-wrapper {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .t581__btn-size_lg,
+  .t581__btn-size_xl,
+  .t581__btn-size_xxl {
     height: 60px;
     font-size: 18px;
     padding-left: 40px;
