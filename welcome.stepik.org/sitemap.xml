@@ -1,35 +1,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 	<url>
-		<loc>https://welcome.stepik.org/</loc>
-		<lastmod>2018-02-14T09:30:32+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://welcome.stepik.org/en</loc>
 		<lastmod>2018-03-19T14:13:26+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/</loc>
+		<lastmod>2018-02-14T09:30:32+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru</loc>
 		<lastmod>2018-03-19T14:24:16+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://welcome.stepik.org/var</loc>
+		<lastmod>2018-03-19T14:26:23+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://welcome.stepik.org/de</loc>
 		<lastmod>2018-03-26T12:12:06+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/ru/pricing</loc>
-		<lastmod>2018-03-26T05:03:38+00:00</lastmod>
+		<loc>https://welcome.stepik.org/test-assistant</loc>
+		<lastmod>2018-03-26T15:09:41+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/ru/corporate</loc>
-		<lastmod>2018-03-19T16:05:22+00:00</lastmod>
+		<loc>https://welcome.stepik.org/en/terms</loc>
+		<lastmod>2018-03-19T14:15:34+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/terms</loc>
 		<lastmod>2018-03-19T14:34:22+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://welcome.stepik.org/en/privacy</loc>
+		<lastmod>2018-03-19T14:16:25+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://welcome.stepik.org/ru/privacy</loc>
 		<lastmod>2018-03-19T14:34:53+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/en/press</loc>
+		<lastmod>2018-03-19T14:16:59+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/press</loc>
@@ -40,44 +52,36 @@
 		<lastmod>2018-03-19T14:36:09+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/ru/contacts</loc>
-		<lastmod>2018-03-19T14:36:38+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/ru/about</loc>
-		<lastmod>2018-03-19T14:37:03+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/ru/careers</loc>
-		<lastmod>2018-03-19T14:37:25+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/ru/class</loc>
-		<lastmod>2018-03-21T11:10:56+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/en/pricing</loc>
-		<lastmod>2018-03-22T15:53:58+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/en/terms</loc>
-		<lastmod>2018-03-19T14:15:34+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/en/privacy</loc>
-		<lastmod>2018-03-19T14:16:25+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/en/press</loc>
-		<lastmod>2018-03-19T14:16:59+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://welcome.stepik.org/en/team</loc>
 		<lastmod>2018-03-19T14:17:34+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/en/contacts</loc>
 		<lastmod>2018-03-19T14:18:09+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/ru/contacts</loc>
+		<lastmod>2018-03-19T14:36:38+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/en/pricing</loc>
+		<lastmod>2018-03-22T15:53:58+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/ru/about</loc>
+		<lastmod>2018-03-19T14:37:03+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/en/classroom</loc>
+		<lastmod>2018-03-27T06:30:37+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/ru/careers</loc>
+		<lastmod>2018-03-19T14:37:25+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/en/course-tutorial</loc>
+		<lastmod>2018-03-19T14:45:02+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ny-17</loc>
@@ -92,35 +96,31 @@
 		<lastmod>2017-10-08T09:48:52+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/class</loc>
-		<lastmod>2018-01-19T19:23:14+00:00</lastmod>
+		<loc>https://welcome.stepik.org/ru/corporate</loc>
+		<lastmod>2018-03-19T16:05:22+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/ru/pricing</loc>
+		<lastmod>2018-03-27T16:24:03+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/ru/class</loc>
+		<lastmod>2018-03-21T11:10:56+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/course-tutorial</loc>
 		<lastmod>2018-03-26T14:38:01+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/adaptivetest</loc>
-		<lastmod>2018-01-26T12:28:54+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/en/course-tutorial</loc>
-		<lastmod>2018-03-19T14:45:02+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/var</loc>
-		<lastmod>2018-03-19T14:26:23+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://welcome.stepik.org/ru/course-checklist</loc>
 		<lastmod>2018-03-19T14:45:33+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/en/classroom</loc>
-		<lastmod>2018-03-27T06:30:37+00:00</lastmod>
+		<loc>https://welcome.stepik.org/adaptivetest</loc>
+		<lastmod>2018-01-26T12:28:54+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/test-assistant</loc>
-		<lastmod>2018-03-26T15:09:41+00:00</lastmod>
+		<loc>https://welcome.stepik.org/class</loc>
+		<lastmod>2018-01-19T19:23:14+00:00</lastmod>
 	</url>
 </urlset>
