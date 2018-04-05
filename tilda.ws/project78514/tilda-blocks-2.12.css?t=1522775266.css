@@ -6569,6 +6569,108 @@ img:not([src]) {
     border: none;
   }
 }
+.t418 {
+  overflow: hidden;
+}
+.t418__gallery {
+  position: relative;
+}
+.t418__wrapper {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+}
+.t418__slider {
+  position: relative;
+  margin: 0 auto;
+}
+.t418__slidecontainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  list-style: none;
+  -webkit-transition: all ease-in-out .3s;
+  -moz-transition: all ease-in-out .3s;
+  -o-transition: all ease-in-out .3s;
+  -ms-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+  padding: 0 !important;
+  margin: 0 !important;
+  -moz-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -webkit-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  transform: translate(0,0);
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+}
+.t418__item {
+  float: left;
+  position: relative;
+  height: 100%;
+  -moz-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -webkit-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  transform: translate(0,0);
+}
+.t418__img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.t418__control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+  background: transparent;
+}
+.t418__next {
+  right: 0;
+  z-index: 1;
+  width: 100%;
+}
+.t418__previous {
+  left: 0;
+  z-index: 3;
+  width: 25%;
+}
+.t418__height.t-width_6 {
+  width: 560px !important;
+  max-width: 560px !important;
+}
+.t418__height.t-width_7 {
+  width: 660px !important;
+  max-width: 660px !important;
+}
+.t418__height.t-width_8 {
+  width: 760px !important;
+  max-width: 760px !important;
+}
+.t418__height.t-width_9 {
+  width: 860px !important;
+  max-width: 860px !important;
+}
+.t418__height.t-width_10 {
+  width: 960px !important;
+  max-width: 960px !important;
+}
+.t418__height.t-width_11 {
+  width: 1060px !important;
+  max-width: 1060px !important;
+}
+.t418__height.t-width_12 {
+  width: 1160px !important;
+  max-width: 1160px !important;
+}
 .t420__descr ul {
   padding: 0 !important;
   margin: 0;
