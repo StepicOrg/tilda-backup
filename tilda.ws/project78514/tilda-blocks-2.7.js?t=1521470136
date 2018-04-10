@@ -2102,6 +2102,37 @@ function t686_GetIEVersion() {
     }
 }
  
+function t696_onSuccess(t696_form){
+	var t696_inputsWrapper = t696_form.find('.t-form__inputsbox');
+    var t696_inputsHeight = t696_inputsWrapper.height();
+    var t696_inputsOffset = t696_inputsWrapper.offset().top;
+    var t696_inputsBottom = t696_inputsHeight + t696_inputsOffset;
+	var t696_targetOffset = t696_form.find('.t-form__successbox').offset().top;
+
+    if ($(window).width()>960) {
+        var t696_target = t696_targetOffset - 200;
+    }	else {
+        var t696_target = t696_targetOffset - 100;
+    }
+
+    if (t696_targetOffset > $(window).scrollTop() || ($(document).height() - t696_inputsBottom) < ($(window).height() - 100)) {
+        t696_inputsWrapper.addClass('t696__inputsbox_hidden');
+		setTimeout(function(){
+			if ($(window).height() > $('.t-body').height()) {$('.t-tildalabel').animate({ opacity:0 }, 50);}
+		}, 300);		
+    } else {
+        $('html, body').animate({ scrollTop: t696_target}, 400);
+        setTimeout(function(){t696_inputsWrapper.addClass('t696__inputsbox_hidden');}, 400);
+    }
+
+	var successurl = t696_form.data('success-url');
+    if(successurl && successurl.length > 0) {
+        setTimeout(function(){
+            window.location.href= successurl;
+        },500);
+    }
+
+} 
 function t698_fixcontentheight(id){
         /* correct cover height if content more when cover height */
         var el = $("#rec" + id);
