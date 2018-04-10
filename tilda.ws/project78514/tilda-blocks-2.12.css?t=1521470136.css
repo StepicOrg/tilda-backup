@@ -11823,6 +11823,167 @@ img:not([src]) {
     right: -0.99px;
   }
 }
+.t817__wrapper {
+  width: 100%;
+  font-size: 0px;
+}
+.t817__wrapper::before,
+.t817__wrapper::after {
+  content: '';
+  display: table;
+}
+.t817__wrapper::after {
+  clear: both;
+}
+.t817__tab {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.t817__tab_active {
+  cursor: default;
+}
+.t817__tab.t817__tab_active:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+}
+.t817__tab.t817__tab_active:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 3px;
+}
+.t817__tab-name {
+  padding: 14px 20px;
+  color: #000000;
+}
+.t817__content-row {
+  position: relative;
+}
+.t817__content {
+  display: block;
+  background-color: #ffffff;
+}
+.t817__content-col_2 {
+  width: 50%;
+}
+.t817__content-col_2:first-child {
+  padding-right: 20px;
+}
+.t817__content-col_2:last-child {
+  padding-left: 20px;
+}
+.t817__content {
+  display: none;
+  position: relative;
+  padding: 40px;
+  border-color: #eeeeee;
+  border-style: solid;
+}
+.t817__content::before,
+.t817__content::after {
+  content: '';
+  display: table;
+}
+.t817__content::after {
+  clear: both;
+}
+.t817__content_active {
+  display: block;
+}
+.t817__content-col {
+  display: inline;
+  float: left;
+  box-sizing: border-box;
+}
+.t817__content img {
+  max-width: 100%;
+  width: 100%;
+}
+.t817__title {
+  margin-bottom: 15px;
+}
+.t817__btn-wrapper {
+  margin-top: 30px;
+}
+.t817__btntext-wrapper {
+  margin-top: 20px;
+}
+.t817__off {
+  display: none !important;
+}
+.t817__select {
+  -webkit-appearance: none;
+  padding: 16px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 0;
+  border: 1px solid;
+  border-bottom-width: 0;
+  outline: none;
+  margin: 0;
+  font-size: 16px;
+}
+.t817__wrapper_mobile {
+  position: relative;
+  display: none;
+}
+.t817__wrapper_mobile:after {
+  content: ' ';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.t817__firefoxfix {
+  width: 16px;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  pointer-events: none;
+}
+@media screen and (max-width: 960px) {
+  .t817__col {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .t817__content {
+    padding: 20px;
+  }
+  .t817__content-col_2 {
+    width: 100%;
+  }
+  .t817__content-col_2:first-child {
+    padding-right: 0;
+  }
+  .t817__content-col_2:last-child {
+    padding-left: 0;
+  }
+  .t817__wrapper_mobile {
+    display: block;
+  }
+  .t817__wrapper {
+    display: none;
+  }
+}
 .t820 .t-section__topwrapper {
   margin-bottom: 90px;
 }
@@ -11905,5 +12066,73 @@ img:not([src]) {
   }
   .t820__imgwrapper {
     max-width: 40px;
+  }
+}
+.t822__container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.t822__col {
+  vertical-align: top;
+  position: relative;
+  height: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+}
+.t822__col.t822__col_line:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -20px;
+  height: 100%;
+  width: 1px;
+  background-color: #eeeeee;
+}
+.t822__col-wrapper {
+  position: relative;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+.t822__title {
+  padding-bottom: 20px;
+}
+.t822__uptitle {
+  padding-bottom: 15px;
+}
+@media screen and (max-width: 1200px) {
+  .t822__line {
+    left: -10px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .t822__container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .t822__col {
+    margin: 0;
+    padding: 0 5% 0 5%;
+    width: 100%;
+    height: auto !important;
+    display: block;
+  }
+  .t822__col.t822__col_line:before {
+    display: none;
+  }
+  .t822__col:not(:last-child) .t822__col-wrapper:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #eeeeee;
+  }
+  .t822__col-wrapper {
+    padding: 30px 0 35px 0;
+  }
+  .t822__title {
+    padding-bottom: 10px;
   }
 }
