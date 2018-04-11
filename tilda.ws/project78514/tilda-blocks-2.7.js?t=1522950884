@@ -2249,6 +2249,7 @@ function t702_showPopup(recid){
       popup = el.find('.t-popup');
 
   popup.css('display', 'block');
+  el.find('.t-range').trigger('popupOpened');
   if(window.lazy=='y'){t_lazyload_update();}
   setTimeout(function() {
     popup.find('.t-popup__container').addClass('t-popup__container-animated');
