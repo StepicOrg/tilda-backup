@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow:
+Sitemap: http://xn--90ahb6aechjl.xn--p1ai/sitemap.xml
+Host: xn--90ahb6aechjl.xn--p1ai
