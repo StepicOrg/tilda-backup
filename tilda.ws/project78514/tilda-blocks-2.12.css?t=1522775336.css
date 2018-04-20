@@ -4970,6 +4970,30 @@ img:not([src]) {
     margin-bottom: 13px;
   }
 }
+.t265__wrapper {
+  padding: 30px 20px 28px 55px;
+  position: relative;
+  text-align: left;
+}
+.t265__icon {
+  position: absolute;
+  top: 27px;
+  left: 20px;
+}
+@media screen and (max-width: 650px) {
+  .t265__wrapper {
+    padding: 20px 20px 16px 50px;
+    margin: 0 -20px;
+  }
+  .t265__icon {
+    top: 16px;
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -o-transform: scale(.8);
+    transform: scale(.8);
+  }
+}
 .t186C .t-section__topwrapper {
   margin-bottom: 75px;
 }
