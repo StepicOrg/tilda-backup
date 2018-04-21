@@ -13,7 +13,7 @@
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/sbw/2018</loc>
-		<lastmod>2018-04-20T08:13:32+00:00</lastmod>
+		<lastmod>2018-04-21T09:56:04+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/en</loc>
@@ -32,8 +32,16 @@
 		<lastmod>2017-08-31T14:19:08+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://bioinf.me/header</loc>
+		<lastmod>2018-03-01T19:34:09+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://bioinf.me/education/program</loc>
 		<lastmod>2018-04-17T08:23:57+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://bioinf.me/footer</loc>
+		<lastmod>2018-03-01T19:34:09+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/projects</loc>
@@ -140,14 +148,6 @@
 		<lastmod>2018-03-05T20:37:13+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/header</loc>
-		<lastmod>2018-03-01T19:34:09+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://bioinf.me/footer</loc>
-		<lastmod>2018-03-01T19:34:09+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://bioinf.me/online/contest2017</loc>
 		<lastmod>2018-03-01T19:34:09+00:00</lastmod>
 	</url>
@@ -182,10 +182,6 @@
 	<url>
 		<loc>https://bioinf.me/education/summer/2017/report</loc>
 		<lastmod>2018-03-06T16:03:00+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://bioinf.me/admission</loc>
-		<lastmod>2018-03-12T21:02:53+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/online/contest2017/results</loc>
@@ -226,6 +222,10 @@
 	<url>
 		<loc>https://bioinf.me/en/education/summer/2018</loc>
 		<lastmod>2018-03-06T17:34:52+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://bioinf.me/admission</loc>
+		<lastmod>2018-03-12T21:02:53+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/en/education/summer/2017</loc>
