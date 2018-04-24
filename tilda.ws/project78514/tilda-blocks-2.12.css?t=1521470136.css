@@ -5886,6 +5886,50 @@ img:not([src]) {
     width: 16px;
   }
 }
+.t368 .t-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.t368__vmiddle {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.t368__vtop {
+  margin-bottom: auto;
+}
+.t368__vbottom {
+  margin-top: auto;
+}
+.t368__left {
+  text-align: left;
+}
+.t368__center {
+  text-align: center;
+}
+.t368__right {
+  text-align: right;
+}
+.t368__img {
+  display: block;
+  max-width: 100%;
+  width: auto;
+}
+.t368__text {
+  padding-top: 12px;
+  color: #777;
+}
+@media screen and (max-width: 640px) {
+  .t368 .t-container {
+    display: -webkit-block;
+    display: block;
+  }
+  .t368__col {
+    margin-bottom: 40px;
+  }
+}
 .t372__line {
   width: 80px;
   height: 2px;
