@@ -2420,6 +2420,13 @@ function t774_unifyHeights(recid){
 		t774_row.css( "height", t774_maxHeight );
 	}
 } 
+function t797_init(recid) {
+    if (isMobile) {
+        $("#rec" + recid + " .t797__txt-wrapper").css("display", "none");
+    }
+    tvote__init(recid);
+}
+ 
 function t817_init(recid) {
   var rec = $('#rec'+recid);
   var curMode = $('.t-records').attr('data-tilda-mode');
