@@ -12,20 +12,20 @@
 		<lastmod>2018-04-27T08:54:03+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/var</loc>
-		<lastmod>2018-04-14T14:57:34+00:00</lastmod>
+		<loc>https://welcome.stepik.org/ru/teach</loc>
+		<lastmod>2018-04-27T09:54:19+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/de</loc>
 		<lastmod>2018-04-03T17:00:15+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/en/terms</loc>
-		<lastmod>2018-04-06T15:00:30+00:00</lastmod>
+		<loc>https://welcome.stepik.org/var</loc>
+		<lastmod>2018-04-14T14:57:34+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/ru/terms</loc>
-		<lastmod>2018-03-19T14:34:22+00:00</lastmod>
+		<loc>https://welcome.stepik.org/en/terms</loc>
+		<lastmod>2018-04-06T15:00:30+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/test-assistant</loc>
@@ -36,20 +36,16 @@
 		<lastmod>2018-04-03T17:05:56+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/ru/privacy</loc>
-		<lastmod>2018-03-19T14:34:53+00:00</lastmod>
+		<loc>https://welcome.stepik.org/ru/terms</loc>
+		<lastmod>2018-03-19T14:34:22+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/en/press</loc>
 		<lastmod>2018-04-03T17:06:45+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/ru/press</loc>
-		<lastmod>2018-03-19T14:35:37+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/ru/team</loc>
-		<lastmod>2018-03-19T14:36:09+00:00</lastmod>
+		<loc>https://welcome.stepik.org/ru/privacy</loc>
+		<lastmod>2018-03-19T14:34:53+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/test2018</loc>
@@ -60,16 +56,20 @@
 		<lastmod>2018-04-03T17:07:20+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/ru/mini-programs/python</loc>
-		<lastmod>2018-04-10T18:07:56+00:00</lastmod>
+		<loc>https://welcome.stepik.org/ru/press</loc>
+		<lastmod>2018-03-19T14:35:37+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/ru/team</loc>
+		<lastmod>2018-03-19T14:36:09+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/en/contacts</loc>
 		<lastmod>2018-04-03T17:07:46+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/ru/contacts</loc>
-		<lastmod>2018-03-29T14:28:57+00:00</lastmod>
+		<loc>https://welcome.stepik.org/ru/mini-programs/python</loc>
+		<lastmod>2018-04-10T18:07:56+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/en/pricing</loc>
@@ -80,28 +80,28 @@
 		<lastmod>2018-04-26T15:33:03+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/ru/about</loc>
-		<lastmod>2018-04-20T13:48:36+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://welcome.stepik.org/en/course-tutorial</loc>
 		<lastmod>2018-04-03T17:08:56+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/ru/careers</loc>
-		<lastmod>2018-03-19T14:37:25+00:00</lastmod>
+		<loc>https://welcome.stepik.org/ru/contacts</loc>
+		<lastmod>2018-03-29T14:28:57+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/en/classroom</loc>
 		<lastmod>2018-04-25T08:24:17+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/ny-17</loc>
-		<lastmod>2018-03-29T14:30:28+00:00</lastmod>
+		<loc>https://welcome.stepik.org/ru/about</loc>
+		<lastmod>2018-04-20T13:48:36+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/ru/teach</loc>
-		<lastmod>2018-04-27T09:39:25+00:00</lastmod>
+		<loc>https://welcome.stepik.org/ru/careers</loc>
+		<lastmod>2018-03-19T14:37:25+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/ny-17</loc>
+		<lastmod>2018-03-29T14:30:28+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/valentine-17</loc>
@@ -144,10 +144,6 @@
 		<lastmod>2018-04-13T07:35:40+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/class</loc>
-		<lastmod>2018-01-19T19:23:14+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://welcome.stepik.org/ru/hints</loc>
 		<lastmod>2018-04-24T22:30:07+00:00</lastmod>
 	</url>
@@ -174,5 +170,9 @@
 	<url>
 		<loc>https://welcome.stepik.org/ru/mini-programs/java</loc>
 		<lastmod>2018-04-11T23:12:51+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/class</loc>
+		<lastmod>2018-01-19T19:23:14+00:00</lastmod>
 	</url>
 </urlset>
