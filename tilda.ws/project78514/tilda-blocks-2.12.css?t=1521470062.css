@@ -11940,8 +11940,6 @@ img:not([src]) {
 }
 .t774__content {
   position: relative;
-  -webkit-transition: height 0.2s linear;
-  transition: height 0.2s linear;
 }
 .t774__textwrapper {
   padding: 27px 30px;
