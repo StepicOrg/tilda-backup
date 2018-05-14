@@ -10607,7 +10607,7 @@ img:not([src]) {
   -webkit-transition: width .6s ease;
   -o-transition: width .6s ease;
   transition: width .6s ease;
-  z-index: 1000;
+  z-index: 99999;
 }
 @media screen and (max-width: 960px) {
   .t602__indicator {
