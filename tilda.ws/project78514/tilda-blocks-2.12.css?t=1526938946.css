@@ -2353,6 +2353,19 @@ img:not([src]) {
 .t017__descr {
   padding-top: 21px;
 }
+.t021__line {
+  width: 100%;
+  max-width: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1px;
+  background-color: #000000;
+}
+.t021__text-impact {
+  text-align: center;
+  margin-top: 44px;
+  margin-bottom: 54px;
+}
 .t030__title {
   margin-bottom: 15px;
 }
@@ -9264,86 +9277,6 @@ img:not([src]) {
     margin-left: 0;
   }
 }
-.t550 .t-section__topwrapper {
-  margin-bottom: 105px;
-}
-.t550 .t-section__title {
-  margin-bottom: 40px;
-}
-.t550 .t-section__descr {
-  max-width: 560px;
-}
-.t550 .t-section__bottomwrapper {
-  margin-top: 105px;
-}
-.t550__numberwrapper {
-  position: relative;
-  padding-bottom: 40px;
-}
-.t550__col:last-child .t550__numberwrapper {
-  padding-bottom: 0 !important;
-}
-.t550__number {
-  position: relative;
-  z-index: 1;
-}
-.t550__circle {
-  width: 44px;
-  height: 44px;
-  background: #222;
-  border-radius: 100%;
-  border: 2px solid #fff;
-}
-.t550__digit {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  text-align: center;
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  color: #fff;
-}
-.t550__line {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  background: #222;
-  left: 50%;
-  -moz-transform: translate(-50%,0);
-  -ms-transform: translate(-50%,0);
-  -webkit-transform: translate(-50%,0);
-  -o-transform: translate(-50%,0);
-  transform: translate(-50%,0);
-}
-.t550__col:last-child .t550__line {
-  display: none;
-}
-.t550__textwrapper {
-  padding-left: 25px;
-  padding-bottom: 40px;
-}
-.t550__col:last-child .t550__textwrapper {
-  padding-bottom: 0 !important;
-}
-.t550__descr {
-  margin-top: 4px;
-  margin-bottom: 5px;
-}
-@media only screen and (max-width: 960px) {
-  .t550 .t-section__bottomwrapper {
-    margin-top: 45px;
-  }
-  .t550 .t-section__topwrapper {
-    margin-bottom: 45px;
-  }
-  .t550 .t-section__title {
-    margin-bottom: 20px;
-  }
-}
 .t551__title {
   margin-bottom: 45px;
 }
@@ -9818,6 +9751,103 @@ img:not([src]) {
   }
   .t566__separator {
     margin-bottom: 0 !important;
+  }
+}
+.t569 .t-section__topwrapper {
+  margin-bottom: 105px;
+}
+.t569 .t-section__title {
+  margin-bottom: 40px;
+}
+.t569 .t-section__descr {
+  max-width: 560px;
+}
+.t569 .t-section__bottomwrapper {
+  margin-top: 105px;
+}
+.t569__imgwrapper {
+  position: relative;
+}
+.t569__line {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 100%;
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+.t569__cirqle {
+  width: 4px;
+  height: 4px;
+  border-radius: 30px;
+  background-color: #222;
+}
+.t569__bgimg {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border: 2px solid #222;
+}
+.t569__textwrapper {
+  margin-top: 25px;
+}
+.t569__text {
+  margin-top: 15px;
+}
+.t569__uptitle {
+  margin-bottom: 15px;
+}
+.t569__line-mobile {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .t569__line {
+    left: -10px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .t569 .t-section__bottomwrapper {
+    margin-top: 45px;
+  }
+  .t569 .t-section__topwrapper {
+    margin-bottom: 45px;
+  }
+  .t569 .t-section__title {
+    margin-bottom: 20px;
+  }
+  .t569__col {
+    padding-top: 30px;
+  }
+  .t569__col:first-child {
+    padding-top: 0;
+  }
+  .t569__line {
+    display: none;
+  }
+  .t569__line-mobile {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .t569__cirqle {
+    margin: 0 auto 10px;
   }
 }
 .t573__address {
