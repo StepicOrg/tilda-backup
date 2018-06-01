@@ -569,6 +569,137 @@ $(document).ready(function(){
         });
     };
  
+function t281_initPopup(recid){
+  $('#rec'+recid).attr('data-animationappear','off');
+  $('#rec'+recid).css('opacity','1');
+  var el=$('#rec'+recid).find('.t-popup'),
+      hook=el.attr('data-tooltip-hook'),
+      analitics=el.attr('data-track-popup');
+  if(hook!==''){
+    var obj = $('a[href="'+hook+'"]');
+    obj.click(function(e){
+      t281_showPopup(recid);
+      t281_resizePopup(recid);
+      e.preventDefault();
+      if(window.lazy=='y'){t_lazyload_update();}
+      if (analitics > '') {
+        Tilda.sendEventToStatistics(analitics, hook);
+      }
+    });
+  }
+}
+
+function t281_lockScroll(){
+  var body = $("body");
+	if (!body.hasClass('t-body_scroll-locked')) {
+		var bodyScrollTop = (typeof window.pageYOffset !== 'undefined') ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+		body.addClass('t-body_scroll-locked');
+		body.css("top","-"+bodyScrollTop+"px");
+    body.attr("data-popup-scrolltop",bodyScrollTop);
+	}
+}
+
+function t281_unlockScroll(){
+  var body = $("body");
+	if (body.hasClass('t-body_scroll-locked')) {
+    var bodyScrollTop = $("body").attr("data-popup-scrolltop");
+		body.removeClass('t-body_scroll-locked');
+		body.css("top","");
+    body.removeAttr("data-popup-scrolltop")
+		window.scrollTo(0, bodyScrollTop);
+	}
+}
+
+function t281_showPopup(recid){
+  var el=$('#rec'+recid),
+      popup = el.find('.t-popup');
+
+  popup.css('display', 'block');
+  setTimeout(function() {
+    popup.find('.t-popup__container').addClass('t-popup__container-animated');
+    popup.addClass('t-popup_show');
+  }, 50);
+
+  $('body').addClass('t-body_popupshowed t281__body_popupshowed');
+  /*fix IOS11 cursor bug + general IOS background scroll*/
+  if (/iPhone|iPad|iPod/i.test(navigator.userAgent) && !window.MSStream) {
+    setTimeout(function() {
+      t281_lockScroll();
+    }, 500);
+  }
+  
+  el.find('.t-popup').click(function(e){
+    if (e.target == this) { t281_closePopup(); }
+  });
+
+  el.find('.t-popup__close').click(function(e){
+    t281_closePopup();
+  });
+
+  el.find('a[href*=#]').click(function(e){
+    var url = $(this).attr('href');
+    if (!url || (url.substring(0,7) != '#price:' && url.substring(0,7) != '#order:')) {
+      t281_closePopup();
+      if (!url || url.substring(0,7) == '#popup:') {
+        setTimeout(function() {
+          $('body').addClass('t-body_popupshowed');
+        }, 300);
+      }
+    }
+  });
+
+  $(document).keydown(function(e) {
+    if (e.keyCode == 27) { t281_closePopup(); }
+  });
+}
+
+function t281_closePopup(){
+  $('body').removeClass('t-body_popupshowed t281__body_popupshowed');
+  /*fix IOS11 cursor bug + general IOS background scroll*/
+  if (/iPhone|iPad|iPod/i.test(navigator.userAgent) && !window.MSStream) {
+    t281_unlockScroll();
+  }  
+  $('.t-popup').removeClass('t-popup_show');
+  setTimeout(function() {
+    $('.t-popup').not('.t-popup_show').css('display', 'none');
+  }, 300);
+}
+
+function t281_resizePopup(recid){
+  var el = $("#rec"+recid),
+      div = el.find(".t-popup__container").height(),
+      win = $(window).height() - 120,
+      popup = el.find(".t-popup__container");
+  if (div > win ) {
+    popup.addClass('t-popup__container-static');
+  } else {
+    popup.removeClass('t-popup__container-static');
+  }
+}
+
+function t281_sendPopupEventToStatistics(popupname) {
+  var virtPage = '/tilda/popup/';
+  var virtTitle = 'Popup: ';
+  if (popupname.substring(0,7) == '#popup:') {
+      popupname = popupname.substring(7);
+  }
+    
+  virtPage += popupname;
+  virtTitle += popupname;
+  if (window.Tilda && typeof Tilda.sendEventToStatistics == 'function') {
+    Tilda.sendEventToStatistics(virtPage, virtTitle, '', 0);
+  } else {
+    if(ga) {
+      if (window.mainTracker != 'tilda') {
+        ga('send', {'hitType':'pageview', 'page':virtPage,'title':virtTitle});
+      }
+    }
+  
+    if (window.mainMetrika > '' && window[window.mainMetrika]) {
+      window[window.mainMetrika].hit(virtPage, {title: virtTitle,referer: window.location.href});
+    }
+  }
+} 
 	var t335 = {};
     t335.initeffect = function(recid) {
         $('#rec'+recid).find(".t335__cell").hover(function(){
