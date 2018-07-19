@@ -37,7 +37,7 @@
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/summer/2018/faq</loc>
-		<lastmod>2018-07-17T17:27:48+00:00</lastmod>
+		<lastmod>2018-07-19T19:23:41+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/program</loc>
@@ -52,8 +52,8 @@
 		<lastmod>2018-07-17T17:26:57+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/education/summer/2018/lectors</loc>
-		<lastmod>2018-07-19T11:21:09+00:00</lastmod>
+		<loc>https://bioinf.me/education/summer/2018/speakers</loc>
+		<lastmod>2018-07-19T19:24:16+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/projects</loc>
@@ -65,7 +65,7 @@
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/summer/2018/program</loc>
-		<lastmod>2018-07-19T17:54:27+00:00</lastmod>
+		<lastmod>2018-07-19T19:23:11+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/mastersprogram/au</loc>
@@ -262,5 +262,9 @@
 	<url>
 		<loc>https://bioinf.me/page3129280.html</loc>
 		<lastmod>2018-07-04T09:47:48+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://bioinf.me/https/education/summer/2018/speakers</loc>
+		<lastmod>2018-07-19T19:24:24+00:00</lastmod>
 	</url>
 </urlset>
