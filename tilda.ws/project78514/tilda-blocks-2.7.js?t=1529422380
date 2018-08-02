@@ -2434,7 +2434,7 @@ function t702_showPopup(recid){
     t702_closePopup();
   });
 
-  el.find('a[href*=#]').click(function(e){
+  el.find('a[href*="#"]').click(function(e){
     var url = $(this).attr('href');
     if (!url || url.substring(0,7) != '#price:') {
       t702_closePopup();
