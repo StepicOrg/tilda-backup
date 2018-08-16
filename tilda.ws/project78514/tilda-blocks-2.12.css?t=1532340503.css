@@ -508,6 +508,8 @@
   vertical-align: middle;
   position: relative;
   background-attachment: fixed;
+  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
 }
 .t-cover__carrier.loading {
   opacity: 0;
