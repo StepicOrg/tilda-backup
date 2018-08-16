@@ -3,6 +3,7 @@ set -ex
 DOMAINS=(
     welcome.stepik.org
     bioinf.me
+    hi.hyperskill.org
 )
 
 for domain in ${DOMAINS[@]}; do
