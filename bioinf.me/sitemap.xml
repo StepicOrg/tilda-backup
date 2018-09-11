@@ -1,5 +1,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 	<url>
+		<loc>https://bioinf.me/education/summer/2018/pr</loc>
+		<lastmod>2018-09-11T18:54:44+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://bioinf.me/</loc>
 		<lastmod>2018-06-20T08:38:36+00:00</lastmod>
 	</url>
