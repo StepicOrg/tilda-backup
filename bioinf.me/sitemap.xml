@@ -9,7 +9,7 @@
 	</url>
 	<url>
 		<loc>https://bioinf.me/contest</loc>
-		<lastmod>2018-09-19T18:16:58+00:00</lastmod>
+		<lastmod>2018-09-24T10:16:58+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/online/masters</loc>
@@ -205,11 +205,11 @@
 	</url>
 	<url>
 		<loc>https://bioinf.me/contest/faq</loc>
-		<lastmod>2018-09-24T09:52:15+00:00</lastmod>
+		<lastmod>2018-09-24T10:15:43+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/online/contest2017</loc>
-		<lastmod>2018-09-24T10:09:52+00:00</lastmod>
+		<loc>https://bioinf.me/contest/2017</loc>
+		<lastmod>2018-09-24T11:16:28+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/online/contest2017/standings</loc>
@@ -274,5 +274,9 @@
 	<url>
 		<loc>https://bioinf.me/page3129280.html</loc>
 		<lastmod>2018-07-04T09:47:48+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://bioinf.me/online/contest2017</loc>
+		<lastmod>2018-09-24T10:15:19+00:00</lastmod>
 	</url>
 </urlset>
