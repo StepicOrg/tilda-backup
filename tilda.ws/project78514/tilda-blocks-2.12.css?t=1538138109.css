@@ -520,7 +520,7 @@
 }
 .t-cover__carrier.loaded {
   opacity: 1;
-  transition: opacity 400ms;
+  transition: opacity 700ms;
 }
 @media screen and (max-device-width: 1024px) {
   .t-cover {
