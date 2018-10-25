@@ -100,8 +100,8 @@
 		<lastmod>2018-10-12T14:10:43+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/test-ui-ux-design-2018</loc>
-		<lastmod>2018-10-12T14:10:43+00:00</lastmod>
+		<loc>https://welcome.stepik.org/test-ui-ux-design-october-2018</loc>
+		<lastmod>2018-10-25T10:04:04+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ny-17</loc>
@@ -152,6 +152,14 @@
 		<lastmod>2018-10-12T14:10:59+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://welcome.stepik.org/ru/payment-terms</loc>
+		<lastmod>2018-10-12T14:11:00+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/ru/paid-courses</loc>
+		<lastmod>2018-10-17T12:01:05+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://welcome.stepik.org/class</loc>
 		<lastmod>2018-01-19T19:23:14+00:00</lastmod>
 	</url>
@@ -162,13 +170,5 @@
 	<url>
 		<loc>https://welcome.stepik.org/en/payment-terms</loc>
 		<lastmod>2018-10-12T14:11:22+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/ru/payment-terms</loc>
-		<lastmod>2018-10-12T14:11:00+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/ru/paid-courses</loc>
-		<lastmod>2018-10-17T12:01:05+00:00</lastmod>
 	</url>
 </urlset>
