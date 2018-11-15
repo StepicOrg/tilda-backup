@@ -21,6 +21,10 @@
 #allrecords ul {
   padding-left: 20px;
 }
+#allrecords b,
+#allrecords strong {
+  font-weight: bold;
+}
 @media print {
   body,
   html {
