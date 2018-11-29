@@ -1127,10 +1127,12 @@
 .t-form .t-submit {
   position: relative;
 }
-.t-form .t-submit.t-btn_sending {
+.t-form .t-submit.t-btn_sending,
+.t-btn.t-btn_sending {
   color: transparent !important;
 }
-.t-form .t-btn_sending:before {
+.t-form .t-btn_sending:before,
+.t-btn.t-btn_sending:before {
   content: '';
   box-sizing: border-box;
   position: absolute;
@@ -6416,6 +6418,10 @@ img:not([src]) {
   .t392__btn {
     display: block;
     margin: 0 auto 10px !important;
+  }
+  .t392__img {
+    margin-left: auto;
+    margin-right: auto !important;
   }
 }
 .t395__col {
