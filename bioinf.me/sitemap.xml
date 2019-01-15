@@ -33,7 +33,7 @@
 	</url>
 	<url>
 		<loc>https://bioinf.me/programs</loc>
-		<lastmod>2019-01-15T08:51:04+00:00</lastmod>
+		<lastmod>2019-01-15T09:03:07+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/en/contest</loc>
@@ -326,6 +326,10 @@
 	<url>
 		<loc>https://bioinf.me/admission</loc>
 		<lastmod>2018-03-12T21:02:53+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://bioinf.me/program</loc>
+		<lastmod>2019-01-15T09:00:37+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/contest/2018</loc>
