@@ -1,9 +1,5 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 	<url>
-		<loc>https://hi.hyperskill.org/</loc>
-		<lastmod>2019-01-09T14:07:34+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://hi.hyperskill.org/page2803866.html</loc>
 		<lastmod>2019-01-09T14:07:34+00:00</lastmod>
 	</url>
@@ -20,7 +16,7 @@
 		<lastmod>2019-01-09T14:07:35+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://hi.hyperskill.org/about</loc>
+		<loc>https://hi.hyperskill.org/</loc>
 		<lastmod>2019-01-28T08:09:58+00:00</lastmod>
 	</url>
 	<url>
