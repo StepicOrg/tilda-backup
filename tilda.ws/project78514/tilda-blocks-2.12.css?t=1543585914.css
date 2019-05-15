@@ -14125,6 +14125,11 @@ transition: opacity ease-in-out .2s;
   margin-bottom: 35px;
 }
 
+.t696 .t-form__inputsbox .t-input-group_st .t-input-block {
+    display: none;
+    margin-bottom: 0;
+}
+
 .t696__form-bottom-text {
 	margin-top: 20px;
 }
@@ -14301,6 +14306,10 @@ transition: opacity ease-in-out .2s;
   padding-top: 5px;
 }
 
+.t698 .t-form__inputsbox .t-input-group_st .t-input-block {
+    display: none;
+}
+
 .t698__form-bottom-text {
   color: #fff;
   margin-top: 30px;
@@ -14455,6 +14464,11 @@ z-index: 9999999;
 .t702 .t-form_bbonly .t-input-subtitle {
   padding-bottom: 0;
   padding-top: 5px;
+}
+
+.t702 .t-form__inputsbox .t-input-group_st .t-input-block {
+    display: none;
+    margin-bottom: 0;
 }
 
 .t702__form-bottom-text {

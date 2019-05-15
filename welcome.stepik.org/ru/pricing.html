@@ -36,7 +36,7 @@
 			<meta name="msapplication-TileColor" content="#000000">
 	<meta name="msapplication-TileImage" content="https://static.tildacdn.com/tild3363-3263-4536-b037-333539386133/favicon_228.png">
 		<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-grid-3.0.min.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="https://tilda.ws/project78514/tilda-blocks-2.12.css?t=1556018095" type="text/css" media="all" />
+	<link rel="stylesheet" href="https://tilda.ws/project78514/tilda-blocks-2.12.css?t=1557931076" type="text/css" media="all" />
 
 	<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-animation-1.0.min.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-slds-1.4.min.css" type="text/css" media="all" />
@@ -46,7 +46,7 @@
 
 	<script src="https://static.tildacdn.com/js/jquery-1.10.2.min.js"></script>
 	<script src="https://static.tildacdn.com/js/tilda-scripts-2.8.min.js"></script>
-	<script src="https://tilda.ws/project78514/tilda-blocks-2.7.js?t=1556018095"></script>
+	<script src="https://tilda.ws/project78514/tilda-blocks-2.7.js?t=1557931076"></script>
 
 	<script src="https://static.tildacdn.com/js/tilda-animation-1.0.min.js" charset="utf-8"></script>
 	<script src="https://static.tildacdn.com/js/tilda-slds-1.4.min.js" charset="utf-8"></script>
@@ -1198,6 +1198,7 @@ $(document).ready(function() {
                         <p class="t-form__errorbox-item js-rule-error js-rule-error-email"></p>
                         <p class="t-form__errorbox-item js-rule-error js-rule-error-name"></p>
                         <p class="t-form__errorbox-item js-rule-error js-rule-error-phone"></p>
+                        <p class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></p>
                         <p class="t-form__errorbox-item js-rule-error js-rule-error-string"></p>
                     </div>
                 </div>				</div>
@@ -1216,6 +1217,7 @@ $(document).ready(function() {
                         <p class="t-form__errorbox-item js-rule-error js-rule-error-email"></p>
                         <p class="t-form__errorbox-item js-rule-error js-rule-error-name"></p>
                         <p class="t-form__errorbox-item js-rule-error js-rule-error-phone"></p>
+                        <p class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></p>
                         <p class="t-form__errorbox-item js-rule-error js-rule-error-string"></p>
                     </div>
                 </div>            </div>
@@ -1249,6 +1251,15 @@ $(document).ready(function(){
   setTimeout(function(){
     t702_initPopup('48486578');
   }, 500);
+  
+    /* hack for Android */
+    var ua = navigator.userAgent.toLowerCase();
+    var isAndroid = ua.indexOf("android") > -1;
+    if(isAndroid) {
+        $('.t-body').addClass('t-body_scrollable-hack-for-android');
+        $('head').append("<style>@media screen and (max-width: 560px) {\n.t-body_scrollable-hack-for-android {\noverflow: visible !important;\n}\n}\n</style>");
+        console.log('Android css hack was inited');
+    }
 });
 </script>
 
@@ -1494,8 +1505,8 @@ $(document).ready(function() {
 
             <div class="t-input-group t-input-group_ph" data-input-lid="1495646545048">
                               <div class="t-input-block">
-                          <input type="tel" name="Phone" class="t-input js-tilda-rule  " value="" placeholder="Телефон"  data-tilda-rule="phone" pattern="[0-9]*"  style="color:#000000;  background-color:#ffffff; border-radius: 30px; -moz-border-radius: 30px; -webkit-border-radius: 30px;">
-                    <div class="t-input-error"></div>
+          		  	                   		<input type="tel" name="Phone" class="t-input js-tilda-rule  " value="" placeholder="Телефон"  data-tilda-rule="phone" pattern="[0-9]*"  style="color:#000000;  background-color:#ffffff; border-radius: 30px; -moz-border-radius: 30px; -webkit-border-radius: 30px;">
+                                    <div class="t-input-error"></div>
           </div>
       </div>
 
@@ -1519,6 +1530,7 @@ $(document).ready(function() {
                         <p class="t-form__errorbox-item js-rule-error js-rule-error-email"></p>
                         <p class="t-form__errorbox-item js-rule-error js-rule-error-name"></p>
                         <p class="t-form__errorbox-item js-rule-error js-rule-error-phone"></p>
+                        <p class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></p>
                         <p class="t-form__errorbox-item js-rule-error js-rule-error-string"></p>
                     </div>
                 </div>				</div>
@@ -1537,6 +1549,7 @@ $(document).ready(function() {
                         <p class="t-form__errorbox-item js-rule-error js-rule-error-email"></p>
                         <p class="t-form__errorbox-item js-rule-error js-rule-error-name"></p>
                         <p class="t-form__errorbox-item js-rule-error js-rule-error-phone"></p>
+                        <p class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></p>
                         <p class="t-form__errorbox-item js-rule-error js-rule-error-string"></p>
                     </div>
                 </div>            </div>
@@ -1628,15 +1641,6 @@ $(document).ready(function() {
 });
 
 </script>
-</div>
-
-
-<div id="rec45024542" class="r t-rec t-rec_pt_60 t-rec_pb_60" style="padding-top:60px;padding-bottom:60px; "  data-record-type="3"   >
-<!-- T107 -->
-<div class="t107">
-  <div class="t-align_center" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="https://static.tildacdn.com/tild6364-3266-4866-b637-613037663362/_.png">    <img src="https://static.tildacdn.com/tild6364-3266-4866-b637-613037663362/_.png"  class="t107__widthauto t-img" imgfield="img"  />    <div class="t-container_8 t107__title t-text" style="" field="title" itemprop="name"><div style="font-size:20px;font-family:'Roboto';" data-customstyle="yes">* Для проведения закупки на Портале Поставщиков <a href="https://welcome.stepik.org/ru/pricing#rec37929289" style="">напишите нам.</a><br /></div></div>           
-  </div>  
-</div>
 </div>
 
 
