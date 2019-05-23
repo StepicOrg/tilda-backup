@@ -34,13 +34,16 @@ function t199_showMenu(recid){
       $body.toggleClass(CLASS_MENU);
     });
 
-    $(document).on('click', function() {
-      $body.removeClass(CLASS_MENU);
+    $(document).on('click', function(e) {
+        var clickedInsideMenu = ($(e.target).hasClass('t199__js__menu') || $(e.target).parents('.t199__js__menu').length > 0);
+        if (!clickedInsideMenu) {
+            $body.removeClass(CLASS_MENU);
+        }
     });
 
-    $menu.on('click', function(e) {
+    /*$menu.on('click', function(e) {
       e.stopPropagation();
-    });
+    });*/
   })
   $('.t199__mmenu').bind('clickedAnchorInTooltipMenu',function(){
     $('body').removeClass('t199__is__menu');
