@@ -983,30 +983,27 @@ function t395_updateSelect(recid) {
 
 function t395_startUpdateLazyLoad($this) {
     var rec_ids = $this.attr('data-tab-rec-ids').split(',');
-    var isVideo_t223 = rec_ids.some(function(item) {
-        return $('#rec' + item).find('.t223 .t-video-lazyload').length > 0;
-    });
-    if (isVideo_t223) {
-        t395_updateVideoLazyLoad(rec_ids);
-    }
+    rec_ids.forEach(function(rec_id, i, arr) {
+	  var rec_el=$('#rec'+rec_id);
+
+      var video = rec_el.find('.t-video-lazyload');
+      if (video.length > 0) {
+          t395_updateVideoLazyLoad(video);
+      }
+	});
 }
 
-function t395_updateVideoLazyLoad(rec_ids) {
+function t395_updateVideoLazyLoad(video) {
     setTimeout(function() {
-        var videoBlock = [];
-        rec_ids.forEach(function(item) {
-            $('#rec' + item).find('.t223 .t-video-lazyload').each(function() {
-                videoBlock.push($(this));
-            });
-        });
-        $(videoBlock).each(function() {
+        video.each(function() {
             var div = $(this);
-            var iframe = div.find('iframe');
-            var height = div.width() * 0.5625;
 
-            if (!div.hasClass('t223__isload')) {
-                div.height(height);
-                iframe.height(height);
+            if (!div.hasClass('t-video__isload')) {
+
+                var height = div.attr('data-videolazy-height') ? $(this).attr('data-videolazy-height') : '100%';
+                if (height.indexOf('vh') != -1) {
+                    height = '100%';
+                }
 
                 var videoId = div.attr('data-videolazy-id').trim();
                 var blockId = div.attr('data-blocklazy-id') || '';
@@ -1018,7 +1015,7 @@ function t395_updateVideoLazyLoad(rec_ids) {
                 }
             }
 
-            div.addClass('t223__isload');
+            div.addClass('t-video__isload');
         });
     }, 0);
 }
@@ -1095,30 +1092,27 @@ function t397_updateSelect(recid) {
 
 function t397_startUpdateLazyLoad($this) {
     var rec_ids = $this.attr('data-tab-rec-ids').split(',');
-    var isVideo_t223 = rec_ids.some(function(item) {
-        return $('#rec' + item).find('.t223 .t-video-lazyload').length > 0;
-    });
-    if (isVideo_t223) {
-        t397_updateVideoLazyLoad(rec_ids);
-    }
+    rec_ids.forEach(function(rec_id, i, arr) {
+	  var rec_el=$('#rec'+rec_id);
+
+      var video = rec_el.find('.t-video-lazyload');
+      if (video.length > 0) {
+          t397_updateVideoLazyLoad(video);
+      }
+	});
 }
 
-function t397_updateVideoLazyLoad(rec_ids) {
+function t397_updateVideoLazyLoad(video) {
     setTimeout(function() {
-        var videoBlock = [];
-        rec_ids.forEach(function(item) {
-            $('#rec' + item).find('.t223 .t-video-lazyload').each(function() {
-                videoBlock.push($(this));
-            });
-        });
-        $(videoBlock).each(function() {
+        video.each(function() {
             var div = $(this);
-            var iframe = div.find('iframe');
-            var height = div.width() * 0.5625;
 
-            if (!div.hasClass('t223__isload')) {
-                div.height(height);
-                iframe.height(height);
+            if (!div.hasClass('t-video__isload')) {
+
+                var height = div.attr('data-videolazy-height') ? $(this).attr('data-videolazy-height') : '100%';
+                if (height.indexOf('vh') != -1) {
+                    height = '100%';
+                }
 
                 var videoId = div.attr('data-videolazy-id').trim();
                 var blockId = div.attr('data-blocklazy-id') || '';
@@ -1130,7 +1124,7 @@ function t397_updateVideoLazyLoad(rec_ids) {
                 }
             }
 
-            div.addClass('t223__isload');
+            div.addClass('t-video__isload');
         });
     }, 0);
 }
