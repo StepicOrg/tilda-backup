@@ -1832,6 +1832,32 @@ function t509_setHeight(recid) {
   }
 }
  
+function t517_unifyHeights(recid) {
+if($(window).width()>=960){
+	$('#rec'+recid+' .t517 .t-container .t517__row').each(function() {
+		var t517__highestBox = 0;
+		var t517__currow = $(this);
+		$('.t517__col', this).each(function(){
+			var t517__curcol = $(this);			
+			var t517__curcolinfo=t517__curcol.find('.t517__sectioninfowrapper');			
+			var t517__curcolpers=t517__curcol.find('.t517__personwrapper');
+			var t517__curcolinnerheight = t517__curcolinfo.outerHeight() + t517__curcolpers.outerHeight();						
+			if(t517__curcolinnerheight > t517__highestBox){t517__highestBox = t517__curcolinnerheight;}
+		});
+		$('.t517__col',this).css('height', t517__highestBox);
+	});
+}
+};
+ 
+function t537_setHeight(recid) {
+  var t537__el=$("#rec"+recid),
+      t537__image = t537__el.find(".t537__bgimg:first"),
+      t537__width = t537__image.attr("data-image-width"),
+      t537__height = t537__image.attr("data-image-height"),
+      t537__ratio = t537__height/t537__width,
+      t537__padding = t537__ratio*100;	  
+  $("#rec"+recid+" .t537__bgimg").css("padding-bottom",t537__padding+"%");  
+} 
 function t557_init(recid,snowtype){
 	$('<img/>').attr('src', 'https://static.tildacdn.com/img/snowflakes_1.png').load(function() {$(this).remove();});
 	$('<img/>').attr('src', 'https://static.tildacdn.com/img/snowflakes_2.png').load(function() {$(this).remove();});
