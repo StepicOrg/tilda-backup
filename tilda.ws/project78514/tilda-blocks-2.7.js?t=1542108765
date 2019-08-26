@@ -1922,26 +1922,6 @@ function t569_init(recid){
     }, 200);        
   });
 } 
-function t570_init(recid){
-if($(window).width()>750){
-  t570_setMapHeight(recid);
-
-  $(window).load(function() {
-      t570_setMapHeight(recid);
-  });
-
-  $(window).resize(function(){
-    t570_setMapHeight(recid);
-  });
-}
-}
-
-function t570_setMapHeight(recid) {
-  var t570__el=$('#rec'+recid),
-  	  t570__map = t570__el.find('.t-map');
-  var t570__textwrapper = t570__el.find('.t570__col_text').height();
-  t570__map.css('height', t570__textwrapper).trigger('sizechange');
-} 
 function t576_init(recid){
   var el = $('#rec'+recid),
       line = el.find('.t576__line'),
@@ -2400,39 +2380,6 @@ function t670_imageHeight(recid) {
     $(this).css("padding-bottom",padding+"%");    
   });
 } 
-function t678_onSuccess(t678_form){
-	var t678_inputsWrapper = t678_form.find('.t-form__inputsbox');
-    var t678_inputsHeight = t678_inputsWrapper.height();
-    var t678_inputsOffset = t678_inputsWrapper.offset().top;
-    var t678_inputsBottom = t678_inputsHeight + t678_inputsOffset;
-	var t678_targetOffset = t678_form.find('.t-form__successbox').offset().top;
-
-    if ($(window).width()>960) {
-        var t678_target = t678_targetOffset - 200;
-    }	else {
-        var t678_target = t678_targetOffset - 100;
-    }
-
-    if (t678_targetOffset > $(window).scrollTop() || ($(document).height() - t678_inputsBottom) < ($(window).height() - 100)) {
-        t678_inputsWrapper.addClass('t678__inputsbox_hidden');
-		setTimeout(function(){
-			if ($(window).height() > $('.t-body').height()) {$('.t-tildalabel').animate({ opacity:0 }, 50);}
-		}, 300);		
-    } else {
-        $('html, body').animate({ scrollTop: t678_target}, 400);
-        setTimeout(function(){t678_inputsWrapper.addClass('t678__inputsbox_hidden');}, 400);
-    }
-
-	var successurl = t678_form.data('success-url');
-    if(successurl && successurl.length > 0) {
-        setTimeout(function(){
-            window.location.href= successurl;
-        },500);
-    }
-
-}
-
- 
 function t686_init(recid){
 	setTimeout(function(){
       t686_setHeight(recid);
