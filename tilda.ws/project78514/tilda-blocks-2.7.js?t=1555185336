@@ -1007,7 +1007,11 @@ function t395_updateVideoLazyLoad(video) {
 
                 var videoId = div.attr('data-videolazy-id').trim();
                 var blockId = div.attr('data-blocklazy-id') || '';
-                var videoTwoId = '_' + div.attr('data-videolazy-two-id') + '_' || '';
+                if (typeof div.attr('data-videolazy-two-id') != 'undefined') {
+                  var videoTwoId = '_' + div.attr('data-videolazy-two-id') + '_';
+                } else {
+                  var videoTwoId = '';
+                }
 
                 if (div.attr('data-videolazy-type') == 'youtube') {
                     div.find('iframe').remove();
@@ -1116,7 +1120,11 @@ function t397_updateVideoLazyLoad(video) {
 
                 var videoId = div.attr('data-videolazy-id').trim();
                 var blockId = div.attr('data-blocklazy-id') || '';
-                var videoTwoId = '_' + div.attr('data-videolazy-two-id') + '_' || '';
+                if (typeof div.attr('data-videolazy-two-id') != 'undefined') {
+                  var videoTwoId = '_' + div.attr('data-videolazy-two-id') + '_';
+                } else {
+                  var videoTwoId = '';
+                }
 
                 if (div.attr('data-videolazy-type') == 'youtube') {
                     div.find('iframe').remove();
@@ -1194,16 +1202,23 @@ t422_setHeight = function(recid) {
 t422_checkEqualHeight = function(recid) {
   var t422__txtel=$('#rec'+recid+' .t422__text');
   var t422__imgel=$('#rec'+recid+' .t422__img');
+  var t422__textwrapperel = $('#rec'+recid+' .t422__textwrapper');
   var t422__borderwidth = 0;
   if (t422__txtel.css("border-top-width") && t422__txtel.css("border-top-width")[1]!='p') {
     t422__borderwidth = + (t422__txtel.css("border-top-width")[0] + t422__txtel.css('border-top-width')[1]);
   }else{if (t422__txtel.css("border-top-width"))
     	t422__borderwidth = +(t422__txtel.css("border-top-width")[0]);
   }
-  if (t422__imgel.height() < (t422__txtel.height() + t422__borderwidth*2)) {
+  /* if (t422__imgel.height() < (t422__txtel.height() + t422__borderwidth*2)) {
       t422__imgel.height(t422__txtel.height() + t422__borderwidth*2);
   }else{if ((t422__imgel.height() - t422__borderwidth*2) > t422__txtel.height()) {
         t422__txtel.height(t422__imgel.height() - t422__borderwidth*2);
+    }
+  } */
+  if (t422__imgel.height() < (t422__textwrapperel.outerHeight() + t422__borderwidth*2)) {
+      t422__imgel.height(t422__textwrapperel.outerHeight() + t422__borderwidth*2);
+  }else{if ((t422__imgel.height() - t422__borderwidth*2) > t422__textwrapperel.outerHeight()) {
+        t422__textwrapperel.outerHeight(t422__imgel.height() - t422__borderwidth*2);
     }
   }
 }; 
@@ -1858,6 +1873,43 @@ function t537_setHeight(recid) {
       t537__padding = t537__ratio*100;	  
   $("#rec"+recid+" .t537__bgimg").css("padding-bottom",t537__padding+"%");  
 } 
+function t539_equalHeight(recid,blocks){
+  if(blocks=='' || parseInt(blocks)==0) {
+    return false;
+  }
+  var t539__el = $('#rec'+recid),
+      t539__cols = t539__el.find(".t539__textwrapper");
+	t539__cols.css("height","auto");
+	if($(window).width()<=480){                                                
+      t539__el.find('.t539').css('visibility', 'visible');
+      return;                                                     
+    }
+	if ($(window).width()<=960) {var t539__perRow = 2;}
+	else {var t539__perRow = +blocks;}
+	for( var i = 0; i < t539__cols.length; i +=t539__perRow )
+	{
+		var t539__maxHeight = 0,
+				t539__row = t539__cols.slice(i, i + t539__perRow);
+		t539__row.each(function(){
+			var t539__itemHeight = $(this).outerHeight();
+			if ( t539__itemHeight > t539__maxHeight ) { t539__maxHeight = t539__itemHeight; }
+		});
+		t539__row.css( "height", t539__maxHeight );
+	}
+  t539__el.find('.t539').css('visibility', 'visible');
+};
+
+function t539_setHeight(recid) {
+  var t539__el=$("#rec"+recid),
+      t539__image = t539__el.find(".t539__bgimg:first"),
+      t539__width = t539__image.attr("data-image-width"),
+      t539__height = t539__image.attr("data-image-height"),
+      t539__ratio = t539__height/t539__width,
+      t539__padding = t539__ratio*100;	  
+  $("#rec"+recid+" .t539__bgimg").css("padding-bottom",t539__padding+"%");  
+}
+
+ 
 function t557_init(recid,snowtype){
 	$('<img/>').attr('src', 'https://static.tildacdn.com/img/snowflakes_1.png').load(function() {$(this).remove();});
 	$('<img/>').attr('src', 'https://static.tildacdn.com/img/snowflakes_2.png').load(function() {$(this).remove();});
