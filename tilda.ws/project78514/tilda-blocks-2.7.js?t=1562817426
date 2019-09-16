@@ -655,7 +655,7 @@ function t281_showPopup(recid){
     }, 500);
   }
   
-  el.find('.t-popup').click(function(e){
+  el.find('.t-popup').mousedown(function(e){
     if (e.target == this) { t281_closePopup(); }
   });
 
@@ -2654,7 +2654,7 @@ function t702_showPopup(recid){
       t702_lockScroll();
     }, 500);
   }
-  el.find('.t-popup').click(function(e){
+  el.find('.t-popup').mousedown(function(e){
     if (e.target == this) { t702_closePopup(); }
   });
 
