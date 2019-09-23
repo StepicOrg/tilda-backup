@@ -3463,6 +3463,7 @@ img:not([src]){
 /* T142 */
 
 .t142 {
+    overflow:hidden;
 }
 
 .t142__submit-overflowed {
@@ -3799,6 +3800,7 @@ img:not([src]){
 /* T142A */
 
 .t142A {
+    overflow: hidden;
 }
 
 .t142A__wrapone{
@@ -3855,6 +3857,7 @@ img:not([src]){
 /* T188 */
 
 .t188{
+    overflow: hidden;
 }
 
 .t188__wrapone{
@@ -9089,6 +9092,10 @@ transition: opacity ease-in-out .2s;
   }
 } 
 /* t442 */
+
+.t442 {
+    overflow: hidden;
+}
 
 .t442__link {
 	display: inline-block;
