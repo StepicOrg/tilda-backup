@@ -3039,3 +3039,59 @@ function t822_setHeight(recid) {
         }
     });
 };
+ 
+function t899_init(recid) {
+  t899_setMinHeight(recid);
+
+  $(window).bind(
+    'resize',
+    t_throttle(function() {
+      if (
+        typeof window.noAdaptive !== 'undefined' &&
+        window.noAdaptive === true &&
+        $isMobile
+      ) {
+        return;
+      }
+      t899_setMinHeight(recid);
+    }, 200)
+  );
+
+  $('.t899').bind('displayChanged', function() {
+    t899_setMinHeight(recid);
+  });
+
+  if ($isMobile) {
+    $(window).on('orientationchange', function() {
+      t899_setMinHeight(recid);
+    });
+  }
+}
+
+function t899_getWrappers(rec) {
+  var el = document.querySelector('#rec' + rec);
+  if (!el) {
+    return;
+  }
+  var wrappers = el.querySelectorAll('.t899__wrapper');
+
+  return wrappers;
+}
+
+function t899_setMinHeight(rec) {
+  var forEach = function(array, callback, scope) {
+    for (var i = 0; i < array.length; i++) {
+      callback.call(scope, i, array[i]);
+    }
+  };
+
+  var wrappers = t899_getWrappers(rec);
+  if (wrappers) {
+    forEach(wrappers, function(index, wrapper) {
+      var symbol = wrapper.querySelector('.t899__symbol');
+      if (symbol && symbol.offsetHeight > wrapper.offsetHeight) {
+        wrapper.style.minHeight = symbol.offsetHeight + 'px';
+      }
+    });
+  }
+}
