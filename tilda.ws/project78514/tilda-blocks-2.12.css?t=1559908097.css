@@ -3462,9 +3462,9 @@ img:not([src]){
  
 /* T142 */
 
-.t142 {
-    overflow:hidden;
-}
+/*.t142 {*/
+/*    overflow:hidden;*/
+/*}*/
 
 .t142__submit-overflowed {
   line-height: 1.1 !important;
@@ -3479,14 +3479,15 @@ img:not([src]){
 
 .t142__wrapone{
 	position: relative; 
-	right: 50%; 
-	float: right;
+	/*right: 50%; */
+	/*float: right;*/
 }
 
 .t142__wraptwo{
 	position: relative; 
 	z-index: 1; 
-	right: -50%;
+	/*right: -50%;*/
+	text-align: center;
 }
 
 .t142__submit{
