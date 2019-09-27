@@ -2975,6 +2975,27 @@ img:not([src]){
 }
 
  
+/* T135 */
+
+.t135 {
+}
+
+.t135__img {
+	max-width:100%;	
+}
+
+@media screen and (max-width: 640px){
+.t135 {
+	position: relative !important;
+	text-align: center;
+	padding: 30px;	
+	top:0px !important;
+	right:0px !important;
+	left:0px !important;
+	z-index: 1 !important;
+}
+}
+ 
 /* T214 */
 
 .t214 .t-row{

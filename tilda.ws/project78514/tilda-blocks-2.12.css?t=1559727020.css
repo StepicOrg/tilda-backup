@@ -2975,6 +2975,27 @@ img:not([src]){
 }
 
  
+/* T135 */
+
+.t135 {
+}
+
+.t135__img {
+	max-width:100%;	
+}
+
+@media screen and (max-width: 640px){
+.t135 {
+	position: relative !important;
+	text-align: center;
+	padding: 30px;	
+	top:0px !important;
+	right:0px !important;
+	left:0px !important;
+	z-index: 1 !important;
+}
+}
+ 
 /* T214 */
 
 .t214 .t-row{
@@ -15004,6 +15025,187 @@ z-index: 9999999;
   }
 }
 
+ 
+/* T704 */
+
+.t704__title {
+  margin-bottom: 24px;
+}
+
+.t704__text-wrapper {
+  margin-bottom: 74px;
+}
+
+.t704__form-bottom-text {
+	margin-top: 30px;
+}
+
+
+/* form */
+
+.t704 .t-form__inputsbox{
+  display:table;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.3s linear;
+  transition: max-height 0.3s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.3s linear;
+  max-height: 5000px;
+}
+
+.t704__inputsbox_hidden.t-form__inputsbox {
+  display: block;
+  overflow: hidden;
+  max-height: 0px;
+  opacity: 0;
+}
+
+.t704 .t-form_inputs-total_5 .t-input-group{
+	width: 20%;
+}
+.t704 .t-form_inputs-total_4 .t-input-group{
+	width: 25%;
+}
+.t704 .t-form_inputs-total_3 .t-input-group{
+	width: 33.33%;
+}
+.t704 .t-form_inputs-total_2 .t-input-group{
+	width: 50%;
+}
+.t704 .t-form_inputs-total_1 .t-input-group{
+	max-width: 460px;
+    width: 460px;
+}
+.t704 .t-form.t-form_inputs-total_1{
+	display: table;
+}
+.t704 .t-align_center .t-form.t-form_inputs-total_1{
+	margin: 0 auto;
+}
+
+.t704 .t-input-group {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.t704 .t-input-block {
+  height: 100%;
+  width:100%;
+  padding-right:20px;
+  box-sizing: border-box;
+}
+
+.t704 .t-input, .t704 .t-select {
+  height: 58px;
+  background-color: transparent;
+}
+
+.t704 .t-input__vis-ph {
+  top: 21px;
+}
+
+.t704 .t-input-title {
+	padding-bottom: 5px;
+	text-align: left;
+}
+
+.t704 .t-input-subtitle {
+	margin-top: -5px;
+	padding-bottom: 10px;
+	text-align: left;
+}
+
+.t704 .t-form__submit {
+  display: table-cell;
+  vertical-align: bottom;
+  height: 100%;
+}
+
+.t704 .t-submit {
+  height: 58px;
+  padding: 0 30px;
+}
+
+.t704 .t-datepicker {
+    width: 100%;
+}
+
+.t704 .t-form_bbonly .t-input-title {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.t704 .t-form_bbonly .t-input-subtitle {
+  padding-bottom: 0;
+  padding-top: 5px;
+}
+
+
+@media screen and (max-width: 960px) {
+  .t704__text-wrapper {
+    margin-bottom: 32px;
+  }
+
+  .t704 .t-form__inputsbox, .t704 .t-form.t-form_inputs-total_1 {
+  	display:block;
+  }
+
+  .t704 .t-input-group, .t704 .t-form_inputs-total_1 .t-input-group {
+    display: block;
+  	width: 100% !important;
+	max-width: 100%;
+  }
+
+  .t704 .t-input-block{
+  	display:block;
+  	margin-bottom: 16px;
+  	padding-right: 0px;
+  }
+
+  .t704 .t-form__submit{
+  	display:block;
+  	width:100%;
+  }
+
+  .t704 .t-submit{
+  	width:100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .t704 .t-input, .t704 .t-submit, .t704 .t-select {
+    height: 50px;
+  }
+
+  .t704 .t-input__vis-ph {
+    top: 17px;
+  }
+
+  .t704 .t-input_pvis {
+    padding: 22px 20px 10px 20px;
+  }
+}
+
+
+/* t704 error */
+.t704 .t-input-error{
+	display:none !important;
+}
+.t704 .t-form__errorbox-wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.t704 .t-form__errorbox-middle{
+	display:none;
+}
+.t704 .t-form__errorbox-bottom{
+	display:block;
+}
+@media screen and (max-width: 960px){
+.t704 .t-form__errorbox-middle{
+	display:block;
+}
+.t704 .t-form__errorbox-bottom{
+	display:none;
+}
+}
  
 /* T718 */
 
