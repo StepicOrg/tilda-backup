@@ -940,6 +940,7 @@ function t395_init(recid){
   var bgcolor=el.css("background-color");
   var bgcolor_target=el.find(".t395__select, .t395__firefoxfix");
   bgcolor_target.css("background", bgcolor);
+  $('#rec'+recid + ' .t395__wrapper_mobile .t395__select option').first().attr('selected', true);
 }
 
 function t395_alltabs_updateContent(recid){
@@ -1148,6 +1149,48 @@ function t409_unifyHeights(recid) {
   }
 }
  
+function t412_init(recid) {
+  var rec = $('#rec' + recid);
+  if (rec.find('a[href^="#order"]')) {
+    rec.find('a[href^="#order"]').on('click', function(e) {
+      var $linkelem = $(this);
+      var $jspaybox = $('.js-payment-systembox');
+
+      t412_setCoordinateToPaymentBox(e, $linkelem, $jspaybox);
+      $jspaybox.css('margin-top', '0');
+      $jspaybox.css('margin-left', '0');
+
+      $(window).resize(function() {
+        if ($jspaybox.css('display') == 'block' && $linkelem) {
+          t412_setCoordinateToPaymentBox(e, $linkelem, $jspaybox);
+        }
+      });
+    });
+  }
+}
+
+
+function t412_setCoordinateToPaymentBox(event, $linkelem, $jspaybox) {
+  var oldTopCoord = 0;
+  var newTopCoord = 0;
+  var offset = $linkelem.offset();
+
+  var top = offset.top + $linkelem.parents('.t412__col').height() - $jspaybox.height();
+  var left = offset.left + $linkelem.parents('.t412__col').width()/2 - $jspaybox.width()/2;
+
+  oldTopCoord = $jspaybox.css('top');
+
+  $jspaybox.css('top', top + 'px');
+  $jspaybox.css('left', left + 'px');
+
+  newTopCoord = $jspaybox.css('top');
+
+  if (parseInt(oldTopCoord) - parseInt(newTopCoord) == 21) {
+    $jspaybox.css('top', (top+21) + 'px');
+  }
+}
+
+
 function t412_unifyHeights(recid) {
     var el=$("#rec"+recid);
 
@@ -1826,6 +1869,63 @@ function t498_unifyHeights(recid) {
         }
     });
 };
+ 
+function t505__createPieChart(recid,data1,data2,data3,data4,sectorcolor,piebgcolor,bgcolor,blocksnumber,diagramwidth,diameter) {
+	if(diameter>300 || diameter=="" || diameter<100) {
+		if(diameter=="") {var t505__radius = 100; diameter = 200;}
+		if(diameter>300) {var t505__radius = 150; diameter = 300;}
+        if(diameter<100) {var t505__radius = 50; diameter = 100;}
+	} else {
+		var t505__radius = diameter/2;
+	}
+
+	if(diagramwidth=="") { diagramwidth = 10;}
+    if(diagramwidth>t505__radius) { diagramwidth = 10;}
+	if(diagramwidth<1) { diagramwidth = 1;}
+
+	//check Retina
+	if(window.devicePixelRatio >= 2) {
+		var t505__oldsize = diameter;
+        t505__radius = t505__radius*2;
+		diameter = diameter*2;
+		diagramwidth = diagramwidth*2;
+	}
+
+	//border id drawing at the edge of circle, so we need correct the radius to fin into canvas
+	var t505__correction = +diagramwidth/2;
+
+    var t505__dataarray = [data1,data2,data3,data4];
+    for (var i=0; i<4; i++) {
+        if (t505__dataarray[i]!="" && blocksnumber>i) {
+            var t505__canvas = document.querySelector('#rec'+recid+' .t505__pie'+(i+1));
+			t505__canvas.setAttribute("width", diameter);
+			t505__canvas.setAttribute("height", diameter);
+            var t505__context = t505__canvas.getContext("2d");
+			if(window.devicePixelRatio >= 2) {
+				t505__canvas.style.width = t505__oldsize + "px";
+				t505__canvas.style.height = t505__oldsize + "px";
+			}
+			for (var j = 0; j < 2; j++) {
+				if(j==1 && t505__dataarray[i]==0) {continue;}
+				//0 - bg, 1 - percent sector
+                if (j==0) {
+					t505__context.strokeStyle = piebgcolor;
+					var t505__angle = Math.PI*2;
+					t505__context.lineWidth = diagramwidth-1;
+                } else {
+                    t505__context.strokeStyle = sectorcolor;
+					var t505__angle = Math.PI*2*(t505__dataarray[i]/100);
+					t505__context.lineWidth = diagramwidth;
+				}
+                t505__context.beginPath();
+				t505__context.lineCap="round";
+				t505__context.moveTo(diameter-t505__correction,t505__radius);
+				t505__context.arc(t505__radius, t505__radius, t505__radius-t505__correction, 0, t505__angle, false);
+				t505__context.stroke();
+			}
+		}
+	}
+}
  
 function t509_setHeight(recid) {  
   var t509__el=$("#rec"+recid);	
@@ -2655,6 +2755,12 @@ function t702_showPopup(recid){
     }, 500);
   }
   el.find('.t-popup').mousedown(function(e){
+    var windowWidth = $(window).width();
+    var maxScrollBarWidth = 17;
+    var windowWithoutScrollBar = windowWidth - maxScrollBarWidth;
+    if(e.clientX > windowWithoutScrollBar) {
+        return;
+    }  
     if (e.target == this) { t702_closePopup(); }
   });
 
