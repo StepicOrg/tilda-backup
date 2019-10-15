@@ -6,7 +6,7 @@
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/workshops</loc>
-		<lastmod>2019-10-15T16:38:13+00:00</lastmod>
+		<lastmod>2019-10-15T19:58:23+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/</loc>
@@ -437,15 +437,23 @@
 		<lastmod>2019-09-19T10:04:14+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/education/workshop/ngs</loc>
-		<lastmod>2019-10-15T09:57:53+00:00</lastmod>
+		<loc>https://bioinf.me/education/workshops/ngs</loc>
+		<lastmod>2019-10-15T20:05:49+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/education/workshop/stat</loc>
-		<lastmod>2019-10-15T19:50:04+00:00</lastmod>
+		<loc>https://bioinf.me/education/workshops/stat</loc>
+		<lastmod>2019-10-15T20:04:36+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/ngs</loc>
 		<lastmod>2019-10-14T14:54:28+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://bioinf.me/education/workshop/ngs</loc>
+		<lastmod>2019-10-15T19:57:35+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://bioinf.me/education/workshop/stat</loc>
+		<lastmod>2019-10-15T19:51:02+00:00</lastmod>
 	</url>
 </urlset>
