@@ -1404,14 +1404,14 @@ t431__generateHtml = function(recid,arrayValues,coltag,hastargetblank,colWidth,b
 	}
 	t431__htmlpart += "<" + t431__theadorbodytag + " class=\"t431__" + t431__theadorbodytag + "\">";
 
-	//remove forst body row top border, if table head has bottom border
+	/*remove forst body row top border, if table head has bottom border*/
 	if($('#rec'+recid+' .t431 .t-container .t431__thead th').length>0 && $('#rec'+recid+' .t431 .t-container .t431__thead th').css("border-bottom-width")[0]!="0") {
 		var t431__firstbodyrowstyle = "border-top: 0 !important;";
 	}
 
 	for (var i=0; i<arrayValues.length; i++) {
 
-		//add classes for striped table
+		/*add classes for striped table*/
 		if (coltag == "td") {
 			if ((i + 1) % 2 > 0) {
 				t431__htmlpart += "<tr class=\"t431__oddrow\"" + "style=\"" + oddrowstyles + "\">";
@@ -1426,7 +1426,7 @@ t431__generateHtml = function(recid,arrayValues,coltag,hastargetblank,colWidth,b
         }
 		for (var j=0; j<(arrayValues[i].length + t431__addingcols); j++) {
 			if (arrayValues[i][j]) {
-				//define col width
+				/*define col width*/
                 if(Array.isArray(colWidth) && colWidth[j]) {
                     var t431__curWidth = colWidth[j].myText;
                 } else { var t431__curWidth = colWidth;}
@@ -1440,7 +1440,7 @@ t431__generateHtml = function(recid,arrayValues,coltag,hastargetblank,colWidth,b
                 if (arrayValues[i][j].myHref) {
                     var t431__tblank = "";
                     if (hastargetblank) {var t431__tblank = "target=\"_blank\"";}
-                    //define link type
+                    /*define link type*/
                     if (arrayValues[i][j].myHrefType == "link") {
                         var t431__linkwithattr = "<a href=\"" + arrayValues[i][j].myHref + "\"" + t431__tblank + ">";
                         var t431__linkclosetag = "</a>";
@@ -1477,8 +1477,8 @@ t431_parseData = function(t431__data) {
 	var t431__EndOfLine = "";
     for (var i=0; i<t431__data.length; i++)
     {
-	  //col end and check of special symbols: «>», «<» and «&»
-      if (t431__data[i] == ";" && !((t431__data[i-1]&&(t431__data[i-1]=="t")) && (t431__data[i-2]&&(t431__data[i-2]=="g" || t431__data[i-2]=="l")) && (t431__data[i-3]&&(t431__data[i-3]=="&"))) && !((t431__data[i-1]&&(t431__data[i-1]=="p")) && (t431__data[i-2]&&(t431__data[i-2]=="m")) && (t431__data[i-3]&&(t431__data[i-3]=="a")) && (t431__data[i-4]&&(t431__data[i-4]=="&")))) {
+	  /*col end and check of special symbols: «>», «<», «&&#187; and « »*/
+      if (t431__data[i] == ";" && !(t431__data.slice(i-4, i) == "&lt;" || t431__data.slice(i-4, i) == "&gt;" || t431__data.slice(i-5, i) == "&amp;" || t431__data.slice(i-6, i) == "&nbsp;")) {
           t431__arrayRow.push(t431__curItem);
           var t431__curItem = {myText:"", myHref:""};
           t431__HasLink = "";
@@ -1537,7 +1537,7 @@ t431_parseData = function(t431__data) {
 };
 
 
-// checking a step by step combining of t431__targetSubstr
+/* checking a step by step combining of t431__targetSubstr*/
 t431__checkSubstr = function(t431__targetSubstr,t431__curSubstr,t431__curSymbol){
 	if (!t431__curSubstr && t431__curSymbol == t431__targetSubstr[0]) {
     return t431__curSymbol;

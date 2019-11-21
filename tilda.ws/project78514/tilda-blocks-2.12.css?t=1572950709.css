@@ -4778,6 +4778,10 @@ img:not([src]){
   padding: 60px 0px 0px 0px;
 }
 
+.t218__blockimgmobile_padding-0 {
+    padding: 0;
+}
+
 .t218__blocktable {
   height: auto !important;
 }
