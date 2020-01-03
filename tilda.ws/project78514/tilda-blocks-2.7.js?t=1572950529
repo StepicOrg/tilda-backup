@@ -599,6 +599,7 @@ function t315_showcomments(recid)
 function t281_initPopup(recid){
   $('#rec'+recid).attr('data-animationappear','off');
   $('#rec'+recid).css('opacity','1');
+  $('#rec'+recid).attr('data-popup-subscribe-inited','y');
   var el=$('#rec'+recid).find('.t-popup'),
       hook=el.attr('data-tooltip-hook'),
       analitics=el.attr('data-track-popup');
