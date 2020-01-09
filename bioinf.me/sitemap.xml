@@ -381,6 +381,10 @@
 		<lastmod>2019-07-10T16:26:27+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://bioinf.me/education/summer/2019/pr</loc>
+		<lastmod>2020-01-09T12:27:16+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://bioinf.me/education/summer/2016/report</loc>
 		<lastmod>2018-03-06T08:11:19+00:00</lastmod>
 	</url>
@@ -397,12 +401,12 @@
 		<lastmod>2018-07-19T19:24:24+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/en/education/summer/2018</loc>
-		<lastmod>2019-02-28T15:23:10+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://bioinf.me/research/contract</loc>
 		<lastmod>2019-12-05T11:05:57+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://bioinf.me/en/education/summer/2018</loc>
+		<lastmod>2019-02-28T15:23:10+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/en/education/summer/2017</loc>
