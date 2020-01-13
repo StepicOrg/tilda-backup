@@ -45,8 +45,8 @@
 		<lastmod>2019-12-25T12:27:39+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/education/program</loc>
-		<lastmod>2019-12-27T09:39:29+00:00</lastmod>
+		<loc>https://bioinf.me/education/program/spb</loc>
+		<lastmod>2020-01-13T15:43:22+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/workshops/ngs/2018</loc>
@@ -341,10 +341,6 @@
 		<lastmod>2018-03-05T17:02:56+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/page7366769.html</loc>
-		<lastmod>2019-09-19T10:06:51+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://bioinf.me/program/moscow</loc>
 		<lastmod>2019-04-23T16:36:00+00:00</lastmod>
 	</url>
@@ -353,24 +349,28 @@
 		<lastmod>2019-12-05T11:08:45+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/en/education</loc>
-		<lastmod>2019-01-22T05:12:59+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://bioinf.me/programs/moscow</loc>
-		<lastmod>2019-09-14T12:16:58+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://bioinf.me/education/summer/2017/report</loc>
 		<lastmod>2018-03-06T16:03:00+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://bioinf.me/en/education</loc>
+		<lastmod>2019-01-22T05:12:59+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/summer/2018/pr</loc>
 		<lastmod>2019-04-25T14:32:20+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://bioinf.me/programs/moscow</loc>
+		<lastmod>2019-09-14T12:16:58+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://bioinf.me/personaldata/poslezavtra</loc>
 		<lastmod>2019-09-16T08:45:11+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://bioinf.me/education/summer/2019/pr</loc>
+		<lastmod>2020-01-09T12:27:16+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/en/itmo</loc>
@@ -379,10 +379,6 @@
 	<url>
 		<loc>https://bioinf.me/personaldata/gamechangers</loc>
 		<lastmod>2019-07-10T16:26:27+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://bioinf.me/education/summer/2019/pr</loc>
-		<lastmod>2020-01-09T12:27:16+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/summer/2016/report</loc>
@@ -401,12 +397,12 @@
 		<lastmod>2018-07-19T19:24:24+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/research/contract</loc>
-		<lastmod>2019-12-05T11:05:57+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://bioinf.me/en/education/summer/2018</loc>
 		<lastmod>2019-02-28T15:23:10+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://bioinf.me/research/contract</loc>
+		<lastmod>2019-12-05T11:05:57+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/en/education/summer/2017</loc>
@@ -419,6 +415,10 @@
 	<url>
 		<loc>https://bioinf.me/education/summer/2017</loc>
 		<lastmod>2019-02-20T15:03:13+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://bioinf.me/page7366769.html</loc>
+		<lastmod>2019-09-19T10:06:51+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/online/masters/details</loc>
