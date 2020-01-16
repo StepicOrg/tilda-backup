@@ -30,11 +30,11 @@
 	</url>
 	<url>
 		<loc>https://bioinf.me/education</loc>
-		<lastmod>2019-10-15T20:33:57+00:00</lastmod>
+		<lastmod>2020-01-16T16:06:08+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/programs</loc>
-		<lastmod>2019-12-26T21:16:16+00:00</lastmod>
+		<lastmod>2020-01-16T15:25:05+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/en/contest</loc>
@@ -105,8 +105,8 @@
 		<lastmod>2019-05-20T09:25:25+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/education/program/admission</loc>
-		<lastmod>2020-01-16T11:57:21+00:00</lastmod>
+		<loc>https://bioinf.me/education/program</loc>
+		<lastmod>2020-01-16T15:28:45+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/masters/algo</loc>
@@ -454,11 +454,11 @@
 	</url>
 	<url>
 		<loc>https://bioinf.me/admission</loc>
-		<lastmod>2019-12-26T21:16:52+00:00</lastmod>
+		<lastmod>2020-01-16T15:27:23+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/program</loc>
-		<lastmod>2019-12-26T21:18:39+00:00</lastmod>
+		<lastmod>2020-01-16T15:25:32+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/projects</loc>
@@ -479,5 +479,9 @@
 	<url>
 		<loc>https://bioinf.me/education/ngs</loc>
 		<lastmod>2019-10-14T14:54:28+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://bioinf.me/education/program/admission</loc>
+		<lastmod>2020-01-16T15:26:35+00:00</lastmod>
 	</url>
 </urlset>
