@@ -7602,7 +7602,6 @@ transition: opacity ease-in-out .2s;
 
 .t389__typo {
   font-size: 14px;
-  color: #222;
 }
 
 .t389__col_mobile {
@@ -7612,6 +7611,7 @@ transition: opacity ease-in-out .2s;
 .t389_scrolltop {
   position: relative;
   padding-right: 12px;
+  display: inline-block;
 }
 
 .t389__icon {
@@ -7619,7 +7619,6 @@ transition: opacity ease-in-out .2s;
   right: 0;
   top: 2px;
 }
-
 
 @media screen and (max-width: 1200px) {
   .t389__content {

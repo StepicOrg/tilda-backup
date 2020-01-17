@@ -934,9 +934,9 @@ function t368_alignVertical(recid){
         });
     };
  
-function t389_scrollToTop(){
-  $('html, body').animate({scrollTop: 0}, 700);								
-}	  
+function t389_scrollToTop() {
+  $('html, body').animate({scrollTop: 0}, 700);
+} 
 function t395_init(recid){
   var el=$('#rec'+recid);
   el.find('.t395__tab').click(function() {
