@@ -1347,31 +1347,31 @@ t431_createTable = function(recid,tablehead,tabledata,tablecolsize,hastargetblan
 
 
 /*add display:block to thead and tbody for vertical scroll, set th width to fix unequal col width*/
-t431_setHeadWidth = function(recid) {
-	if ($(window).width()>960){
-        var t431__tbody = $('#rec'+recid+' .t431 .t431__tbody');
-        var t431__thead = $('#rec'+recid+' .t431 .t431__thead');
-		t431__tbody.css("display","block");
-		t431__thead.css("display","block");
+function t431_setHeadWidth(recid) {
+  if ($(window).width() > 960) {
+    var tBody = $('#rec' + recid + ' .t431 .t431__tbody');
+    var tHead = $('#rec' + recid + ' .t431 .t431__thead');
+    tBody.css("display", "block");
+    tHead.css("display", "block");
 
-		var t431__colWidth = $('#rec'+recid+' .t431 .t431__tbody tr:first').children().map(function() {
-            return $(this).width();
-        });
+    var colWidth = $('#rec' + recid + ' .t431 .t431__tbody tr:first').children().map(function() {
+      return $(this).width();
+    });
 
-		if($('#rec'+recid+' .t431 .t431__tbody tr td:first').css('border-left-width').length>=3) {
-			var t431__verticalborder = $('#rec'+recid+' .t431 .t431__tbody tr td:first').css('border-left-width').slice(0,-2);
-		}
+    var vBorder = "";
+    if ($('#rec' + recid + ' .t431 .t431__tbody tr td:first').css('border-left-width').length >= 3) {
+      vBorder = $('#rec' + recid + ' .t431 .t431__tbody tr td:first').css('border-left-width').slice(0, -2);
+    }
 
-        $('#rec'+recid+' .t431 .t431__thead tr').children().each(function(i, v) {
-            if ($(v).is(":last-child")) {
-                $(v).width(t431__colWidth[i] + (t431__tbody.width() - $('#rec'+recid+' .t431 .t431__tbody tr:first').width()));
-            } else {
-                $(v).width(t431__colWidth[i] + (+t431__verticalborder));
-            }
-        });
-	}
-};
-
+    $('#rec' + recid + ' .t431 .t431__thead tr').children().each(function(i, el) {
+      if ($(el).is(":last-child")) {
+        $(el).width(colWidth[i] + (tBody.width() - $('#rec' + recid + ' .t431 .t431__tbody tr:first').width()));
+      } else {
+        $(el).width(colWidth[i] + (+vBorder));
+      }
+    });
+  }
+}
 
 t431__findMaxRowLengthInTable = function(arrayhead, arraydata) {
 	var t431__headmaxlength = 0;

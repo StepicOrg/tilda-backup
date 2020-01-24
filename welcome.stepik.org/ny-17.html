@@ -36,16 +36,16 @@
 			<meta name="msapplication-TileColor" content="#000000">
 	<meta name="msapplication-TileImage" content="https://static.tildacdn.com/tild3363-3263-4536-b037-333539386133/favicon_228.png">
 		<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-grid-3.0.min.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="https://tilda.ws/project78514/tilda-blocks-2.12.css?t=1572950581" type="text/css" media="all" />
+	<link rel="stylesheet" href="https://tilda.ws/project78514/tilda-blocks-2.12.css?t=1579881026" type="text/css" media="all" />
 
 	<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-animation-1.0.min.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-menusub-1.0.min.css" type="text/css" media="all" />
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillicrel=stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic" type="text/css" />
 
 	<script src="https://static.tildacdn.com/js/jquery-1.10.2.min.js"></script>
 	<script src="https://static.tildacdn.com/js/tilda-scripts-2.8.min.js"></script>
-	<script src="https://tilda.ws/project78514/tilda-blocks-2.7.js?t=1572950581"></script>
+	<script src="https://tilda.ws/project78514/tilda-blocks-2.7.js?t=1579881026"></script>
 
 	<script src="https://static.tildacdn.com/js/tilda-animation-1.0.min.js" charset="utf-8"></script>
 	<script src="https://static.tildacdn.com/js/tilda-menusub-1.0.min.js" charset="utf-8"></script>
@@ -117,19 +117,18 @@
 
 <script type="text/javascript">
   $(document).ready(function() { 
-    $("button:not(.t-submit):not(.t835__btn_next):not(.t835__btn_prev):not(.t835__btn_result):not(.t862__btn_next):not(.t862__btn_prev):not(.t862__btn_result):not(.t854__news-btn):not(.t862__btn_next), a:not([href*=#],.carousel-control,.t-carousel__control,.t807__btn_reply,[href^=#price],[href^=javascript],[href^=mailto],[href^=tel],[href^=link_sub],.t-menu__link-item[data-menu-submenu-hook])").click(function(e){
+    $("button:not(.t-submit,.t835__btn_next,.t835__btn_prev,.t835__btn_result,.t862__btn_next,.t862__btn_prev,.t862__btn_result,.t854__news-btn,.t862__btn_next),a:not([href*=#],.carousel-control,.t-carousel__control,.t807__btn_reply,[href^=#price],[href^=javascript],[href^=mailto],[href^=tel],[href^=link_sub],.t-menu__link-item[data-menu-submenu-hook])").click(function(e){
       var goTo = this.getAttribute("href");
-        if (goTo && goTo.substring(0,4) == 'tel:' ) {
-            return true;
+        if (goTo !== null) {
+            var target = $(this).attr("target");
+            if (target !== "_blank") {
+                e.preventDefault();
+                $(".t-records").removeClass("t-records_visible");
+                setTimeout(function() {
+                    window.location = goTo;
+                }, 500);
+            }
         }
-      var target = $(this).attr("target");
-      if (target !== "_blank" ) {
-        e.preventDefault();
-        $(".t-records").removeClass("t-records_visible");
-        setTimeout(function(){
-           window.location = goTo;
-        },500);
-      }   
     });
   }); 
 </script>
@@ -221,8 +220,7 @@ $(document).ready(function() {
                         <div class="t228__right_buttons_wrap">
                         <div class="t228__right_langs_lang"><a style="color:#ffffff;font-weight:400;" href="http://welcome.stepik.org/">En</a></div>                        <div class="t228__right_langs_lang"><a style="color:#ffffff;font-weight:400;" href="http://welcome.stepik.org/ru">Ru</a></div>                        </div>
                     </div>
-                        
-             </div>
+                             </div>
                        </div>
           
           <div class="t228__padding40px"></div>    
@@ -251,8 +249,8 @@ $(document).ready(function() {
         t228_highlight();
         
                 t228_checkAnchorLinks('12443713');
-                        
-      }); 
+                
+      });
     
 
     
@@ -260,11 +258,13 @@ $(document).ready(function() {
       t228_setWidth('12443713');
     });
     $(window).load(function() {
-      t228_setWidth('12443713');
+        if(typeof t228_setWidth !== "undefined") {
+            t228_setWidth('12443713');
+        }
     });
     $(document).ready(function() {
       t228_setWidth('12443713');
-    });        
+    });
     
  
 
@@ -279,23 +279,22 @@ $(document).ready(function() {
 
 
 
-      
+    
         $(document).ready(function() {
             t228_changebgopacitymenu('12443713');
             $(window).bind('scroll', t_throttle(function(){t228_changebgopacitymenu('12443713')}, 200));
-        }); 
+        });
     
 </script>
 
 <script type="text/javascript">
-      
+    
         $(document).ready(function() {
             t228_createMobileMenu('12443713');
-        }); 
+        });
     
 </script>
 
-      
 
 
 
@@ -466,24 +465,26 @@ $(document).ready(function() {
 
 
 <div id="rec12532959" class="r t-rec" style=" "  data-record-type="270"   >
-<div class="t270" ></div>
-<script type="text/javascript">
+<div class="t270"></div>
+<script>
 
-  $(document).ready(function(){
-    setTimeout(function(){
-      var $root = $('html, body');
-      $('a[href*="#"]:not([href="#"],.carousel-control,.t-carousel__control,[href^="#price"],[href^="#popup"],[href^="#prodpopup"],[href^="#order"])').click(function() {        
-        var target = $(this.hash);  
-        if (target.length == 0){ target = $('a[name="' + this.hash.substr(1) + '"]'); }
-        if (target.length == 0){
-          return true;
-        } 
-        $root.animate({ scrollTop: target.offset().top + 3 }, 500);  
-        return false;  
-      });
+$(document).ready(function() {
+    var hash = window.location.hash;
+    
+    setTimeout(function() {
+        var curPath = window.location.pathname;
+        var curFullPath = window.location.origin + curPath;
+        $('a[href^="#"]:not([href="#"],.carousel-control,.t-carousel__control,[href^="#price"],[href^="#popup"],[href^="#prodpopup"],[href^="#order"]),a[href^="' + curPath + '#"],a[href^="' + curFullPath + '#"]').click(function(e) {
+            e.preventDefault();
+            var hash = this.hash;
+            if(hash !== "") {
+                t270_scroll(hash, -3);
+            }
+        });
+        
     }, 500);
-  });
-     
+});
+
 </script>
 
 </div>
