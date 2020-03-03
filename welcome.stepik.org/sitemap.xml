@@ -150,7 +150,7 @@
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/subscribe2020-preview</loc>
-		<lastmod>2020-03-03T11:49:04+00:00</lastmod>
+		<lastmod>2020-03-03T13:51:49+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/class</loc>
@@ -175,5 +175,9 @@
 	<url>
 		<loc>https://welcome.stepik.org/x/statistics</loc>
 		<lastmod>2019-09-12T14:26:31+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/subscribe2020-pro</loc>
+		<lastmod>2020-03-03T13:51:59+00:00</lastmod>
 	</url>
 </urlset>
