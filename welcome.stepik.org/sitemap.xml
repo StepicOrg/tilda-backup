@@ -150,11 +150,23 @@
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/subscribe2020-preview</loc>
-		<lastmod>2020-03-03T14:52:54+00:00</lastmod>
+		<lastmod>2020-03-04T13:44:14+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/class</loc>
 		<lastmod>2018-01-19T19:23:14+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/subscribe2020-pro</loc>
+		<lastmod>2020-03-03T14:31:41+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/subscribe2020-enterprise</loc>
+		<lastmod>2020-03-04T11:26:20+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/page9754144.html</loc>
+		<lastmod>2020-03-03T15:08:38+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/en/about</loc>
@@ -175,17 +187,5 @@
 	<url>
 		<loc>https://welcome.stepik.org/x/statistics</loc>
 		<lastmod>2019-09-12T14:26:31+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/subscribe2020-pro</loc>
-		<lastmod>2020-03-03T14:31:41+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/subscribe2020-enterprise</loc>
-		<lastmod>2020-03-04T11:26:20+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/page9754144.html</loc>
-		<lastmod>2020-03-03T15:08:38+00:00</lastmod>
 	</url>
 </urlset>
