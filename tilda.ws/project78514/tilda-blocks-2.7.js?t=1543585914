@@ -482,11 +482,12 @@ function t270_scroll(hash, offset) {
         target = $(hash);
     } catch(event) {
         console.log("Exception t270: " + event.message);
+        return true;
     }
     if (target.length == 0) {
         target = $('a[name="' + hash.substr(1) + '"]');
         if (target.length == 0) {
-            return false;
+            return true;
         }
     }
     $root.animate({
@@ -1359,7 +1360,7 @@ t427_alignMiddle = function(recid) {
 		t427__arrow.css('top', (t427__img.height()-t427__arrow.height())/2);
 	}
 }; 
-t431_createTable = function(recid,tablehead,tabledata,tablecolsize,hastargetblank,btnstyles,t431__tdstyles,t431__thstyles,t431__oddrowstyles,t431__evenrowstyles){
+function  t431_createTable(recid,tablehead,tabledata,tablecolsize,hastargetblank,btnstyles,t431__tdstyles,t431__thstyles,t431__oddrowstyles,t431__evenrowstyles){
 	var t431__arrayColSize = t431_parseData(tablecolsize);
 	var t431__arrayHead = t431_parseData(tablehead);
     var t431__arrayData = t431_parseData(tabledata);
@@ -1445,7 +1446,7 @@ function t431__setColumnsWidth(colWidth, colsNumber, recid) {
   }
 }
 
-t431__generateHtml = function(recid,arrayValues,coltag,hastargetblank,colWidth,btnstyles,colstyles,oddrowstyles,evenrowstyles,maxcolnumber) {
+function t431__generateHtml(recid,arrayValues,coltag,hastargetblank,colWidth,btnstyles,colstyles,oddrowstyles,evenrowstyles,maxcolnumber) {
 	var t431__htmlpart = "";
 
 

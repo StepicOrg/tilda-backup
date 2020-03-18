@@ -11176,7 +11176,7 @@ transition: opacity ease-in-out .2s;
 }
 
 .t514__circlewrapper {
-	background: #fff;
+	background: transparent;
     z-index: 100;
     position: absolute;    
 	padding: 4px 0;
@@ -11187,6 +11187,10 @@ transition: opacity ease-in-out .2s;
 	height: 12px;
 	border: 2px solid #d4d4d4;
 	border-radius: 50%;	
+}
+
+.t514__rightcol_1 .t514__line {
+    top: 28px !important;
 }
 
 .t514__line {
@@ -11240,6 +11244,10 @@ transition: opacity ease-in-out .2s;
 
 .t514__circlewrapper {
 	top: -2px !important;
+}
+
+.t514__rightcol_1 .t514__line {
+    top: 20px !important;
 }
 
 .t514__line {
