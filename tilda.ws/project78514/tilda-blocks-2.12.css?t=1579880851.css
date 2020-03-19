@@ -10065,6 +10065,30 @@ transition: opacity ease-in-out .2s;
 	margin-top: 60px;
 }
  
+/* T485 */
+
+.t485__uptitle {
+  margin-bottom: 25px;  
+}
+
+.t485__title{
+  margin-bottom: 60px;  
+}
+
+.t485__descr{
+  margin-top: 60px;
+}
+
+.t485 .t-btn {
+	margin-top: 60px;
+}
+
+.t485__img {
+  width:auto;
+  max-width: 100%;
+  display: block;  
+}
+ 
 /* T487 */
 
 .t487__uptitle {
