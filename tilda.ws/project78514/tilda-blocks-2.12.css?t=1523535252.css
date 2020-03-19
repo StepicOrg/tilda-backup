@@ -4087,6 +4087,16 @@ img:not([src]){
 }
 }
  
+/* T196 */
+.t196__descr {
+  padding-bottom: 6px;
+}
+
+.t196 .t-align_center .t196__img {
+  max-width: 100%;
+}
+
+ 
 .t199__holder {
   margin: auto;
   padding: 0 40px;
