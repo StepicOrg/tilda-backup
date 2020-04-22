@@ -2424,11 +2424,28 @@ function t616_equalHeight(element) {
   }
 } 
 function t635_init(recid){
-	t635_startType(recid);
+    var el = $("#rec"+recid);
+    var data = el.find(".t635__textholder");
+	var animRecId = data.attr("data-recid");
+	var screenmin = parseInt($("#rec" + animRecId).attr("data-screen-min"), 10);
+	var screenmax = parseInt($("#rec" + animRecId).attr("data-screen-max"), 10);
+	
+	if(isNaN(screenmax) && isNaN(screenmin)) {
+	    t635_startType(recid);
+	} else if(!isNaN(screenmax) && !isNaN(screenmin)) {
+	    if($(window).width() >= screenmin && $(window).width() <= screenmax) {
+	        t635_startType(recid);
+	    }
+    } else if(!isNaN(screenmax)) {
+	    if($(window).width() <= screenmax) {
+	        t635_startType(recid);
+	    }
+	} else if(!isNaN(screenmin)) {
+	    if($(window).width() >= screenmin) {
+	        t635_startType(recid);
+	    }
+	}
 }
-
-
-
 
 function t635_startType(recid){
 	var t635_el = $('#rec'+recid),
@@ -2451,8 +2468,7 @@ function t635_startType(recid){
 	if (typeof t635_phrase4!="undefined") {t635_phrasesList.push(t635_phrase4.slice(0,80));}
 	if (typeof t635_phrase5!="undefined") {t635_phrasesList.push(t635_phrase5.slice(0,80));}
 
-
-  if(t635_animText.length != 0 && t635_phrasesList.length != 0) {
+  if(t635_animText.length !== 0 && t635_phrasesList.length !== 0) {
     var t635_animTextHtml = t635_animText.html(),
         t635_animTextSplitted = t635_animTextHtml.split("|"),
 		t635_curWin = $(window);
@@ -2460,7 +2476,9 @@ function t635_startType(recid){
 
     t635_updateAnimTextLimits(t635_animRecId);
     t635_curWin.bind('resize', t_throttle(function(){t635_updateAnimTextLimits(t635_animRecId);}, 200));
-    setInterval(function(){t635_updateAnimTextLimits(t635_animRecId);},5000);
+    var intervalUpdate = setInterval(function() {
+        t635_updateAnimTextLimits(t635_animRecId);
+    }, 5000);
 
     var t635_animatedText = $("#rec"+t635_animRecId+" .t635__typing-text"),
         t635_animTextTop = t635_animatedText.attr("data-top-limit"),
@@ -2488,9 +2506,6 @@ function t635_startType(recid){
   }
 }
 
-
-
-
 function t635_findAnimElem(animRecId) {
   var animRec = $("#rec"+animRecId);
   var animH1 = animRec.find("h1:contains(\'|\')").last();
@@ -2511,18 +2526,12 @@ function t635_findAnimElem(animRecId) {
   }
 }
 
-
-
-
 function t635_updateAnimTextLimits(t635_animRecId){
 	var t635_animatedBlock = $("#rec"+t635_animRecId),
 		t635_animatedText = t635_animatedBlock.find(".t635__typing-text");
 	t635_animatedText.attr("data-top-limit",t635_animatedText.offset().top);
 	t635_animatedText.attr("data-bottom-limit",(t635_animatedBlock.offset().top+t635_animatedBlock.height()));
 }
-
-
-
 
 function t635_animateText(t635_animRecId,t635_phrasesList,t635_speed,t635_loop,t635_backspaceDelay) {
 	if (typeof t635_speed=="undefined"){t635_speed = 40;}

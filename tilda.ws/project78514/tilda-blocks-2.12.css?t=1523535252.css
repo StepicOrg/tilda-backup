@@ -14621,7 +14621,8 @@ transition: opacity ease-in-out .2s;
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
-} 
+}
+ 
 /* t650 */
 
 .t650 .t-section__topwrapper {
@@ -14814,7 +14815,7 @@ transition: opacity ease-in-out .2s;
 }
 }
  
-/* t678 */
+/* .t678 */
 
 .t678 .t-section__topwrapper {
 	margin-bottom: 75px;
@@ -14850,6 +14851,10 @@ transition: opacity ease-in-out .2s;
 
 .t678 .t-input-block textarea.t-input_pvis {
   padding-top: 26px;
+}
+
+.t678 .t-input-phonemask__wrap {
+    background-color: #ffffff;
 }
 
 .t678 .t-input-title {
