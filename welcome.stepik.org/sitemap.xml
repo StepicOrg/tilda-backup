@@ -204,4 +204,16 @@
 		<loc>https://welcome.stepik.org/en/teach-with-stepik</loc>
 		<lastmod>2020-04-10T11:26:25+00:00</lastmod>
 	</url>
+	<url>
+		<loc>https://welcome.stepik.org/en/pricing/pro</loc>
+		<lastmod>2020-05-04T11:04:34+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/en/pricing/basic</loc>
+		<lastmod>2020-05-04T11:05:42+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/en/pricing/enterprise</loc>
+		<lastmod>2020-05-04T11:13:55+00:00</lastmod>
+	</url>
 </urlset>

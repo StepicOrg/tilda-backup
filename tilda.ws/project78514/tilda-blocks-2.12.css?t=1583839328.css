@@ -16538,6 +16538,7 @@ z-index: 9999999;
 }
 
 .t774__wrapper {
+    overflow: hidden;
   background-color: #fff;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
