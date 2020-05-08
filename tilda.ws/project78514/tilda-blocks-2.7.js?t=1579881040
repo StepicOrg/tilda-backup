@@ -1900,12 +1900,6 @@ function t456_createMobileMenu(recid){
     menu.fadeToggle(300);
     $(this).toggleClass("t456_opened")
   });
-  if ($isMobile) {
-      el.find('.t456__list_item .t-menu__link-item').on('click', function(e) {
-          menu.fadeToggle(300);
-          burger.toggleClass("t456_opened")
-      });
-  }
   $(window).bind('resize', t_throttle(function(){
     window_width=$(window).width();
     if(window_width>980){
