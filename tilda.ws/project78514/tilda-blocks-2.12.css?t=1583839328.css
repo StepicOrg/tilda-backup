@@ -7840,6 +7840,18 @@ transition: opacity ease-in-out .2s;
   transition: all 0.3s ease;
 }
 
+.t395__width_12 {
+  width: 12.5%;
+}
+
+.t395__width_14 {
+  width: 14.28%;
+}
+
+.t395__width_16 {
+  width: 16.66%;
+}
+
 .t395__width_20 {
   width: 20%;
 }
