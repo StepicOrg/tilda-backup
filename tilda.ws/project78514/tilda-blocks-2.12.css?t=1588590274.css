@@ -7836,8 +7836,7 @@ transition: opacity ease-in-out .2s;
 .t395__title {
   padding: 0 22px;
   color: #777;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  transition: font-weight, color 0.3s ease;
 }
 
 .t395__width_12 {
@@ -8122,8 +8121,7 @@ transition: opacity ease-in-out .2s;
 .t397__title {
   padding: 0 10px;
   color: #777;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  transition: font-weight, color 0.3s ease;
   padding-bottom: 18px;
 }
 
