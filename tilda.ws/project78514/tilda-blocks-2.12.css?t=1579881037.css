@@ -8181,6 +8181,7 @@ transition: opacity ease-in-out .2s;
 .t379__zero-off {
     position: absolute !important;
     height: 0 !important;
+    overflow: hidden;
 }
 
 .t397__select {
@@ -16729,6 +16730,7 @@ z-index: 9999999;
     color: #a1a1a1;
 	text-align: right;
 	font-size: 0px;
+	mix-blend-mode: multiply;
 }
 
 @-webkit-keyframes t774__icon-anim {
@@ -16775,7 +16777,7 @@ z-index: 9999999;
 	max-width: 70%;
 }
 
-.t774__mobile-scroll-help {
+.t774__scroll-icon-wrapper {
   padding: 0px 20px 10px 0px;
 }
 }
