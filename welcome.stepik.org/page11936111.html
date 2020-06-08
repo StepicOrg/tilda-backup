@@ -36,7 +36,7 @@
 			<meta name="msapplication-TileColor" content="#000000">
 	<meta name="msapplication-TileImage" content="https://static.tildacdn.com/tild3363-3263-4536-b037-333539386133/favicon_228.png">
 		<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-grid-3.0.min.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="https://tilda.ws/project78514/tilda-blocks-2.12.css?t=1591639803" type="text/css" media="all" />
+	<link rel="stylesheet" href="https://tilda.ws/project78514/tilda-blocks-2.12.css?t=1591640438" type="text/css" media="all" />
 
 	<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-animation-1.0.min.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-menusub-1.0.min.css" type="text/css" media="all" />
@@ -47,7 +47,7 @@
 
 	<script src="https://static.tildacdn.com/js/jquery-1.10.2.min.js"></script>
 	<script src="https://static.tildacdn.com/js/tilda-scripts-2.8.min.js"></script>
-	<script src="https://tilda.ws/project78514/tilda-blocks-2.7.js?t=1591639803"></script>
+	<script src="https://tilda.ws/project78514/tilda-blocks-2.7.js?t=1591640438"></script>
 
 	<script src="https://static.tildacdn.com/js/tilda-animation-1.0.min.js" charset="utf-8"></script>
 	<script src="https://static.tildacdn.com/js/tilda-menusub-1.0.min.js" charset="utf-8"></script>
@@ -6999,6 +6999,14 @@ $( document ).ready(function() {
     #pricing_description {
         border-collapse: collapse;
     }
+    
+    #pricing_description tr.header th {
+        border-bottom: 1px solid #eee;
+    }
+    
+    #pricing_description td.commission {
+        border-right: 1px solid #eee;
+    }
 </style>
 
 <div class="t613">
@@ -7011,34 +7019,34 @@ $( document ).ready(function() {
       <th class="t613__title t613__header_title t-name t-name_md t-align_center" colspan="2">Pro</th>
       <th class="t613__title t613__header_title t-name t-name_md t-align_center" colspan="2">Enterprise</th>
     </tr>
-    <tr class="t613__header">
+    <tr class="header">
       <th>&nbsp;</th>
-      <th>бесплатно</th>
-      <th>+комиссия</th>
-      <th>подписка</th>
-      <th>+комиссия</th>
-      <th>подписка</th>
-      <th>+комиссия</th>
+      <th class="t613__title t613__middle_title t-descr t-descr_xs">Бесплатно</th>
+      <th class="commision t613__title t613__middle_title t-descr t-descr_xs">+комиссия</th>
+      <th class="t613__title t613__middle_title t-descr t-descr_xs">Подписка</th>
+      <th class="commission t613__title t613__middle_title t-descr t-descr_xs">+комиссия</th>
+      <th class="t613__title t613__middle_title t-descr t-descr_xs">Подписка</th>
+      <th class="commission t613__title t613__middle_title t-descr t-descr_xs">+комиссия</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td class="t613__title t613__middle_title t-descr t-descr_xs">Приём платежей на Stepik</td>
       <td class="no t613__col t-align_center t-valign_middle"></td>
-      <td class="yes t613__col t-align_center t-valign_middle"></td>
+      <td class="commision yes t613__col t-align_center t-valign_middle"></td>
       <td class="no t613__col t-align_center t-valign_middle"></td>
-      <td class="yes t613__col t-align_center t-valign_middle"></td>
+      <td class="commision yes t613__col t-align_center t-valign_middle"></td>
       <td class="no t613__col t-align_center t-valign_middle"></td>
-      <td class="yes t613__col t-align_center t-valign_middle"></td>
+      <td class="commision yes t613__col t-align_center t-valign_middle"></td>
     </tr>
     <tr>
       <td class="t613__title t613__middle_title t-descr t-descr_xs">Онлайн-редактор курса</td>
       <td class="yes t613__col t-align_center t-valign_middle"></td>
+      <td class="commision yes t613__col t-align_center t-valign_middle"></td>
       <td class="yes t613__col t-align_center t-valign_middle"></td>
+      <td class="commision yes t613__col t-align_center t-valign_middle"></td>
       <td class="yes t613__col t-align_center t-valign_middle"></td>
-      <td class="yes t613__col t-align_center t-valign_middle"></td>
-      <td class="yes t613__col t-align_center t-valign_middle"></td>
-      <td class="yes t613__col t-align_center t-valign_middle"></td>
+      <td class="commision yes t613__col t-align_center t-valign_middle"></td>
     </tr>
   </tbody>
   <tfoot>
