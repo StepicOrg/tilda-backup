@@ -36,7 +36,7 @@
 			<meta name="msapplication-TileColor" content="#000000">
 	<meta name="msapplication-TileImage" content="https://static.tildacdn.com/tild3363-3263-4536-b037-333539386133/favicon_228.png">
 		<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-grid-3.0.min.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="https://tilda.ws/project78514/tilda-blocks-2.12.css?t=1591648230" type="text/css" media="all" />
+	<link rel="stylesheet" href="https://tilda.ws/project78514/tilda-blocks-2.12.css?t=1591649774" type="text/css" media="all" />
 
 	<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-animation-1.0.min.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-menusub-1.0.min.css" type="text/css" media="all" />
@@ -47,7 +47,7 @@
 
 	<script src="https://static.tildacdn.com/js/jquery-1.10.2.min.js"></script>
 	<script src="https://static.tildacdn.com/js/tilda-scripts-2.8.min.js"></script>
-	<script src="https://tilda.ws/project78514/tilda-blocks-2.7.js?t=1591648230"></script>
+	<script src="https://tilda.ws/project78514/tilda-blocks-2.7.js?t=1591649774"></script>
 
 	<script src="https://static.tildacdn.com/js/tilda-animation-1.0.min.js" charset="utf-8"></script>
 	<script src="https://static.tildacdn.com/js/tilda-menusub-1.0.min.js" charset="utf-8"></script>
@@ -7013,13 +7013,26 @@ $( document ).ready(function() {
         vertical-align: bottom;
     }
     
-    #pricing_description tbody tr td:first-child {
+    #pricing_description tr td:first-child, #pricing_description tr td.t613__title:first-child {
         padding-left: 0;
+    }
+    
+    #pricing_description tr td:last-child {
+        border-right: 0;
     }
     
     #pricing_description th.commission, #pricing_description td.commission {
 
     }
+    
+    #pricing_description .t-btn tr td {
+        border-bottom: 0;
+    }
+    
+    #pricing_description .t-btn_sm {
+        /*padding: 24px 16px;*/
+    }
+    
 </style>
 
 <div class="r t-rec t-rec_pt_120 t-rec_pb_150" style="padding-top:120px;padding-bottom:150px;background-color:#d6f0ff;" data-bg-color="#d6f0ff">
@@ -7082,7 +7095,7 @@ $( document ).ready(function() {
             ['Автоматическая проверка решений', yes, yes, yes, yes, yes, yes],
             ['Общение с учащимися', yes, yes, yes, yes, yes, yes],
             ['Ручная проверка решений', no, yes, yes, yes, yes, yes],
-            ['Дедлайны и экзамены', no, yes, yes, yes, yes, '+ прокторинг'],
+            ['Дедлайны и экзамены', no, yes, yes, yes, '+ прокторинг', '+ прокторинг'],
             ['Табель успеваемости и отчеты', no, yes, yes, yes, yes, yes],
             ['Выдача сертификатов', 'В случае одобрения Stepik', yes, yes, yes, yes, yes],
             ['Создание приватных курсов', no, no, yes, yes, yes, yes],
@@ -7100,7 +7113,7 @@ $( document ).ready(function() {
             for (var h = 1; h < func_descr.length; h++) {
                 var availability = func_descr[h];
                 row += '<td class="t613__col t-align_center t-valign_middle t-descr t-descr_xs ';
-                if ((h % 2) === 0 && h < 6) {
+                if ((h % 2) === 0) {
                     row += 'right-bordered ';
                 }
                 row += '">';
@@ -7124,9 +7137,12 @@ $( document ).ready(function() {
             'https://welcome.stepik.org/ru/pricing/enterprise',
             'https://welcome.stepik.org/ru/paid-courses']; 
         var table_footer = document.querySelector('#pricing_description tfoot');
-        var btns = '<tr><td>&nbsp;</td>';
+        var btns = '<tr><td class="right-bordered">&nbsp;</td>';
         for (var i = 0; i < more_links.length; i++) {
-            btns += '<td>' + get_btn(more_links[i], 'Подробнее') + '</td>';
+            if ((i % 2) === 1) {
+                continue;
+            }
+            btns += '<td class="right-bordered" colspan="2">' + get_btn(more_links[i], 'Подробнее') + '</td>';
         }
         btns += '</tr>';
         table_footer.innerHTML += btns;
