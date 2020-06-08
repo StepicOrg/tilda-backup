@@ -36,7 +36,7 @@
 			<meta name="msapplication-TileColor" content="#000000">
 	<meta name="msapplication-TileImage" content="https://static.tildacdn.com/tild3363-3263-4536-b037-333539386133/favicon_228.png">
 		<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-grid-3.0.min.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="https://tilda.ws/project78514/tilda-blocks-2.12.css?t=1591644716" type="text/css" media="all" />
+	<link rel="stylesheet" href="https://tilda.ws/project78514/tilda-blocks-2.12.css?t=1591648230" type="text/css" media="all" />
 
 	<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-animation-1.0.min.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-menusub-1.0.min.css" type="text/css" media="all" />
@@ -47,7 +47,7 @@
 
 	<script src="https://static.tildacdn.com/js/jquery-1.10.2.min.js"></script>
 	<script src="https://static.tildacdn.com/js/tilda-scripts-2.8.min.js"></script>
-	<script src="https://tilda.ws/project78514/tilda-blocks-2.7.js?t=1591644716"></script>
+	<script src="https://tilda.ws/project78514/tilda-blocks-2.7.js?t=1591648230"></script>
 
 	<script src="https://static.tildacdn.com/js/tilda-animation-1.0.min.js" charset="utf-8"></script>
 	<script src="https://static.tildacdn.com/js/tilda-menusub-1.0.min.js" charset="utf-8"></script>
@@ -7000,50 +7000,60 @@ $( document ).ready(function() {
         border-collapse: collapse;
     }
     
-    #pricing_description tr.header th {
+    #pricing_description tr.header th, #pricing_description tbody tr td, td.bottom-bordered, th.bottom-bordered {
         border-bottom: 1px solid #eee;
     }
     
-    #pricing_description th.commission, #pricing_description td.commission {
+    .right-bordered, td.right-bordered, th.right-bordered {
         border-right: 1px solid #eee;
+    }
+    
+    #pricing_description thead th.left-bottom-alligned {
+        text-align: left;
+        vertical-align: bottom;
+    }
+    
+    #pricing_description tbody tr td:first-child {
+        padding-left: 0;
+    }
+    
+    #pricing_description th.commission, #pricing_description td.commission {
+
     }
 </style>
 
-<div class="t613">
-<div class="t613__container t-container">
-<table id="pricing_description" class="t613__content t-col t-col_12">
+<div class="r t-rec t-rec_pt_120 t-rec_pb_150" style="padding-top:120px;padding-bottom:150px;background-color:#d6f0ff;" data-bg-color="#d6f0ff">
+    <div class="t613">
+        <div class="t613__container t-container">
+            <div class="t613__content t-col t-col_12" data-auto-correct-mobile-width="false">
+                <div class="t613__mobile" data-auto-correct-mobile-width="false">
+                    <div class="t613__wrapper" style="border-radius: 8px;" data-auto-correct-mobile-width="false">
+
+<table id="pricing_description">
  <thead>
     <tr>
-      <th class="t613__left t613__title t613__header_title t-name t-name_md">Возможности</th>
-      <th class="t613__title t613__header_title t-name t-name_md t-align_center" colspan="2">Basic</th>
-      <th class="t613__title t613__header_title t-name t-name_md t-align_center" colspan="2">Pro</th>
+      <th class="t613__left t613__title t613__header_title t-name t-name_md left-bottom-alligned bottom-bordered right-bordered" rowspan="2" style="min-width: 260px;width: 260px;">Возможности</th>
+      <th class="t613__title t613__header_title t-name t-name_md t-align_center right-bordered" colspan="2">Basic</th>
+      <th class="t613__title t613__header_title t-name t-name_md t-align_center right-bordered" colspan="2">Pro</th>
       <th class="t613__title t613__header_title t-name t-name_md t-align_center" colspan="2">Enterprise</th>
     </tr>
     <tr class="header">
-      <th>&nbsp;</th>
       <th class="t613__title t613__middle_title t-descr t-descr_xs">Бесплатно</th>
-      <th class="t613__title t613__middle_title t-descr t-descr_xs commission">+комиссия</th>
+      <th class="t613__title t613__middle_title t-descr t-descr_xs right-bordered">+комиссия</th>
       <th class="t613__title t613__middle_title t-descr t-descr_xs">Подписка</th>
-      <th class="t613__title t613__middle_title t-descr t-descr_xs commission">+комиссия</th>
+      <th class="t613__title t613__middle_title t-descr t-descr_xs right-bordered">+комиссия</th>
       <th class="t613__title t613__middle_title t-descr t-descr_xs">Подписка</th>
-      <th class="t613__title t613__middle_title t-descr t-descr_xs commission">+комиссия</th>
+      <th class="t613__title t613__middle_title t-descr t-descr_xs">+комиссия</th>
     </tr>
   </thead>
-  <tbody>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tfoot>
+  <tbody></tbody>
+  <tfoot></tfoot>
 </table>
-</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script>
@@ -7064,8 +7074,8 @@ $( document ).ready(function() {
         '</svg>';
     
     function build_pricing_table() {
-        var no = no_class;
         var yes = yes_class;
+        var no = no_class;
         const func_list = [
             ['Приём платежей на Stepik', no, yes, no, yes, no, yes],
             ['Онлайн-редактор курса', yes, yes, yes, yes, yes, yes],
@@ -7086,12 +7096,12 @@ $( document ).ready(function() {
         var table_body = document.querySelector('#pricing_description tbody');
         for (var i = 0, j = func_list.length; i < j; i++) {
             var func_descr = func_list[i];
-            var row = '<tr><td class="t613__title t613__middle_title t-descr t-descr_xs">' + func_descr[0] + '</td>';
-            for (var h = 1; h < 7; h++) {
+            var row = '<tr><td class="t613__title t613__middle_title t-descr t-descr_xs right-bordered">' + func_descr[0] + '</td>';
+            for (var h = 1; h < func_descr.length; h++) {
                 var availability = func_descr[h];
                 row += '<td class="t613__col t-align_center t-valign_middle t-descr t-descr_xs ';
-                if ((h % 2) === 0) {
-                    row += 'commission ';
+                if ((h % 2) === 0 && h < 6) {
+                    row += 'right-bordered ';
                 }
                 row += '">';
                 if (availability === yes_class) {
@@ -7106,21 +7116,42 @@ $( document ).ready(function() {
             row += '</tr>';
             table_body.innerHTML += row;
         }
+        
+        const more_links = ['https://welcome.stepik.org/ru/pricing/basic',
+            'https://welcome.stepik.org/ru/paid-courses',
+            'https://welcome.stepik.org/ru/pricing/pro',
+            'https://welcome.stepik.org/ru/paid-courses',
+            'https://welcome.stepik.org/ru/pricing/enterprise',
+            'https://welcome.stepik.org/ru/paid-courses']; 
+        var table_footer = document.querySelector('#pricing_description tfoot');
+        var btns = '<tr><td>&nbsp;</td>';
+        for (var i = 0; i < more_links.length; i++) {
+            btns += '<td>' + get_btn(more_links[i], 'Подробнее') + '</td>';
+        }
+        btns += '</tr>';
+        table_footer.innerHTML += btns;
+    }
+    
+    function get_btn(link, label) {
+        return '<div class="t613__col t-align_center t-valign_middle" style="">' + 
+            '<div class="t613__buttonwrapper">' +
+            '<a href="' + link + '" target="" class="t609__btn t-btn t-btn_sm" style="color:#ffffff;background-color:#66cc66;border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px;">' + 
+            '<table style="width:100%; height:100%;"><tbody><tr><td>' + label + '</td></tr></tbody></table>' + 
+            '</a></div></div>';
     }
 /*
-    function set_availability_markers() {
+    function add_availability_markers() {
     var cells = document.querySelectorAll('#pricing_description tr td.' + no_class, '#pricing_description tr td.' + yes_class); 
     for (var i = 0, j = cells.length; i < j; i++) {
         var cell = cells[i];
       cell.innerHTML += cell.classList.contains(no_class) ? no_img : yes_img;
-      console.log(cell.classList);
     }
   }
 */
   
   window.addEventListener("DOMContentLoaded", function() {
       build_pricing_table();
-        //set_availability_markers();
+        //add_availability_markers();
     }, false);
 
 </script>
