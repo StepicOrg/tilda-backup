@@ -36,7 +36,7 @@
 			<meta name="msapplication-TileColor" content="#000000">
 	<meta name="msapplication-TileImage" content="https://static.tildacdn.com/tild3363-3263-4536-b037-333539386133/favicon_228.png">
 		<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-grid-3.0.min.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="https://tilda.ws/project78514/tilda-blocks-2.12.css?t=1591640438" type="text/css" media="all" />
+	<link rel="stylesheet" href="https://tilda.ws/project78514/tilda-blocks-2.12.css?t=1591644716" type="text/css" media="all" />
 
 	<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-animation-1.0.min.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-menusub-1.0.min.css" type="text/css" media="all" />
@@ -47,7 +47,7 @@
 
 	<script src="https://static.tildacdn.com/js/jquery-1.10.2.min.js"></script>
 	<script src="https://static.tildacdn.com/js/tilda-scripts-2.8.min.js"></script>
-	<script src="https://tilda.ws/project78514/tilda-blocks-2.7.js?t=1591640438"></script>
+	<script src="https://tilda.ws/project78514/tilda-blocks-2.7.js?t=1591644716"></script>
 
 	<script src="https://static.tildacdn.com/js/tilda-animation-1.0.min.js" charset="utf-8"></script>
 	<script src="https://static.tildacdn.com/js/tilda-menusub-1.0.min.js" charset="utf-8"></script>
@@ -7004,7 +7004,7 @@ $( document ).ready(function() {
         border-bottom: 1px solid #eee;
     }
     
-    #pricing_description td.commission {
+    #pricing_description th.commission, #pricing_description td.commission {
         border-right: 1px solid #eee;
     }
 </style>
@@ -7022,32 +7022,14 @@ $( document ).ready(function() {
     <tr class="header">
       <th>&nbsp;</th>
       <th class="t613__title t613__middle_title t-descr t-descr_xs">Бесплатно</th>
-      <th class="commision t613__title t613__middle_title t-descr t-descr_xs">+комиссия</th>
+      <th class="t613__title t613__middle_title t-descr t-descr_xs commission">+комиссия</th>
       <th class="t613__title t613__middle_title t-descr t-descr_xs">Подписка</th>
-      <th class="commission t613__title t613__middle_title t-descr t-descr_xs">+комиссия</th>
+      <th class="t613__title t613__middle_title t-descr t-descr_xs commission">+комиссия</th>
       <th class="t613__title t613__middle_title t-descr t-descr_xs">Подписка</th>
-      <th class="commission t613__title t613__middle_title t-descr t-descr_xs">+комиссия</th>
+      <th class="t613__title t613__middle_title t-descr t-descr_xs commission">+комиссия</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td class="t613__title t613__middle_title t-descr t-descr_xs">Приём платежей на Stepik</td>
-      <td class="no t613__col t-align_center t-valign_middle"></td>
-      <td class="commision yes t613__col t-align_center t-valign_middle"></td>
-      <td class="no t613__col t-align_center t-valign_middle"></td>
-      <td class="commision yes t613__col t-align_center t-valign_middle"></td>
-      <td class="no t613__col t-align_center t-valign_middle"></td>
-      <td class="commision yes t613__col t-align_center t-valign_middle"></td>
-    </tr>
-    <tr>
-      <td class="t613__title t613__middle_title t-descr t-descr_xs">Онлайн-редактор курса</td>
-      <td class="yes t613__col t-align_center t-valign_middle"></td>
-      <td class="commision yes t613__col t-align_center t-valign_middle"></td>
-      <td class="yes t613__col t-align_center t-valign_middle"></td>
-      <td class="commision yes t613__col t-align_center t-valign_middle"></td>
-      <td class="yes t613__col t-align_center t-valign_middle"></td>
-      <td class="commision yes t613__col t-align_center t-valign_middle"></td>
-    </tr>
   </tbody>
   <tfoot>
     <tr>
@@ -7065,20 +7047,80 @@ $( document ).ready(function() {
 </div>
 
 <script>
-	const yes_img = 'yes';
-    const no_img = 'no';
-
-    function set_icons() {
-		var cells = document.querySelectorAll('#pricing_description tr td.no, #pricing_description tr td.yes'); 
-		for (var i = 0, j = cells.length; i < j; i++) {
-		    var cell = cells[i];
-			cell.innerHTML += cell.classList.contains("no") ? no_img : yes_img;
-			console.log(cell.classList);
-		}
-	}
-	
-	window.addEventListener("DOMContentLoaded", function() {
-        set_icons();
+    const yes_class = 'icon+';
+    const no_class = 'icon-';
+    
+    const yes_img = '<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">' +
+                        '<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">' +
+                          '<circle fill="#25B309" cx="12" cy="12" r="12"></circle>' +
+                          '<polygon fill="#FFFFFF" points="10.776 16.32 5.184 10.728 5.688 10.2 10.776 15.288 18.792 7.272 19.296 7.8"></polygon>' +
+                        '</g>' +
+                      '</svg>';
+    const no_img = '<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">' +
+                      '<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">' +
+                        '<circle fill="#F24613" cx="12" cy="12" r="12"></circle>' +
+                        '<polygon fill="#FFFFFF" points="17.28 7.32 16.8 6.84 12.072 11.592 7.32 6.84 6.84 7.32 11.592 12.072 6.84 16.8 7.32 17.28 12.072 12.528 16.8 17.28 17.28 16.8 12.528 12.072"></polygon>' +
+                      '</g>' +
+        '</svg>';
+    
+    function build_pricing_table() {
+        var no = no_class;
+        var yes = yes_class;
+        const func_list = [
+            ['Приём платежей на Stepik', no, yes, no, yes, no, yes],
+            ['Онлайн-редактор курса', yes, yes, yes, yes, yes, yes],
+            ['Автоматическая проверка решений', yes, yes, yes, yes, yes, yes],
+            ['Общение с учащимися', yes, yes, yes, yes, yes, yes],
+            ['Ручная проверка решений', no, yes, yes, yes, yes, yes],
+            ['Дедлайны и экзамены', no, yes, yes, yes, yes, '+ прокторинг'],
+            ['Табель успеваемости и отчеты', no, yes, yes, yes, yes, yes],
+            ['Выдача сертификатов', 'В случае одобрения Stepik', yes, yes, yes, yes, yes],
+            ['Создание приватных курсов', no, no, yes, yes, yes, yes],
+            ['Управление учащимися (в том числе добавление их на курс вручную)', no, no, yes, yes, yes, yes],
+            ['Сложные задания (Linux, external grader, задача на данные)', no, no, no, no, yes, yes],
+            ['Интеграция LTI', no, no, no, no, yes, yes],
+            ['Договоры и акты, оплата по счету', no, yes, no, yes, yes, yes],
+            ['Техническая поддержка', 'Стандартная', 'Улучшенная', 'Улучшенная', 'Улучшенная', 'Приоритетная', 'Приоритетная']
+        ];
+        
+        var table_body = document.querySelector('#pricing_description tbody');
+        for (var i = 0, j = func_list.length; i < j; i++) {
+            var func_descr = func_list[i];
+            var row = '<tr><td class="t613__title t613__middle_title t-descr t-descr_xs">' + func_descr[0] + '</td>';
+            for (var h = 1; h < 7; h++) {
+                var availability = func_descr[h];
+                row += '<td class="t613__col t-align_center t-valign_middle t-descr t-descr_xs ';
+                if ((h % 2) === 0) {
+                    row += 'commission ';
+                }
+                row += '">';
+                if (availability === yes_class) {
+                    row += yes_img;
+                } else if (availability === no_class) {
+                    row += no_img;
+                } else {
+                    row += availability;
+                }
+                row += '</td>';   
+            }
+            row += '</tr>';
+            table_body.innerHTML += row;
+        }
+    }
+/*
+    function set_availability_markers() {
+    var cells = document.querySelectorAll('#pricing_description tr td.' + no_class, '#pricing_description tr td.' + yes_class); 
+    for (var i = 0, j = cells.length; i < j; i++) {
+        var cell = cells[i];
+      cell.innerHTML += cell.classList.contains(no_class) ? no_img : yes_img;
+      console.log(cell.classList);
+    }
+  }
+*/
+  
+  window.addEventListener("DOMContentLoaded", function() {
+      build_pricing_table();
+        //set_availability_markers();
     }, false);
 
 </script>
