@@ -36,7 +36,7 @@
 			<meta name="msapplication-TileColor" content="#000000">
 	<meta name="msapplication-TileImage" content="https://static.tildacdn.com/tild3363-3263-4536-b037-333539386133/favicon_228.png">
 		<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-grid-3.0.min.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="https://tilda.ws/project78514/tilda-blocks-2.12.css?t=1591651557" type="text/css" media="all" />
+	<link rel="stylesheet" href="https://tilda.ws/project78514/tilda-blocks-2.12.css?t=1591701271" type="text/css" media="all" />
 
 	<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-animation-1.0.min.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-menusub-1.0.min.css" type="text/css" media="all" />
@@ -47,7 +47,7 @@
 
 	<script src="https://static.tildacdn.com/js/jquery-1.10.2.min.js"></script>
 	<script src="https://static.tildacdn.com/js/tilda-scripts-2.8.min.js"></script>
-	<script src="https://tilda.ws/project78514/tilda-blocks-2.7.js?t=1591651557"></script>
+	<script src="https://tilda.ws/project78514/tilda-blocks-2.7.js?t=1591701271"></script>
 
 	<script src="https://static.tildacdn.com/js/tilda-animation-1.0.min.js" charset="utf-8"></script>
 	<script src="https://static.tildacdn.com/js/tilda-menusub-1.0.min.js" charset="utf-8"></script>
@@ -6386,18 +6386,29 @@ $( document ).ready(function() {
     const yes_class = 'icon+';
     const no_class = 'icon-';
     
-    const yes_img = '<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">' +
+    const yes_img1 = '<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">' +
                         '<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">' +
                           '<circle fill="#25B309" cx="12" cy="12" r="12"></circle>' +
                           '<polygon fill="#FFFFFF" points="10.776 16.32 5.184 10.728 5.688 10.2 10.776 15.288 18.792 7.272 19.296 7.8"></polygon>' +
                         '</g>' +
                       '</svg>';
-    const no_img = '<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">' +
+    const no_img1 = '<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">' +
                       '<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">' +
                         '<circle fill="#F24613" cx="12" cy="12" r="12"></circle>' +
                         '<polygon fill="#FFFFFF" points="17.28 7.32 16.8 6.84 12.072 11.592 7.32 6.84 6.84 7.32 11.592 12.072 6.84 16.8 7.32 17.28 12.072 12.528 16.8 17.28 17.28 16.8 12.528 12.072"></polygon>' +
                       '</g>' +
         '</svg>';
+        
+    const yes_img = '<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">' +
+    '<g id="check/yes" transform="translate(0.000000, -2.000000)" fill="#66CC66">' +
+        '<path d="M6.81160723,12.3921922 L17.0121155,2.54938631 C17.4049366,2.17034031 18.0291502,2.17635146 18.4145988,2.56289217 L19.2848981,3.43565756 C19.6748696,3.82673396 19.6739738,4.45989831 19.2828974,4.84986971 C19.2799092,4.85284942 19.2769022,4.85581018 19.2738766,4.85875183 L6.81139852,16.9752706 L6.81139852,16.9752706 L0.749205251,11.2375314 C0.348094602,10.8578885 0.330691511,10.2249627 0.71033436,9.82385209 C0.717455813,9.81632794 0.724693761,9.80891491 0.732045582,9.80161568 L1.62202777,8.91800039 C2.00136307,8.54137884 2.60981579,8.52967781 3.00335073,8.89143646 L6.81160723,12.3921922 L6.81160723,12.3921922 Z" id="Path"></path>' +
+    '</g></svg>';
+    const no_img = '<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">' +
+        '<defs><path d="M18.6894198,5.32118305 C18.4910397,5.12235579 18.22171,5.01061813 17.9408419,5.01061813 C17.6599737,5.01061813 17.390644,5.12235579 17.1922639,5.32118305 L12,10.5028289 L6.80773606,5.31056492 C6.60935598,5.11173766 6.34002632,5 6.05915813,5 C5.77828995,5 5.50896029,5.11173766 5.3105802,5.31056492 C4.89647327,5.72467186 4.89647327,6.39361384 5.3105802,6.80772078 L10.5028441,11.9999847 L5.3105802,17.1922487 C4.89647327,17.6063556 4.89647327,18.2752976 5.3105802,18.6894045 C5.72468714,19.1035115 6.39362912,19.1035115 6.80773606,18.6894045 L12,13.4971406 L17.1922639,18.6894045 C17.6063709,19.1035115 18.2753129,19.1035115 18.6894198,18.6894045 C19.1035267,18.2752976 19.1035267,17.6063556 18.6894198,17.1922487 L13.4971559,11.9999847 L18.6894198,6.80772078 C19.0929086,6.40423197 19.0929086,5.72467186 18.6894198,5.32118305 Z" id="path-1"></path></defs>' +
+    '<g id="icon/cross" transform="translate(-5.000000, -5.000000)">' +
+        '<mask id="mask-2" fill="white"><use xlink:href="#path-1"></use></mask>' +
+        '<use id="icon/no" fill="#FF7965" fill-rule="evenodd" xlink:href="#path-1"></use>' +
+    '</g></svg>';
     
     function build_pricing_table() {
         var yes = yes_class;
@@ -6410,7 +6421,7 @@ $( document ).ready(function() {
             ['Ручная проверка решений', no, yes, yes, yes, yes, yes],
             ['Дедлайны и экзамены', no, yes, yes, yes, '+ прокторинг', '+ прокторинг'],
             ['Табель успеваемости и отчеты', no, yes, yes, yes, yes, yes],
-            ['Выдача сертификатов', 'В случае одобрения Stepik', yes, yes, yes, yes, yes],
+            ['Выдача сертификатов', 'В случае\nодобрения Stepik', yes, yes, yes, yes, yes],
             ['Управление преподавателями', no, yes, yes, yes, yes, yes],
             ['Управление учащимися (в том числе добавление их на курс вручную)', no, no, yes, yes, yes, yes],
             ['Создание приватных курсов', no, no, yes, yes, yes, yes],
