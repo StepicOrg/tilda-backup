@@ -36,7 +36,7 @@
 			<meta name="msapplication-TileColor" content="#000000">
 	<meta name="msapplication-TileImage" content="https://static.tildacdn.com/tild3363-3263-4536-b037-333539386133/favicon_228.png">
 		<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-grid-3.0.min.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="https://tilda.ws/project78514/tilda-blocks-2.12.css?t=1591701556" type="text/css" media="all" />
+	<link rel="stylesheet" href="https://tilda.ws/project78514/tilda-blocks-2.12.css?t=1591701905" type="text/css" media="all" />
 
 	<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-animation-1.0.min.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-menusub-1.0.min.css" type="text/css" media="all" />
@@ -47,7 +47,7 @@
 
 	<script src="https://static.tildacdn.com/js/jquery-1.10.2.min.js"></script>
 	<script src="https://static.tildacdn.com/js/tilda-scripts-2.8.min.js"></script>
-	<script src="https://tilda.ws/project78514/tilda-blocks-2.7.js?t=1591701556"></script>
+	<script src="https://tilda.ws/project78514/tilda-blocks-2.7.js?t=1591701905"></script>
 
 	<script src="https://static.tildacdn.com/js/tilda-animation-1.0.min.js" charset="utf-8"></script>
 	<script src="https://static.tildacdn.com/js/tilda-menusub-1.0.min.js" charset="utf-8"></script>
@@ -6467,18 +6467,17 @@ $( document ).ready(function() {
             if ((i % 2) === 1) {
                 continue;
             }
-            btns += '<td class="right-bordered" colspan="2">' + get_btn(more_links[i], 'Подробнее') + '</td>';
+            btns += '<td class="t-align-center t-valign-middle right-bordered" colspan="2">' + get_btn(more_links[i], 'Подробнее') + '</td>';
         }
         btns += '</tr>';
         table_footer.innerHTML += btns;
     }
     
     function get_btn(link, label) {
-        return '<div class="t613__col t-align_center t-valign_middle" style="">' + 
-            '<div class="t613__buttonwrapper">' +
+        return '<div class="t613__buttonwrapper">' +
             '<a href="' + link + '" target="_blank" class="t609__btn t-btn t-btn_sm" style="color:#ffffff;background-color:#66cc66;border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px;">' + 
             '<table style="width:100%; height:100%;"><tbody><tr><td>' + label + '</td></tr></tbody></table>' + 
-            '</a></div></div>';
+            '</a></div>';
     }
 /*
     function add_availability_markers() {
