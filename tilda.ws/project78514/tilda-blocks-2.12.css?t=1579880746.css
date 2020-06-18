@@ -4866,6 +4866,10 @@ img:not([src]){
   height: auto !important;
 }
 
+.t218__textfield {
+   	padding-bottom:50px;
+}
+
 .t218__btn-wrapper {
 	padding-top: 0px;
 	padding-bottom: 40px;	
@@ -4884,7 +4888,6 @@ img:not([src]){
 }
 
 .t218__textfield {
-   	padding-bottom:50px;	
 	width: 100%;	   	
 }
 .t218__textwrapper {	
@@ -9171,7 +9174,7 @@ transition: opacity ease-in-out .2s;
 
 .t431__table {
 	border-collapse: collapse;
-	table-layout: fixed;
+	table-layout: auto;
 }
 
 .t431__tbody {
