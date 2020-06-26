@@ -2504,17 +2504,28 @@ function t576_init(recid){
                       
   el.find('.t576__item:last-child').find('.t576__line').css('height', el.find('.t576__item:last-child').find('.t576__img').outerHeight() + 20);
 } 
-function t585_init(recid){
-  var el= $('#rec'+recid),
-      toggler = el.find(".t585__header");
-  
-  toggler.click(function(){
-    $(this).toggleClass("t585__opened");
-    $(this).next().slideToggle();
-    if(window.lazy=='y'){t_lazyload_update();}
-  });
-}
- 
+function t585_init(recid) {
+    var el = $('#rec' + recid);
+    var toggler = el.find(".t585__header");
+    var accordion = el.find('.t585__accordion');
+    if (accordion) {
+        accordion = accordion.attr('data-accordion');
+    } else {
+        accordion = "false";
+    }
+
+    toggler.click(function () {
+        if (accordion === "true") {
+            toggler.not(this).removeClass("t585__opened").next().slideUp();
+        }
+
+        $(this).toggleClass("t585__opened");
+        $(this).next().slideToggle();
+        if (window.lazy === 'y') {
+            t_lazyload_update();
+        }
+    });
+} 
 function t592_init(recid){
   var element = $('#rec'+recid).find('.t592__descr');
 
