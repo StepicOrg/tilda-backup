@@ -15043,6 +15043,13 @@ transition: opacity ease-in-out .2s;
   transform: translate3d(0px,0px,0px) !important;
   position: initial;
 }
+
+.t686__button-bottom .t686__button-container {
+    opacity: 1;
+    -webkit-transform: translate3d(0px,0px,0px) !important;
+    transform: translate3d(0px,0px,0px) !important;
+    position: initial;
+}
 }
 
 @media screen and (max-width: 640px){
