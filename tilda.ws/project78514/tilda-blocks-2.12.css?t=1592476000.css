@@ -2650,6 +2650,50 @@ img:not([src]){
 }
 }
  
+/* T037 */
+
+.t037 .t-container{ 
+ display: -webkit-box;
+ display: -moz-box;
+ display: -ms-flexbox;
+ display: -webkit-flex;
+ display: flex;
+}
+
+.t037__title {
+	font-family: 'Roboto',Arial,sans-serif;
+	color: #000000;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 28px;
+	padding-right: 50px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.t037__text {
+	padding-top: 8px;	
+	padding-bottom: 6px;
+}
+
+@media screen and (max-width: 960px){
+.t037 .t-container{ 
+	display: -webkit-block;
+	display: block;
+}
+.t037__title {
+	padding-right: 0px;
+}
+}
+
+@media screen and (max-width: 640px){
+.t037__title {
+	margin-bottom: 20px;
+	padding-right: 0;
+}
+}
+
+ 
 /* T046 */
 .t046__text {
 	text-align:center;
