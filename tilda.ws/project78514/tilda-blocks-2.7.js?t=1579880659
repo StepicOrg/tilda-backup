@@ -1054,7 +1054,6 @@ function t395_init(recid) {
         var bgcolor = el.css("background-color");
         var bgcolor_target = el.find(".t395__select, .t395__firefoxfix");
         bgcolor_target.css("background", bgcolor);
-        $('#rec'+recid + ' .t395__wrapper_mobile .t395__select option').first().attr('selected', true);
     }
 }
 
@@ -1177,6 +1176,8 @@ function t395_scrollToTabs(recid) {
     var tabIndexNumber = curUrl.indexOf('#!/tab/');
     var tabIndexNumberStart = curUrl.indexOf('tab/');
 
+    el.find('.t395__wrapper_mobile .t395__select option:eq(0)').attr('selected', true);
+
     if (tabIndexNumber !== -1) {
         var tabRec = curUrl.substring(tabIndexNumberStart+4, tabIndexNumberStart+4+recid.length);
     
@@ -1185,6 +1186,7 @@ function t395_scrollToTabs(recid) {
             var tabNumber = parseInt(curUrl.slice(tabIndexNumberStart + 4 + recid.length + 1), 10);
             el.find('.t395__tab').removeClass('t395__tab_active');
             el.find('.t395__tab:eq(' + (tabNumber-1) + ')').addClass('t395__tab_active');
+            el.find('.t395__wrapper_mobile .t395__select option:eq(' + (tabNumber-1) + ')').attr('selected', true);
         
             var targetOffset = tabBlock.offset().top;
             var target = targetOffset;
@@ -1385,6 +1387,8 @@ function t397_scrollToTabs(recid) {
     var tabIndexNumber = curUrl.indexOf('#!/tab/');
     var tabIndexNumberStart = curUrl.indexOf('tab/');
 
+    el.find('.t397__wrapper_mobile .t397__select option:eq(0)').attr('selected', true);
+
     if (tabIndexNumber !== -1) {
         var tabRec = curUrl.substring(tabIndexNumberStart+4, tabIndexNumberStart+4+recid.length);
     
@@ -1393,6 +1397,7 @@ function t397_scrollToTabs(recid) {
             var tabNumber = parseInt(curUrl.slice(tabIndexNumberStart + 4 + recid.length + 1), 10);
             el.find('.t397__tab').removeClass('t397__tab_active');
             el.find('.t397__tab:eq(' + (tabNumber-1) + ')').addClass('t397__tab_active');
+            el.find('.t397__wrapper_mobile .t397__select option:eq(' + (tabNumber-1) + ')').attr('selected', true);
         
             var targetOffset = tabBlock.offset().top;
             var target = targetOffset;
