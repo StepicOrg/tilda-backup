@@ -1078,7 +1078,7 @@ function t395_alltabs_updateContent(recid) {
         });
 
         var off = unique.filter(function (value) {
-            return $.inArray(value, active) === -1
+            return $.inArray(value, active) === -1;
         });
 
         if (el.find(".t395__tab_active").is(":visible") || el.find(".t395__select").is(":visible")) {
@@ -1093,13 +1093,13 @@ function t395_alltabs_updateContent(recid) {
             active.forEach(function (recid) {
                 var el = $('#rec' + recid);
                 el.attr('data-animationappear', 'off');
-                el.attr('data-connect-with-tab', 'yes');
                 el.addClass('t395__off');
             });
         }
 
         off.forEach(function (recid) {
             var el = $('#rec' + recid);
+            el.attr('data-connect-with-tab', 'yes');
             el.attr('data-animationappear', 'off');
             el.addClass('t395__off');
         });
@@ -1295,7 +1295,6 @@ function t397_alltabs_updateContent(recid) {
         } else {
             active.forEach(function (recid) {
                 var el = $('#rec' + recid);
-                el.attr('data-connect-with-tab', 'yes');
                 el.attr('data-animationappear', 'off');
                 el.addClass('t397__off');
             });
@@ -1303,11 +1302,11 @@ function t397_alltabs_updateContent(recid) {
 
         off.forEach(function (recid) {
             var el = $('#rec' + recid);
+            el.attr('data-connect-with-tab', 'yes');
             el.attr('data-animationappear', 'off');
             el.addClass('t397__off');
   
         });
-
     }
 }
 

@@ -3584,9 +3584,6 @@ img:not([src]){
 }
 
 .t165__text {
-	filter: alpha(opacity=85);
-	KHTMLOpacity: 0.85;
-	MozOpacity: 0.85;
 	opacity: 0.85;		
 }
 
@@ -3662,10 +3659,7 @@ img:not([src]){
 .t167__imgdescr {
   font-family: Arial;
   font-size: 13px;
-  line-height: 16px;	
-  filter: alpha(opacity=70);
-  KHTMLOpacity: 0.7;
-  MozOpacity: 0.7;
+  line-height: 16px;
   opacity: 0.7;	
   padding-top: 10px;			
 }
