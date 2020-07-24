@@ -2548,6 +2548,10 @@ img:not([src]){
 
  
 /* T015 */
+.t015 {
+    box-sizing: border-box;
+}
+
 .t015__title {
   padding-top: 8px;
   padding-bottom: 3px;
