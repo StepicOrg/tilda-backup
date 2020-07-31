@@ -692,24 +692,31 @@ function t315_showcomments(recid)
   el.find(".t315__blockhtml").css("display","block");
 }
  
-function t281_initPopup(recid){
-  $('#rec'+recid).attr('data-animationappear','off');
-  $('#rec'+recid).css('opacity','1');
-  $('#rec'+recid).attr('data-popup-subscribe-inited','y');
-  var el=$('#rec'+recid).find('.t-popup'),
-      hook=el.attr('data-tooltip-hook'),
-      analitics=el.attr('data-track-popup');
-  if(hook!==''){
-    $('.r').on('click', 'a[href="' + hook + '"]', function(e) {
-      t281_showPopup(recid);
-      t281_resizePopup(recid);
-      e.preventDefault();
-      if(window.lazy=='y'){t_lazyload_update();}
-      if (analitics > '') {
-        Tilda.sendEventToStatistics(analitics, hook);
-      }
-    });
-  }
+function t281_initPopup(recid) {
+    $('#rec' + recid).attr('data-animationappear', 'off');
+    $('#rec' + recid).css('opacity', '1');
+    $('#rec' + recid).attr('data-popup-subscribe-inited', 'y');
+    var el = $('#rec' + recid).find('.t-popup'),
+        hook = el.attr('data-tooltip-hook'),
+        analitics = el.attr('data-track-popup');
+
+    el.bind('scroll', t_throttle(function () {
+        if (window.lazy == 'y') { t_lazyload_update(); }
+    }));
+
+    if (hook !== '') {
+        $('.r').on('click', 'a[href="' + hook + '"]', function (e) {
+            t281_showPopup(recid);
+            t281_resizePopup(recid);
+            e.preventDefault();
+            if (window.lazy == 'y') {
+                t_lazyload_update();
+            }
+            if (analitics > '') {
+                Tilda.sendEventToStatistics(analitics, hook);
+            }
+        });
+    }
 }
 
 function t281_lockScroll(){
@@ -3262,27 +3269,34 @@ function t698_onSuccess(t698_form){
     }
 
 } 
-function t702_initPopup(recid){
-  $('#rec'+recid).attr('data-animationappear','off');
-  $('#rec'+recid).css('opacity','1');
-  var el=$('#rec'+recid).find('.t-popup'),
-      hook=el.attr('data-tooltip-hook'),
-      analitics=el.attr('data-track-popup');
-  if(hook!==''){
-    $('.r').on('click', 'a[href="' + hook + '"]', function(e) {
-      t702_showPopup(recid);
-      t702_resizePopup(recid);
-      e.preventDefault();
-      if(window.lazy=='y'){t_lazyload_update();}
-      if (analitics > '') {
-        var virtTitle = hook;
-        if (virtTitle.substring(0,7) == '#popup:') {
-            virtTitle = virtTitle.substring(7);
-        }
-        Tilda.sendEventToStatistics(analitics, virtTitle);
-      }
-    });
-  }
+function t702_initPopup(recid) {
+    $('#rec' + recid).attr('data-animationappear', 'off');
+    $('#rec' + recid).css('opacity', '1');
+    var el = $('#rec' + recid).find('.t-popup'),
+        hook = el.attr('data-tooltip-hook'),
+        analitics = el.attr('data-track-popup');
+
+    el.bind('scroll', t_throttle(function () {
+        if (window.lazy == 'y') { t_lazyload_update(); }
+    }));
+
+    if (hook !== '') {
+        $('.r').on('click', 'a[href="' + hook + '"]', function (e) {
+            t702_showPopup(recid);
+            t702_resizePopup(recid);
+            e.preventDefault();
+            if (window.lazy == 'y') {
+                t_lazyload_update();
+            }
+            if (analitics > '') {
+                var virtTitle = hook;
+                if (virtTitle.substring(0, 7) == '#popup:') {
+                    virtTitle = virtTitle.substring(7);
+                }
+                Tilda.sendEventToStatistics(analitics, virtTitle);
+            }
+        });
+    }
 }
 
 function t702_onSuccess(t702_form){
