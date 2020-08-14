@@ -261,7 +261,7 @@ function t228_checkAnchorLinks(recid) {
         var t228_navLinks = $("#rec" + recid + " .t228__list_item a:not(.tooltipstered)[href*='#']");
         if (t228_navLinks.length > 0) {
             setTimeout(function(){
-              t228_catchScroll(t228_navLinks);
+                t228_catchScroll(t228_navLinks);
             }, 500);
         }
     }
@@ -291,8 +291,8 @@ function t228_catchScroll(t228_navLinks) {
     t228_highlightNavLinks(t228_navLinks, t228_sections, t228_sectionIdTonavigationLink, t228_clickedSectionId);
 
     t228_navLinks.click(function() {
-        var t228_clickedSection = t228_getSectionByHref($(this));
-        if (!$(this).hasClass("tooltipstered") && typeof t228_clickedSection.attr("id") != "undefined") {
+        var clickedSection = t228_getSectionByHref($(this));
+        if (!$(this).hasClass("tooltipstered") && typeof clickedSection.attr("id") != "undefined") {
             t228_navLinks.removeClass('t-active');
             $(this).addClass('t-active');
             t228_clickedSectionId = t228_getSectionByHref($(this)).attr("id");
@@ -321,14 +321,16 @@ function t228_updateSectionsOffsets(sections){
 	});
 }
 
+
 function t228_getSectionByHref(curlink) {
-      var t228_curLinkValue = curlink.attr('href').replace(/\s+/g, '').replace(/.*#/, '');
-      if (curlink.is('[href*="#rec"]')) {
-          return $(".r[id='" + t228_curLinkValue + "']");
-      } else {
-          return $(".r[data-record-type='215']").has("a[name='" + t228_curLinkValue + "']");
-      }
-  }
+    var curLinkValue = curlink.attr('href').replace(/\s+/g, '').replace(/.*#/, '');
+    if (curlink.is('[href*="#rec"]')) {
+        return $(".r[id='" + curLinkValue + "']");
+    } else {
+        return $(".r[data-record-type='215']").has("a[name='" + curLinkValue + "']");
+    }
+}
+
 
 function t228_highlightNavLinks(t228_navLinks, t228_sections, t228_sectionIdTonavigationLink, t228_clickedSectionId) {
     var t228_scrollPosition = $(window).scrollTop(),
@@ -1090,11 +1092,22 @@ function t395_alltabs_updateContent(recid) {
 
         if (el.find(".t395__tab_active").is(":visible") || el.find(".t395__select").is(":visible")) {
             active.forEach(function (recid) {
-                var el = $('#rec' + recid);
-                el.removeClass('t379__off');
-                el.removeClass('t379__zero-off');
-                el.removeClass('t395__off');
-                el.css('opacity', '');
+                if (recid !== '') {
+                    var el = $('#rec' + recid);
+                    var recordType = el.attr('data-record-type');
+                    el.removeClass('t395__off');
+                    el.css('opacity', '');
+
+                    if (recordType === '395') {
+                        t395_alltabs_updateContent(recid);
+                        t395_updateSelect(recid);
+                    }
+
+                    if (recordType === '397' && t397_alltabs_updateContent !== undefined && t397_updateSelect !== undefined) {
+                        t397_alltabs_updateContent(recid);
+                        t397_updateSelect(recid);
+                    }
+                }
             });
         } else {
             active.forEach(function (recid) {
@@ -1105,10 +1118,23 @@ function t395_alltabs_updateContent(recid) {
         }
 
         off.forEach(function (recid) {
-            var el = $('#rec' + recid);
-            el.attr('data-connect-with-tab', 'yes');
-            el.attr('data-animationappear', 'off');
-            el.addClass('t395__off');
+            if (recid !== '') {
+                var el = $('#rec' + recid);
+                var recordType = el.attr('data-record-type');
+                el.attr('data-connect-with-tab', 'yes');
+                el.attr('data-animationappear', 'off');
+                el.addClass('t395__off');
+
+                if(recordType === '395') {
+                    t395_alltabs_updateContent(recid);
+                    t395_updateSelect(recid);
+                }
+
+                if(recordType === '397' && t397_alltabs_updateContent !== undefined && t397_updateSelect !== undefined) {
+                    t397_alltabs_updateContent(recid);
+                    t397_updateSelect(recid);
+                }
+            }
         });
 
     }
@@ -1293,11 +1319,22 @@ function t397_alltabs_updateContent(recid) {
 
         if (el.find(".t397__tab_active").is(":visible") || el.find(".t397__select").is(":visible")) {
             active.forEach(function (recid) {
-                var el = $('#rec' + recid);
-                el.removeClass('t379__off');
-                el.removeClass('t379__zero-off');
-                el.removeClass('t397__off');
-                el.css('opacity', '');
+                if (recid !== '') {
+                    var el = $('#rec' + recid);
+                    var recordType = el.attr('data-record-type');
+                    el.removeClass('t397__off');
+                    el.css('opacity', '');
+
+                    if (recordType === '395' && t395_alltabs_updateContent !== undefined && t395_updateSelect !== undefined) {
+                        t395_alltabs_updateContent(recid);
+                        t395_updateSelect(recid);
+                    }
+
+                    if (recordType === '397') {
+                        t397_alltabs_updateContent(recid);
+                        t397_updateSelect(recid);
+                    }
+                }
             });
         } else {
             active.forEach(function (recid) {
@@ -1308,11 +1345,23 @@ function t397_alltabs_updateContent(recid) {
         }
 
         off.forEach(function (recid) {
-            var el = $('#rec' + recid);
-            el.attr('data-connect-with-tab', 'yes');
-            el.attr('data-animationappear', 'off');
-            el.addClass('t397__off');
-  
+            if (recid !== '') {
+                var el = $('#rec' + recid);
+                var recordType = el.attr('data-record-type');
+                el.attr('data-connect-with-tab', 'yes');
+                el.attr('data-animationappear', 'off');
+                el.addClass('t397__off');
+
+                if (recordType === '395' && t395_alltabs_updateContent !== undefined && t395_updateSelect !== undefined) {
+                    t395_alltabs_updateContent(recid);
+                    t395_updateSelect(recid);
+                }
+
+                if (recordType === '397') {
+                    t397_alltabs_updateContent(recid);
+                    t397_updateSelect(recid);
+                }
+            }
         });
     }
 }

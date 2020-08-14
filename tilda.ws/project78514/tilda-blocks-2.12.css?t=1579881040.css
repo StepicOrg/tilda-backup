@@ -9791,7 +9791,7 @@ transition: opacity ease-in-out .2s;
 .t456.t456__positionabsolute,
 .t456.t456__positionfixed,
 .t456.t456__positionstatic{
-	position: static;
+	position: relative;
 }
 
 .t456__imglogo {
