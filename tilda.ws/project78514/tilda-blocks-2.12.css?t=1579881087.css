@@ -16431,7 +16431,10 @@ z-index: 9999999;
 }
 
 .t734__wrapper {
-  padding: 60px 0;
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 60px 0;
 }
 
 .t734__table{

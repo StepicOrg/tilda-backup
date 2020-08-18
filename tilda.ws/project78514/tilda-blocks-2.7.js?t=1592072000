@@ -1071,6 +1071,7 @@ function t395_init(recid) {
 }
 
 function t395_alltabs_updateContent(recid) {
+    var mainRecid = recid;
     var el = $('#rec' + recid);
 
     var activeTab = el.find(".t395__tab_active");
@@ -1098,12 +1099,12 @@ function t395_alltabs_updateContent(recid) {
                     el.removeClass('t395__off');
                     el.css('opacity', '');
 
-                    if (recordType === '395') {
+                    if (recordType === '395' && mainRecid !== recid) {
                         t395_alltabs_updateContent(recid);
                         t395_updateSelect(recid);
                     }
 
-                    if (recordType === '397' && t397_alltabs_updateContent !== undefined && t397_updateSelect !== undefined) {
+                    if (recordType === '397' && t397_alltabs_updateContent !== undefined && t397_updateSelect !== undefined && mainRecid !== recid) {
                         t397_alltabs_updateContent(recid);
                         t397_updateSelect(recid);
                     }
@@ -1125,12 +1126,12 @@ function t395_alltabs_updateContent(recid) {
                 el.attr('data-animationappear', 'off');
                 el.addClass('t395__off');
 
-                if(recordType === '395') {
+                if(recordType === '395' && mainRecid !== recid) {
                     t395_alltabs_updateContent(recid);
                     t395_updateSelect(recid);
                 }
 
-                if(recordType === '397' && t397_alltabs_updateContent !== undefined && t397_updateSelect !== undefined) {
+                if(recordType === '397' && t397_alltabs_updateContent !== undefined && t397_updateSelect !== undefined && mainRecid !== recid) {
                     t397_alltabs_updateContent(recid);
                     t397_updateSelect(recid);
                 }
@@ -1298,6 +1299,7 @@ function t397_init(recid) {
 }
 
 function t397_alltabs_updateContent(recid) {
+    var mainRecid = recid;
     var el = $('#rec' + recid);
 
     var activeTab = el.find(".t397__tab_active");
@@ -1325,12 +1327,12 @@ function t397_alltabs_updateContent(recid) {
                     el.removeClass('t397__off');
                     el.css('opacity', '');
 
-                    if (recordType === '395' && t395_alltabs_updateContent !== undefined && t395_updateSelect !== undefined) {
+                    if (recordType === '395' && t395_alltabs_updateContent !== undefined && t395_updateSelect !== undefined && mainRecid !== recid) {
                         t395_alltabs_updateContent(recid);
                         t395_updateSelect(recid);
                     }
 
-                    if (recordType === '397') {
+                    if (recordType === '397' && mainRecid !== recid) {
                         t397_alltabs_updateContent(recid);
                         t397_updateSelect(recid);
                     }
@@ -1352,12 +1354,12 @@ function t397_alltabs_updateContent(recid) {
                 el.attr('data-animationappear', 'off');
                 el.addClass('t397__off');
 
-                if (recordType === '395' && t395_alltabs_updateContent !== undefined && t395_updateSelect !== undefined) {
+                if (recordType === '395' && t395_alltabs_updateContent !== undefined && t395_updateSelect !== undefined && mainRecid !== recid) {
                     t395_alltabs_updateContent(recid);
                     t395_updateSelect(recid);
                 }
 
-                if (recordType === '397') {
+                if (recordType === '397' && mainRecid !== recid) {
                     t397_alltabs_updateContent(recid);
                     t397_updateSelect(recid);
                 }
