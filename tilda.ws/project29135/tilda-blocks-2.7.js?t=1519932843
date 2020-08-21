@@ -177,6 +177,7 @@ if(arrayValues[i][j].myHrefType=="link"){var t431__linkwithattr="<a href=\""+arr
 t431__htmlpart+=t431__colwithattr+t431__linkwithattr+arrayValues[i][j].myText+t431__linkclosetag+"</"+coltag+">"}else{t431__htmlpart+=t431__colwithattr+arrayValues[i][j].myText+"</"+coltag+">"}}else{t431__htmlpart+="<"+coltag+" class=\"t431__"+coltag+"\" style=\"width:"+t431__curWidth+";"+colstyles+"\">"+"</"+coltag+">"}}
 t431__htmlpart+="</tr>"}
 t431__htmlpart+="</"+t431__theadorbodytag+">";return t431__htmlpart}
+function t433_init(recid){var el=$('#rec'+recid);$('#separateMap'+recid).css("height","auto");t433_setMapHeight(recid);el.find('.t433').bind('displayChanged',function(){t433_setMapHeight(recid)});$(window).bind('resize',t_throttle(function(){t433_setMapHeight(recid)}))}
 function t433_setMapHeight(recid){var el=$('#rec'+recid);var map=el.find('.t433__map');var textwrapper=el.find('.t433__col_text').height();map.css('height',textwrapper);el.find('.t-map').css('height',textwrapper).trigger('sizechange')}
 function t441__createPieChart(recid,data1,data2,data3,data4,sectorcolor,piebgcolor,bgcolor,blocksnumber,diagramwidth,diameter){if(diameter>300||diameter==""||diameter<100){if(diameter==""){var t441__radius=100;diameter=200}
 if(diameter>300){var t441__radius=150;diameter=300}
