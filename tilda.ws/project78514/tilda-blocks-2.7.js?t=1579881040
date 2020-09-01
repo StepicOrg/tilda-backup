@@ -240,17 +240,18 @@ console.log(disqus_shortname);
 function t228__init(recid) {
     var el = $('#rec' + recid);
     var mobile = el.find('.t228__mobile');
-    
+    var fixedBlock = mobile.css('position') === 'fixed' && mobile.css('display') === 'block';
+
     setTimeout(function() {
         el.find('.t-menu__link-item:not(.t-menusub__target-link):not(.tooltipstered):not(.t794__tm-link)').on('click', function () {
             if ($(this).is(".t-menu__link-item.tooltipstered, .t-menu__link-item.t-menusub__target-link, .t-menu__link-item.t794__tm-link")) { return; }
-            if (mobile.css('display') === 'block') {
+            if (fixedBlock) {
                 mobile.trigger('click');
             }
         });
 
         el.find('.t-menusub__link-item').on('click', function () {
-            if (mobile.css('display') === 'block') {
+            if (fixedBlock) {
                 mobile.trigger('click');
             }
         });
