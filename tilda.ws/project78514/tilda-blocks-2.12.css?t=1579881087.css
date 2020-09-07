@@ -15744,6 +15744,10 @@ transition: opacity ease-in-out .2s;
   margin-bottom: 30px;
 }
 
+.t698 .t-input-phonemask__wrap-style .t-input-phonemask {
+    color: inherit;
+}
+
 @media screen and (max-width: 640px){
   .t698__title {
     margin-bottom: 18px;
