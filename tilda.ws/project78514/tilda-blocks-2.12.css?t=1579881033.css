@@ -3977,7 +3977,8 @@ img:not([src]){
     line-height: 1.54;
     font-weight: 300;
     padding-top: 90px;
-    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .t184__title {
@@ -3997,10 +3998,12 @@ img:not([src]){
     font-weight: 300;
     margin: 0 auto;
     letter-spacing: 1px;
-    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 @media screen and (max-width:640px) {
+
     .t184__descr,
     .t184__title,
     .t184__uptitle {
@@ -4023,7 +4026,8 @@ img:not([src]){
         font-size: 14px;
         line-height: 20px;
     }
-} 
+}
+ 
 /* T142A */
 
 /*.t142A {*/
