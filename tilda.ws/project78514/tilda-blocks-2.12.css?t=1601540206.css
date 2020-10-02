@@ -5442,7 +5442,7 @@ transition: opacity ease-in-out .2s;
 .t228__positionabsolute {
 	position: absolute;
 }
-.t228__positionfixed {
+.t228__mobile.t228__positionfixed {
 	position: fixed;
 }
 .t228__positionstatic {
