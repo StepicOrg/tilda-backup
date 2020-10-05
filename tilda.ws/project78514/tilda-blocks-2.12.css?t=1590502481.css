@@ -3093,7 +3093,6 @@ img:not([src]){
     color: #000;
 	font-size: 30px;
 	line-height: 1.35;
-	margin-top: -1px;
 }
 
 @media screen and (max-width: 640px) {
@@ -3102,6 +3101,11 @@ img:not([src]){
     }
 }
 
+@media screen and (min-width: 960px) {
+    .t119__preface {
+		margin-top: -1px;
+    }
+}
  
 /* T120 */
 .t120__title {
