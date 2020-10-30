@@ -2987,8 +2987,9 @@ img:not([src]){
 /* T004 */
 
 .t004 {
+    position: relative;
 	padding-top:8px;
-	padding-bottom:6px;	
+	padding-bottom:6px;
 }
 
 .t004__text-column-count_2{

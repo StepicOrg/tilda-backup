@@ -1234,7 +1234,7 @@ function t395_scrollToTabs(recid) {
     var tabIndexNumber = curUrl.indexOf('#!/tab/');
     var tabIndexNumberStart = curUrl.indexOf('tab/');
 
-    el.find('.t395__wrapper_mobile .t395__select option:eq(0)').attr('selected', true);
+    el.find('.t395__wrapper_mobile .t395__select option:eq(0)').attr('selected', false);
 
     if (tabIndexNumber !== -1) {
         var tabRec = curUrl.substring(tabIndexNumberStart + 4, tabIndexNumberStart + 4 + recid.length);
@@ -1465,7 +1465,7 @@ function t397_scrollToTabs(recid) {
     var tabIndexNumber = curUrl.indexOf('#!/tab/');
     var tabIndexNumberStart = curUrl.indexOf('tab/');
 
-    el.find('.t397__wrapper_mobile .t397__select option:eq(0)').attr('selected', true);
+    el.find('.t397__wrapper_mobile .t397__select option:eq(0)').attr('selected', false);
 
     if (tabIndexNumber !== -1) {
         var tabRec = curUrl.substring(tabIndexNumberStart + 4, tabIndexNumberStart + 4 + recid.length);
