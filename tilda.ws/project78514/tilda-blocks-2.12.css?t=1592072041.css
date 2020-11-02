@@ -1265,7 +1265,7 @@
 .t-form .js-error-control-box .t-input-error{
   display:block;
 }
-.t-form .js-error-control-box .t-input,
+.t-form .js-error-control-box .t-input:not(.t-input-phonemask),
 .t-form .js-error-control-box .t-checkbox__control,
 .t-form .js-error-control-box .t-checkboxes__wrapper,
 .t-form .js-error-control-box .t-select,
@@ -1316,6 +1316,10 @@
   padding: 20px;
   margin-bottom: 20px;
   font-family: 'Open Sans',Arial,sans-serif;
+}
+
+.t-form option {
+    color: #000000;
 }
 
 @keyframes t-submit-spinner {
@@ -2987,9 +2991,9 @@ img:not([src]){
 /* T004 */
 
 .t004 {
-    position: relative;
 	padding-top:8px;
 	padding-bottom:6px;
+	position: relative;
 }
 
 .t004__text-column-count_2{
