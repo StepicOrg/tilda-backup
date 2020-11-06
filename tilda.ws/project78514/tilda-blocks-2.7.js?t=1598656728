@@ -255,6 +255,12 @@ function t228__init(recid) {
                 mobile.trigger('click');
             }
         });
+        
+        el.find('.t228__right_buttons_but .t-btn').on('click', function () {
+            if (fixedBlock) {
+                mobile.trigger('click');
+            }
+        });
     }, 500);
 }
 
