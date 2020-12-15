@@ -15182,6 +15182,7 @@ transition: opacity ease-in-out .2s;
 }
 .t678__inputsbox_hidden.t-form__inputsbox {
   overflow: hidden;
+  display: none;
   max-height: 0px;
   opacity: 0;
 }
