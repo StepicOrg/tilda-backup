@@ -50,7 +50,7 @@
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/program/materials</loc>
-		<lastmod>2020-12-16T08:52:48+00:00</lastmod>
+		<lastmod>2020-12-16T11:57:15+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/summer/2020/materials</loc>
@@ -374,7 +374,7 @@
 	</url>
 	<url>
 		<loc>https://bioinf.me/press</loc>
-		<lastmod>2020-08-11T15:13:11+00:00</lastmod>
+		<lastmod>2020-12-16T12:08:44+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/summer/2018/materials</loc>
@@ -406,7 +406,7 @@
 	</url>
 	<url>
 		<loc>https://bioinf.me/en/itmo</loc>
-		<lastmod>2020-08-11T14:47:22+00:00</lastmod>
+		<lastmod>2020-12-16T12:10:13+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/summer2017/team</loc>
@@ -423,10 +423,6 @@
 	<url>
 		<loc>https://bioinf.me/education/summer2017/participants</loc>
 		<lastmod>2019-02-16T10:39:46+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://bioinf.me/community/students/moscow</loc>
-		<lastmod>2020-11-17T21:55:16+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/summer/2017-1</loc>
@@ -467,10 +463,6 @@
 	<url>
 		<loc>https://bioinf.me/education/summer/2016/report</loc>
 		<lastmod>2018-03-06T08:11:19+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://bioinf.me/education/program/moscow</loc>
-		<lastmod>2020-09-10T08:38:58+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/https/education/summer/2018/speakers</loc>
@@ -567,5 +559,13 @@
 	<url>
 		<loc>https://bioinf.me/page16010574.html</loc>
 		<lastmod>2020-12-16T11:11:23+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://bioinf.me/education/program/spb</loc>
+		<lastmod>2020-12-16T11:59:29+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://bioinf.me/education/program/moscow</loc>
+		<lastmod>2020-12-16T12:03:17+00:00</lastmod>
 	</url>
 </urlset>
