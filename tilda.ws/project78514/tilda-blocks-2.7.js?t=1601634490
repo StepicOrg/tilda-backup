@@ -3628,25 +3628,37 @@ function t734_init(recid) {
     var rec = $('#rec' + recid);
     if ($('body').find('.t830').length > 0) {
         if (rec.find('.t-slds__items-wrapper').hasClass('t-slds_animated-none')) {
-            t_sldsInit(recid);
+            t_onFuncLoad('t_sldsInit', function () {
+                t_sldsInit(recid);
+            });
         } else {
             setTimeout(function() {
-                t_sldsInit(recid);
+                t_onFuncLoad('t_sldsInit', function () {
+                    t_sldsInit(recid);
+                });
             }, 500);   
         }
     } else {
-        t_sldsInit(recid);
+        t_onFuncLoad('t_sldsInit', function () {
+            t_sldsInit(recid);
+        });
     }
 
     rec.find('.t734').bind('displayChanged', function() {
-        t_slds_updateSlider(recid);
+        t_onFuncLoad('t_slds_updateSlider', function () {
+            t_slds_updateSlider(recid);
+        });
     });
 } 
 function t764_init(recid){
     var el = $('#rec' + recid);
-
-    t_sldsInit(recid);
-    t_slds_SliderWidth(recid);
+    
+    t_onFuncLoad('t_sldsInit', function () {
+        t_sldsInit(recid);
+    });
+    t_onFuncLoad('t_slds_SliderWidth', function () {
+        t_slds_SliderWidth(recid);
+    });
     var sliderWrapper = el.find('.t-slds__items-wrapper');
     var sliderWidth = el.find('.t-slds__container').width();
     var pos = parseFloat(sliderWrapper.attr('data-slider-pos'), 10);
@@ -3654,11 +3666,17 @@ function t764_init(recid){
         transform: 'translate3d(-' + (sliderWidth * pos) + 'px, 0, 0)'
     });
 
-    t_slds_UpdateSliderHeight(recid);
-    t_slds_UpdateSliderArrowsHeight(recid);
+    t_onFuncLoad('t_slds_UpdateSliderHeight', function () {
+        t_slds_UpdateSliderHeight(recid);
+    });
+    t_onFuncLoad('t_slds_UpdateSliderArrowsHeight', function () {
+        t_slds_UpdateSliderArrowsHeight(recid);
+    });
     
     el.find('.t764').bind('displayChanged', function() {
-        t_slds_updateSlider(recid);
+        t_onFuncLoad('t_slds_updateSlider', function () {
+            t_slds_updateSlider(recid);
+        });
     });
 }
  
