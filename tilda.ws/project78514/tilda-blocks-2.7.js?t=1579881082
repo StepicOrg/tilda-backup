@@ -3741,7 +3741,9 @@ function t797_init(recid) {
     if (isMobile) {
         $("#rec" + recid + " .t797__txt-wrapper").css("display", "none");
     }
-    tvote__init(recid);
+    t_onFuncLoad('tvote__init', function () {
+        tvote__init(recid);
+    });
 }
  
 function t814_init(recid) {
