@@ -7867,6 +7867,7 @@ transition: opacity ease-in-out .2s;
 	z-index:1;
 	width:100%;
 	height:100vh;
+	transform: translateZ(0);
 }
 
 .t396__elem{
