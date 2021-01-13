@@ -18368,11 +18368,16 @@ z-index: 9999999;
 }
 
 .t830 .t-site-search-dm__result__product {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
-@media screen and (min-width: 1260px) {
+@media screen and (min-width: 1200px) {
   .t830__allrecords_padd,
   .t830__t-tildalabel_padd,
   .t830__allrecords_padd-small,
@@ -18500,7 +18505,7 @@ z-index: 9999999;
   }
 }
 
-@media screen and (max-width: 1259px) {
+@media screen and (max-width: 1200px) {
   .t830__panel {
     position: static;
     top: 0;
