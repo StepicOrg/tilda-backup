@@ -2298,6 +2298,10 @@ img:not([src]){
     visibility: hidden;
 }
 
+.t-popup {
+    display: none;
+}
+
 .t-rec{}
 .t-rec_pt_0{padding-top:0;}
 .t-rec_pt_15{padding-top:15px;}
@@ -4591,11 +4595,10 @@ img:not([src]){
 /* T203 */
 
 .t203__wrapper{
-	display: table;
+	display: block;
+	width: 100%;
 	padding-top: 60px;
 	padding-bottom: 60px;
-	margin-left: -60px;
-	margin-right: -60px;	
 }
 
 .t203__textwrapper{
@@ -5014,6 +5017,10 @@ img:not([src]){
  vertical-align: middle;     	 
  text-align: center;
  width: 100%;
+}
+
+.t228__centerside_hidden {
+    display: none;
 }
 .t228__centerside.t228__menualign_left{
  text-align: left;

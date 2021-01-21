@@ -261,6 +261,8 @@ function t228__init(recid) {
             }
         });
     }, 500);
+    
+    el.find(".t228__centerside").removeClass("t228__centerside_hidden");
 }
 
 function t228_highlight() {
@@ -412,10 +414,11 @@ function t228_setWidth(recid) {
             } else {
                 el.find(".t228__leftside").css("min-width", "");
                 el.find(".t228__rightside").css("min-width", "");
-
             }
         });
     }
+    
+    el.find(".t228__centerside").removeClass("t228__centerside_hidden");
 }
 
 function t228_setBg(recid) {
