@@ -650,25 +650,22 @@ $(document).ready(function () {
     t300_init();
     setTimeout(function () {
         /* listener open t-store popup (e.g., st300 */
-        var t300_storePopups = document.querySelectorAll('body .t-store');
-        if (t300_storePopups.length > 0) {
-            t300_storePopups.forEach(function(el) {
-                new MutationObserver(function (mutationsList, observer) {
-                    for (var mutation in mutationsList) {
-                        var event = mutationsList[mutation];
-                        if (event.type === 'attributes') {
-                            if (event.target.className.indexOf('t-popup_show') != -1) {
-                                t300_init();
-                            }
+        $('body .t-store').each(function(i, el) {
+            new MutationObserver(function (mutationsList, observer) {
+                for (var mutation in mutationsList) {
+                    var event = mutationsList[mutation];
+                    if (event.type === 'attributes') {
+                        if (event.target.className.indexOf('t-popup_show') != -1) {
+                            t300_init();
                         }
                     }
-                }).observe(el, {
-                    attributes: true,
-                    attributeFilter: ['class'],
-                    subtree: true
-                });
+                }
+            }).observe(el, {
+                attributes: true,
+                attributeFilter: ['class'],
+                subtree: true
             });
-        }
+        });
 
         t300_init();
     }, 500);
@@ -1096,7 +1093,7 @@ function t395_scrollToTabs(recid) {
     var tabIndexNumber = curUrl.indexOf('#!/tab/');
     var tabIndexNumberStart = curUrl.indexOf('tab/');
 
-    el.find('.t395__wrapper_mobile .t395__select option:eq(0)').attr('selected', false);
+    el.find('.t395__wrapper_mobile .t395__select option:eq(0)').prop('selected', false);
 
     if (tabIndexNumber !== -1) {
         var tabRec = curUrl.substring(tabIndexNumberStart + 4, tabIndexNumberStart + 4 + recid.length);
@@ -1106,7 +1103,7 @@ function t395_scrollToTabs(recid) {
             var tabNumber = parseInt(curUrl.slice(tabIndexNumberStart + 4 + recid.length + 1), 10);
             el.find('.t395__tab').removeClass('t395__tab_active');
             el.find('.t395__tab:eq(' + (tabNumber - 1) + ')').addClass('t395__tab_active');
-            el.find('.t395__wrapper_mobile .t395__select option:eq(' + (tabNumber - 1) + ')').attr('selected', true);
+            el.find('.t395__wrapper_mobile .t395__select option:eq(' + (tabNumber - 1) + ')').prop('selected', true);
 
             var targetOffset = tabBlock.offset().top;
             var target = targetOffset;
@@ -1329,7 +1326,7 @@ function t397_scrollToTabs(recid) {
     var tabIndexNumber = curUrl.indexOf('#!/tab/');
     var tabIndexNumberStart = curUrl.indexOf('tab/');
 
-    el.find('.t397__wrapper_mobile .t397__select option:eq(0)').attr('selected', false);
+    el.find('.t397__wrapper_mobile .t397__select option:eq(0)').prop('selected', false);
 
     if (tabIndexNumber !== -1) {
         var tabRec = curUrl.substring(tabIndexNumberStart + 4, tabIndexNumberStart + 4 + recid.length);
@@ -1339,7 +1336,7 @@ function t397_scrollToTabs(recid) {
             var tabNumber = parseInt(curUrl.slice(tabIndexNumberStart + 4 + recid.length + 1), 10);
             el.find('.t397__tab').removeClass('t397__tab_active');
             el.find('.t397__tab:eq(' + (tabNumber - 1) + ')').addClass('t397__tab_active');
-            el.find('.t397__wrapper_mobile .t397__select option:eq(' + (tabNumber - 1) + ')').attr('selected', true);
+            el.find('.t397__wrapper_mobile .t397__select option:eq(' + (tabNumber - 1) + ')').prop('selected', true);
 
             var targetOffset = tabBlock.offset().top;
             var target = targetOffset;
