@@ -1185,6 +1185,20 @@ function t397_init(recid) {
         var bgcolor_target = el.find(".t397__select, .t397__firefoxfix");
         bgcolor_target.css("background-color", bgcolor);
     }
+    
+    /* Scroll and open proper tab on a valid link click */
+    $(document).on('click', function(e) {
+        var isLink = $(e.target).is('a, a *');
+        var curUrl = window.location.href;
+        var isValidUrl = curUrl.indexOf('#!/tab/') !== -1;
+        
+        if (isLink && isValidUrl) {
+            setTimeout(function() {
+                /* wait for location update */
+                t397_scrollToTabs(recid);
+            }, 100);
+        }
+    });
 }
 
 function t397_alltabs_updateContent(recid) {
