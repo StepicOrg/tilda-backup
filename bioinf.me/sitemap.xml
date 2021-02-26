@@ -69,10 +69,6 @@
 		<lastmod>2021-02-09T08:58:30+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/en/contest/faq</loc>
-		<lastmod>2019-02-26T08:39:01+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://bioinf.me/header</loc>
 		<lastmod>2020-03-04T16:00:41+00:00</lastmod>
 	</url>
@@ -97,12 +93,12 @@
 		<lastmod>2021-02-01T20:47:19+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/en/contest/2019/results</loc>
-		<lastmod>2019-05-27T12:45:40+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://bioinf.me/footer</loc>
 		<lastmod>2021-02-25T10:34:28+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://bioinf.me/en/contest/faq</loc>
+		<lastmod>2019-02-26T08:39:01+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/summer</loc>
@@ -113,8 +109,8 @@
 		<lastmod>2020-08-03T12:18:14+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/en/contest/2019</loc>
-		<lastmod>2018-12-01T13:07:15+00:00</lastmod>
+		<loc>https://bioinf.me/en/contest/2019/results</loc>
+		<lastmod>2019-05-27T12:45:40+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/sbw/2019</loc>
@@ -126,7 +122,7 @@
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/workshops/ngs</loc>
-		<lastmod>2021-02-09T09:05:28+00:00</lastmod>
+		<lastmod>2021-02-26T15:15:46+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/masters/algo</loc>
@@ -145,8 +141,8 @@
 		<lastmod>2020-12-08T15:13:38+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/en/contest/2018</loc>
-		<lastmod>2019-02-05T12:34:43+00:00</lastmod>
+		<loc>https://bioinf.me/en/contest/2019</loc>
+		<lastmod>2018-12-01T13:07:15+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/sbw</loc>
@@ -161,16 +157,16 @@
 		<lastmod>2019-03-04T21:01:38+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/en/contest/2018/results</loc>
-		<lastmod>2018-12-01T13:07:32+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://bioinf.me/education/projects</loc>
 		<lastmod>2021-02-25T10:36:54+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/graduates2014-15</loc>
 		<lastmod>2020-08-17T16:54:26+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://bioinf.me/en/contest/2018</loc>
+		<lastmod>2019-02-05T12:34:43+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/summer/2020online</loc>
@@ -183,6 +179,10 @@
 	<url>
 		<loc>https://bioinf.me/education/online</loc>
 		<lastmod>2021-02-25T10:37:35+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://bioinf.me/en/contest/2018/results</loc>
+		<lastmod>2018-12-01T13:07:32+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/en/education/summer/2020</loc>
@@ -199,10 +199,6 @@
 	<url>
 		<loc>https://bioinf.me/education/workshop/ngs</loc>
 		<lastmod>2019-10-15T19:57:35+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://bioinf.me/contest/results</loc>
-		<lastmod>2018-12-01T13:07:46+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/mastersprogram/itmo</loc>
@@ -225,12 +221,12 @@
 		<lastmod>2019-10-15T19:51:02+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/en/contest/2017</loc>
-		<lastmod>2019-01-18T12:49:45+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://bioinf.me/education/summer/2019</loc>
 		<lastmod>2021-02-02T16:14:05+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://bioinf.me/contest/results</loc>
+		<lastmod>2018-12-01T13:07:46+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/mastersprogram/au</loc>
@@ -245,8 +241,8 @@
 		<lastmod>2021-02-01T20:25:43+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/en/contest/2017/results</loc>
-		<lastmod>2018-12-01T13:07:57+00:00</lastmod>
+		<loc>https://bioinf.me/en/contest/2017</loc>
+		<lastmod>2019-01-18T12:49:45+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/community/team</loc>
@@ -265,12 +261,12 @@
 		<lastmod>2021-02-01T20:54:12+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/en/sbw2018</loc>
-		<lastmod>2019-01-22T05:09:13+00:00</lastmod>
+		<loc>https://bioinf.me/en/contest/2017/results</loc>
+		<lastmod>2018-12-01T13:07:57+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/online/contest2017/standings</loc>
-		<lastmod>2018-12-01T13:08:02+00:00</lastmod>
+		<loc>https://bioinf.me/en/sbw2018</loc>
+		<lastmod>2019-01-22T05:09:13+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/community/lectors</loc>
@@ -285,20 +281,20 @@
 		<lastmod>2021-02-25T10:38:21+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/online/contest2017</loc>
-		<lastmod>2018-12-01T13:08:12+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://bioinf.me/education/summer/2019/participants</loc>
 		<lastmod>2019-09-18T12:59:23+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://bioinf.me/online/contest2017/standings</loc>
+		<lastmod>2018-12-01T13:08:02+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/page2920613.html</loc>
 		<lastmod>2018-12-01T14:30:11+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/contest</loc>
-		<lastmod>2019-02-08T13:06:05+00:00</lastmod>
+		<loc>https://bioinf.me/online/contest2017</loc>
+		<lastmod>2018-12-01T13:08:12+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/community/graduates</loc>
@@ -313,16 +309,16 @@
 		<lastmod>2021-01-29T15:06:34+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/contest/2018</loc>
-		<lastmod>2019-02-08T13:05:59+00:00</lastmod>
+		<loc>https://bioinf.me/contest</loc>
+		<lastmod>2019-02-08T13:06:05+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/research</loc>
 		<lastmod>2021-02-25T10:39:03+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/contest/2017</loc>
-		<lastmod>2019-02-08T13:05:53+00:00</lastmod>
+		<loc>https://bioinf.me/contest/2018</loc>
+		<lastmod>2019-02-08T13:05:59+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/en/education/summer/2019</loc>
@@ -339,6 +335,10 @@
 	<url>
 		<loc>https://bioinf.me/education/program/schedule</loc>
 		<lastmod>2021-02-25T10:39:24+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://bioinf.me/contest/2017</loc>
+		<lastmod>2019-02-08T13:05:53+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/contest/2019</loc>
