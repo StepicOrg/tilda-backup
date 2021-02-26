@@ -4981,4 +4981,156 @@ function t908_changeActiveTab(item, imageContainer) {
         }
     }
   })
+} 
+function t976_highlight(recid) {
+	var url = window.location.href;
+	var pathname = window.location.pathname;
+	var hash = window.location.hash;
+	if (url.substr(url.length - 1) == '/') {
+		url = url.slice(0, -1);
+	}
+	if (pathname.substr(pathname.length - 1) == '/') {
+		pathname = pathname.slice(0, -1);
+	}
+	if (pathname.charAt(0) == '/') {
+		pathname = pathname.slice(1);
+	}
+	if (pathname == '') {
+		pathname = '/';
+	}
+	$(".t976__list-item a[href='" + url + "'] ").addClass('t-active');
+	$(".t976__list-item a[href='" + url + "/']").addClass('t-active');
+	$(".t976__list-item a[href='" + pathname + "']").addClass('t-active');
+	$(".t976__list-item a[href='/" + pathname + "']").addClass('t-active');
+	$(".t976__list-item a[href='" + pathname + "/']").addClass('t-active');
+	$(".t976__list-item a[href='/" + pathname + "/']").addClass('t-active');
+	if (hash) {
+		$(".t976__list-item a[href='" + hash + "']").addClass('t-active');
+	}
+}
+
+function t976_checkAnchorLinks(recid) {
+	var navLinks = $(
+		'#rec' + recid + " .t976__list-item a:not(.tooltipstered)[href*='#']"
+	);
+	if (navLinks.length > 0) {
+		t976_catchScroll(navLinks);
+	}
+}
+
+function t976_catchScroll(navLinks) {
+	var clickedSectionId = null,
+		sections = new Array(),
+		sectionIdTonavigationLink = [],
+		interval = 100,
+		lastCall,
+		timeoutId;
+
+	navLinks = $(navLinks.get().reverse());
+	navLinks.each(function() {
+		var cursection = t976_getSectionByHref($(this));
+		if (typeof cursection.attr('id') != 'undefined') {
+			sections.push(cursection);
+		}
+		sectionIdTonavigationLink[cursection.attr('id')] = $(this);
+	});
+	t976_updateSectionsOffsets(sections);
+	sections.sort(function(a, b) {
+		return b.attr('data-offset-top') - a.attr('data-offset-top');
+	});
+	$(window).bind('resize', t_throttle(function() {
+			t976_updateSectionsOffsets(sections);
+		}, 200)
+	);
+	$('.t976').bind('displayChanged', function() {
+		t976_updateSectionsOffsets(sections);
+	});
+	setInterval(function() {
+		t976_updateSectionsOffsets(sections);
+	}, 5000);
+	t976_highlightNavLinks(navLinks, sections, sectionIdTonavigationLink, clickedSectionId);
+
+	navLinks.click(function() {
+		var clickedSection = t976_getSectionByHref($(this));
+		if (
+			!$(this).hasClass('tooltipstered') &&
+			typeof clickedSection.attr('id') != 'undefined'
+		) {
+			navLinks.removeClass('t-active');
+			$(this).addClass('t-active');
+			clickedSectionId = t976_getSectionByHref($(this)).attr('id');
+		}
+	});
+	$(window).scroll(function() {
+		var now = new Date().getTime();
+		if (lastCall && now < lastCall + interval) {
+			clearTimeout(timeoutId);
+			timeoutId = setTimeout(function() {
+				lastCall = now;
+				clickedSectionId = t976_highlightNavLinks(navLinks, sections, sectionIdTonavigationLink, clickedSectionId);
+			}, interval - (now - lastCall));
+		} else {
+			lastCall = now;
+			clickedSectionId = t976_highlightNavLinks(navLinks, sections, sectionIdTonavigationLink, clickedSectionId);
+		}
+	});
+}
+
+function t976_updateSectionsOffsets(sections) {
+	$(sections).each(function() {
+		var curSection = $(this);
+		curSection.attr('data-offset-top', curSection.offset().top);
+	});
+}
+
+function t976_getSectionByHref(curlink) {
+	var curLinkValue = curlink
+		.attr('href')
+		.replace(/\s+/g, '')
+		.replace(/.*#/, '');
+	if (curlink.is('[href*="#rec"]')) {
+		return $(".r[id='" + curLinkValue + "']");
+	} else {
+		return $(".r[data-record-type='215']").has(
+			"a[name='" + curLinkValue + "']"
+		);
+	}
+}
+
+function t976_highlightNavLinks(navLinks, sections, sectionIdTonavigationLink, clickedSectionId) {
+	var scrollPosition = $(window).scrollTop(),
+		valueToReturn = clickedSectionId;
+	/*if first section is not at the page top (under first blocks)*/
+	if (
+		sections.length != 0 &&
+		clickedSectionId == null &&
+		sections[sections.length - 1].attr('data-offset-top') > scrollPosition + 300
+	) {
+		navLinks.removeClass('t-active');
+		return null;
+	}
+
+	$(sections).each(function(e) {
+		var curSection = $(this),
+			sectionTop = curSection.attr('data-offset-top'),
+			id = curSection.attr('id'),
+			navLink = sectionIdTonavigationLink[id];
+		if (
+			scrollPosition + 300 >= sectionTop ||
+			(sections[0].attr('id') == id &&
+				scrollPosition >= $(document).height() - $(window).height())
+		) {
+			if (clickedSectionId == null && !navLink.hasClass('t-active')) {
+				navLinks.removeClass('t-active');
+				navLink.addClass('t-active');
+				valueToReturn = null;
+			} else {
+				if (clickedSectionId != null && id == clickedSectionId) {
+					valueToReturn = null;
+				}
+			}
+			return false;
+		}
+	});
+	return valueToReturn;
 }
