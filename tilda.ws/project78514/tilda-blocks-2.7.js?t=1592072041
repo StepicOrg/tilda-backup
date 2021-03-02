@@ -533,6 +533,10 @@ function t228_createMobileMenu(recid) {
     }));
 } 
 function t270_scroll(hash, offset, speed) {
+    if (hash.indexOf('#!/tproduct/') !== -1 || hash.indexOf('#!/tab/') !== -1) {
+        return true;
+    }
+
     var $root = $('html, body');
     var target = "";
     
@@ -1189,14 +1193,15 @@ function t397_init(recid) {
     /* Scroll and open proper tab on a valid link click */
     $(document).on('click', function(e) {
         var isLink = $(e.target).is('a, a *');
-        var curUrl = window.location.href;
-        var isValidUrl = curUrl.indexOf('#!/tab/') !== -1;
-        
-        if (isLink && isValidUrl) {
+        if (isLink) {
             setTimeout(function() {
-                /* wait for location update */
-                t397_scrollToTabs(recid);
-            }, 100);
+                var curUrl = window.location.href;
+                var isValidUrl = curUrl.indexOf('#!/tab/') !== -1;
+                if (isValidUrl) {
+                    /* wait for location update */
+                    t397_scrollToTabs(recid);
+                }
+            }, 10);
         }
     });
 }
