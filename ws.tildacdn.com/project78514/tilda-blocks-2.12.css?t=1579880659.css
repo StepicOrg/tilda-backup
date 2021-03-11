@@ -9645,6 +9645,7 @@ transition: opacity ease-in-out .2s;
 
     .t456__rightwrapper {
         padding: 20px 0;
+        box-sizing: border-box;
     }
 
     .t456__list {
