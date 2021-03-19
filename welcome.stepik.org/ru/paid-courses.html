@@ -21,7 +21,7 @@
 
 	<meta name="format-detection" content="telephone=no" />
 	<meta http-equiv="x-dns-prefetch-control" content="on">
-	<link rel="dns-prefetch" href="https://tilda.ws">
+	<link rel="dns-prefetch" href="https://ws.tildacdn.com">
 	<link rel="dns-prefetch" href="https://static.tildacdn.com">
 
 
@@ -36,8 +36,8 @@
 			<meta name="msapplication-TileColor" content="#000000">
 	<meta name="msapplication-TileImage" content="https://static.tildacdn.com/tild3363-3263-4536-b037-333539386133/favicon_228.png">
 		<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-grid-3.0.min.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="https://ws.tildacdn.com/project78514/tilda-blocks-2.12.css?t=1605204703" type="text/css" media="all" />
-
+	<link rel="stylesheet" href="https://ws.tildacdn.com/project78514/tilda-blocks-2.12.css?t=1616152039" type="text/css" media="all" />
+    
 	<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-animation-1.0.min.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-menusub-1.0.min.css" type="text/css" media="all" />
 
@@ -45,12 +45,13 @@
 
 	<script src="https://static.tildacdn.com/js/jquery-1.10.2.min.js"></script>
 	<script src="https://static.tildacdn.com/js/tilda-scripts-2.8.min.js"></script>
-	<script src="https://ws.tildacdn.com/project78514/tilda-blocks-2.7.js?t=1605204703"></script>
-
+	<script src="https://ws.tildacdn.com/project78514/tilda-blocks-2.7.js?t=1616152039"></script>
+    
 	<script src="https://static.tildacdn.com/js/tilda-animation-1.0.min.js" charset="utf-8"></script>
 	<script src="https://static.tildacdn.com/js/tilda-menusub-1.0.min.js" charset="utf-8"></script>
 	<script src="https://static.tildacdn.com/js/tilda-forms-1.0.min.js" charset="utf-8"></script>
 
+	
 	
 	
 	
@@ -87,7 +88,7 @@ fbq('track', 'PageView');
 <body class="t-body" style="margin:0;">
 
 	<!--allrecords-->
-<div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="78514" data-tilda-page-id="3813133" data-tilda-page-alias="ru/paid-courses" data-tilda-formskey="606be37835e28d4ed00dd8e8c57d2535"    >
+<div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="78514" data-tilda-page-id="3813133" data-tilda-page-alias="ru/paid-courses" data-tilda-formskey="606be37835e28d4ed00dd8e8c57d2535"     >
 
 <div id="rec70682211" class="r t-rec t-rec_pt_0" style="padding-top:0px; " data-animationappear="off" data-record-type="257"   >
 
@@ -118,10 +119,10 @@ fbq('track', 'PageView');
           
           <div class="t228__leftside">
                         <div class="t228__leftcontainer">    
-                <a href="https://stepik.org" target="_blank" style="color:#ffffff;"><img src="https://static.tildacdn.com/tild6235-3730-4430-b939-636463386139/stepik_logotype_blac.svg" class="t228__imglogo t228__imglogomobile" imgfield="img" style="max-width: 140px;width: 140px; height: auto; display: block;" alt=""></a>            </div>
+                <a href="https://stepik.org" target="_blank" style="color:#ffffff;"><img src="https://static.tildacdn.com/tild6235-3730-4430-b939-636463386139/stepik_logotype_blac.svg" class="t228__imglogo t228__imglogomobile" imgfield="img" style="max-width: 140px; width: 140px; min-width: 140px; height: auto; display: block;" alt=""></a>            </div>
                       </div>
 
-          <div class="t228__centerside ">
+          <div class="t228__centerside t228__centerside_hidden ">
                       </div>
 
           <div class="t228__rightside">
@@ -177,7 +178,9 @@ $(document).ready(function() {
     
 
 
-    t228__init('70682211');
+    if (typeof t228__init === 'function') {
+        t228__init('70682211');
+    }
     t228_setBg('70682211');
     
 
@@ -240,7 +243,9 @@ $(document).ready(function() {
 <script type="text/javascript">
   $(document).ready(function() {
     setTimeout(function(){
-      t_menusub_init('70682211');
+      t_onFuncLoad('t_menusub_init', function() {
+        t_menusub_init('70682211');
+      });
     }, 500);
   });
 </script>
@@ -263,7 +268,24 @@ $(document).ready(function() {
 
 
 </style>
+</div>
 
+
+<div id="rec293547095" class="r t-rec" style=" "  data-record-type="305"   >
+<div class="t303">
+    <br><br>
+    <center>
+            
+        <script>
+            window.location.replace("https://teach.stepik.org/ru/paid-courses" + window.location.search + window.location.hash);
+        </script>
+        <noscript>
+            Redirect to URL: <a href="https://teach.stepik.org/ru/paid-courses">https://teach.stepik.org/ru/paid-courses</a>
+        </noscript>
+        
+        </center>
+    <br><br>
+</div>
 </div>
 
 
@@ -1071,7 +1093,6 @@ $(document).ready(function() {
 <!--/allrecords-->
 
 
-
 	
 		
 	<!-- Google Tag Manager (noscript) -->
@@ -1106,7 +1127,7 @@ $(document).ready(function() {
 	if (! window.mainTracker) { window.mainTracker = 'tilda'; }
 
 	
-	(function (d, w, k, o, g) { var n=d.getElementsByTagName(o)[0],s=d.createElement(o),f=function(){n.parentNode.insertBefore(s,n);}; s.type = "text/javascript"; s.async = true; s.key = k; s.id = "tildastatscript"; s.src=g; if (w.opera=="[object Opera]") {d.addEventListener("DOMContentLoaded", f, false);} else { f(); } })(document, window, '60963f9afd619ab4bca57b4bb845d1ef','script','https://stat.tildacdn.com/js/tildastat-0.2.min.js');
+	(function (d, w, k, o, g) { var n=d.getElementsByTagName(o)[0],s=d.createElement(o),f=function(){n.parentNode.insertBefore(s,n);}; s.type = "text/javascript"; s.async = true; s.key = k; s.id = "tildastatscript"; s.src=g; if (w.opera=="[object Opera]") {d.addEventListener("DOMContentLoaded", f, false);} else { f(); } })(document, window, '60963f9afd619ab4bca57b4bb845d1ef','script','https://static.tildacdn.com/js/tildastat-0.2.min.js');
 
 
 	
