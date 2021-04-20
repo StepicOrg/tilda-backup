@@ -4985,7 +4985,7 @@ function t899_init(recid) {
     t899_setMinHeight(recid);
 
     $(window).bind('resize', t_throttle(function () {
-        if (typeof window.noAdaptive !== 'undefined' && window.noAdaptive === true && $isMobile) { return; }
+        if (typeof window.noAdaptive !== 'undefined' && window.noAdaptive === true && window.isMobile) { return; }
         t899_setMinHeight(recid);
     }));
 
@@ -4993,7 +4993,7 @@ function t899_init(recid) {
         t899_setMinHeight(recid);
     });
 
-    if ($isMobile) {
+    if (window.isMobile) {
         $(window).on('orientationchange', function () {
             t899_setMinHeight(recid);
         });
