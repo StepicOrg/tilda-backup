@@ -1680,7 +1680,7 @@ function t431__escapeHTML(string) {
     ['b', 'i', 'u', 'ul', 'li', 'ol', 'br', 'img', 's', 'sub', 'sup', 'span', 'hr', 'pre', 'code', 'mark', 'strong', 'small'].forEach(function(value) {
         allowedTags += ":not(" + value + ")";
     });
-    var allowedAttrs = ['alt', 'class', 'title', 'id', 'src', 'style', 'width', 'height'];
+    var allowedAttrs = ['alt', 'class', 'title', 'id', 'src', 'style', 'width', 'height', 'data-replace-key'];
     var fakeDOM = document.implementation.createHTMLDocument('fake');
 
     $.each($.parseHTML(html, fakeDOM) || [], function(i, $el) {
@@ -4627,7 +4627,6 @@ function t862_setError(rec, quizQuestionNumber) {
     var showErrors;
     currentQuestion.addClass('js-error-control-box');
     var errorsTypeObj = arErrors[0];
-    var arLang = window.tildaForm.arValidateErrors[window.tildaBrowserLang] || {};
 
     if (errorsTypeObj != undefined) {
         var errorType = errorsTypeObj.type[0];
@@ -4640,7 +4639,9 @@ function t862_setError(rec, quizQuestionNumber) {
         if (errorTextCustom != '') {
             sError = errorTextCustom;
         } else {
-            sError = arLang[errorType];
+            t_onFuncLoad('t_form_dict', function () {
+                sError = t_form_dict(errorType);
+            });
         }
         showErrors = errorType == 'emptyfill' ? false : window.tildaForm.showErrors(currentQuestion, arErrors);
         currentQuestion.find('.t-input-error').html(sError);
@@ -4926,9 +4927,7 @@ function t862_closePopup(rec) {
 
 function t862_resizePopup(rec) {
     var div = rec.find('.t-popup__container').height();
-    console.log(div);
     var win = $(window).height() - 120;
-    console.log(win);
     var popup = rec.find('.t-popup__container');
     if (div > win) {
         popup.addClass('t-popup__container-static');
