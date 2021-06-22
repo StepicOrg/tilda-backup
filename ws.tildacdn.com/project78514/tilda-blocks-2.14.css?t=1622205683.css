@@ -4134,6 +4134,10 @@ img:not([src]) {
  text-align: right;
 }
 
+.t228__right_langs_lang a[href=""] {
+    cursor: text;
+}
+
 .t228 .lastside{
  display: table-cell;	
  vertical-align: middle; 
