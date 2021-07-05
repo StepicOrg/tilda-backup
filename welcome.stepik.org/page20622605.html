@@ -36,7 +36,7 @@
 			<meta name="msapplication-TileColor" content="#000000">
 	<meta name="msapplication-TileImage" content="https://static.tildacdn.com/tild3363-3263-4536-b037-333539386133/favicon_228.png">
 		<link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-grid-3.0.min.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="https://ws.tildacdn.com/project78514/tilda-blocks-2.14.css?t=1625496509" type="text/css" media="all" />
+	<link rel="stylesheet" href="https://ws.tildacdn.com/project78514/tilda-blocks-2.14.css?t=1625498045" type="text/css" media="all" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@300;400;500;600;700&subset=latin,cyrillic" rel="stylesheet">
 
@@ -51,7 +51,7 @@
 
 	<script src="https://static.tildacdn.com/js/jquery-1.10.2.min.js"></script>
 	<script src="https://static.tildacdn.com/js/tilda-scripts-3.0.min.js"></script>
-	<script src="https://ws.tildacdn.com/project78514/tilda-blocks-2.7.js?t=1625496509"></script>
+	<script src="https://ws.tildacdn.com/project78514/tilda-blocks-2.7.js?t=1625498045"></script>
 
 	<script src="https://static.tildacdn.com/js/tilda-animation-1.0.min.js" charset="utf-8"></script>
 	<script src="https://static.tildacdn.com/js/tilda-cover-1.0.min.js" charset="utf-8"></script>
@@ -6420,12 +6420,12 @@ $( document ).ready(function() {
       <th class="t613__title t613__header_title t-name t-name_md t-align_center" colspan="2" style="width: 25%;">Enterprise</th>
     </tr>
     <tr class="header">
-      <th class="t613__title t613__middle_title t-descr t-descr_xs">Бесплатно</th>
-      <th class="t613__title t613__middle_title t-descr t-descr_xs right-bordered">+Комиссия</th>
-      <th class="t613__title t613__middle_title t-descr t-descr_xs">Подписка</th>
-      <th class="t613__title t613__middle_title t-descr t-descr_xs right-bordered">+Комиссия</th>
-      <th class="t613__title t613__middle_title t-descr t-descr_xs">Подписка</th>
-      <th class="t613__title t613__middle_title t-descr t-descr_xs">+Комиссия</th>
+      <th class="t613__title t613__middle_title t-descr t-descr_xs">Открытый бесплатный</th>
+      <th class="t613__title t613__middle_title t-descr t-descr_xs right-bordered">Платный курс</th>
+      <th class="t613__title t613__middle_title t-descr t-descr_xs">Открытый бесплатный или приватный</th>
+      <th class="t613__title t613__middle_title t-descr t-descr_xs right-bordered">Платный курс</th>
+      <th class="t613__title t613__middle_title t-descr t-descr_xs">Открытый бесплатный или приватный</th>
+      <th class="t613__title t613__middle_title t-descr t-descr_xs">Платный курс</th>
     </tr>
   </thead>
   <tbody></tbody>
@@ -6481,10 +6481,11 @@ $( document ).ready(function() {
             ['Управление преподавателями', no, yes, yes, yes, yes, yes],
             ['Управление учащимися (в том числе добавление их на курс вручную)', no, no, 'До 1000\nучащихся', yes, yes, yes],
             ['Создание приватных курсов', no, no, yes, yes, yes, yes],
-            ['Сложные задания (Linux, external grader, задача на данные)', no, no, no, no, yes, yes],
+            ['Сложные задания (Linux, external grader)', no, no, no, no, yes, yes],
             ['Интеграция LTI', no, no, no, no, yes, yes],
             ['Договоры и акты, оплата по счету', no, yes, no, yes, yes, yes],
-            ['Техническая поддержка', 'Стандартная', 'Улучшенная', 'Улучшенная', 'Улучшенная', 'Приоритетная', 'Приоритетная']
+            ['Техническая поддержка', 'Стандартная', 'Улучшенная', 'Улучшенная', 'Улучшенная', 'Приоритетная', 'Приоритетная'],
+            ['Оплата', 'Бесплатно', 'Комиссия с продаж', 'Подписка', 'Подписка и комиссия с продаж', 'Подписка', 'Подписка и комиссия с продаж']
         ];
         
         var table_body = document.querySelector('#pricing_description tbody');
