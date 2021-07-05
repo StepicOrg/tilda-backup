@@ -1396,7 +1396,7 @@ function t397_scrollToTabs(recid, hash) {
             var tabBlock = $('#rec' + tabRec).find('.t397');
             var tabNumber = parseInt(curUrl.slice(tabIndexNumberStart + 4 + recid.length + 1), 10);
             el.find('.t397__tab').removeClass('t397__tab_active');
-            el.find('.t397__tab:eq(' + (tabNumber - 1) + ')').addClass('t397__tab_active').trigger('click');
+            el.find('.t397__tab:eq(' + (tabNumber - 1) + ')').trigger('click').addClass('t397__tab_active');
             el.find('.t397__wrapper_mobile .t397__select option:eq(' + (tabNumber - 1) + ')').prop('selected', true);
 
             var targetOffset = tabBlock.offset().top;
