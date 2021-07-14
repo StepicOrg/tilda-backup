@@ -17993,7 +17993,6 @@ transition: opacity ease-in-out .2s;
     .t862 .t-radio__control,
     .t862 .t-checkbox__control,
     .t862 .t-img-select__text {
-        font-size: 13px;
         word-break: break-word;
     }
 
