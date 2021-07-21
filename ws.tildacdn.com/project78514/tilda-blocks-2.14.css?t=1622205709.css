@@ -6385,23 +6385,14 @@ transition: opacity ease-in-out .2s;
 }
 
 .t389__list {
-    list-style-type: none;
-    padding-left: 0 !important;
-    margin-bottom: 0 !important;
-
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-flex-wrap: wrap;
-	    -ms-flex-wrap: wrap;
-	        flex-wrap: wrap;
-	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+  list-style-type: none;
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .t389__list_item {
   display: inline-block;
+  margin: 0 15px;
 }
 
 .t389__copyright, .t389__scroll {
@@ -6476,7 +6467,7 @@ transition: opacity ease-in-out .2s;
   }
 
   .t389__list_item {
-    margin-bottom: 4px;
+    margin: 0 10px 4px;
   }
 
   .t389__col:last-child {

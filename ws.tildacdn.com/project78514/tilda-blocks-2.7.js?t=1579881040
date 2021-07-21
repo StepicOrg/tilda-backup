@@ -242,6 +242,13 @@ function t228__init(recid) {
     var fixedBlock = mobile.css('position') === 'fixed' && mobile.css('display') === 'block';
 
     setTimeout(function() {
+        el.on('click', '.t-menusub__target-link', function () {
+            if ($(this).hasClass('t-menusub__target-link_active')) {
+                el.find('.t228').trigger('overflow');
+            } else {
+                el.find('.t228').trigger('nooverflow');
+            }
+        });
         el.find('.t-menu__link-item:not(.t-menusub__target-link):not(.tooltipstered):not(.t794__tm-link)').on('click', function () {
             if ($(this).is('.tooltipstered, .t-menusub__target-link, .t794__tm-link, .t966__tm-link, .t978__tm-link')) { return; }
             if (fixedBlock) {
@@ -324,7 +331,7 @@ function t228_checkNoOverflow(recid) {
     var menu = el.find('.t228');
     var submenus = el.find('.t966__tooltip-menu_mobile');
     
-    if (menu.css('position') === 'fixed' && submenus.length === 1) {
+    if (menu.css('position') === 'fixed') {
         menu.removeClass('t228__overflow');
         menu[0].style.setProperty('height', 'auto');
     }
