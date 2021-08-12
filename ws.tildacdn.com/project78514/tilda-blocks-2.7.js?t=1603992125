@@ -579,14 +579,14 @@ function t270_scroll(hash, offset, speed) {
 
     var root = $('html, body');
     var target = "";
-    
+
     if (speed === undefined) {
-        speed = 500;
+        speed = 400;
     }
 
     try {
         target = $(hash);
-    } catch(event) {
+    } catch (event) {
         console.log("Exception t270: " + event.message);
         return true;
     }
@@ -596,24 +596,30 @@ function t270_scroll(hash, offset, speed) {
             return true;
         }
     }
-    
-    var isHistoryChangeAllowed = !(window.location.hash === hash);
 
-    root.animate({
-        scrollTop: target.offset().top - offset
-    }, speed, function() {
+    var isHistoryChangeAllowed = window.location.hash !== hash;
+    var complete = function () {
         if (!isHistoryChangeAllowed) {
             return;
         }
-        
-        if(history.pushState) {
+
+        if (history.pushState) {
             history.pushState(null, null, hash);
         } else {
             window.location.hash = hash;
         }
-        
+
         isHistoryChangeAllowed = false;
-    });
+    }
+
+    var dontChangeHistory = Boolean($('.t270').attr('data-history-disabled'));
+    if (dontChangeHistory) {
+        complete = function () {};
+    }
+
+    root.animate({
+        scrollTop: target.offset().top - offset
+    }, speed, complete);
 
     return true;
 } 
