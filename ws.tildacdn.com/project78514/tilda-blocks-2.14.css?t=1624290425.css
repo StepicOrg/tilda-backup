@@ -13948,6 +13948,14 @@ transition: opacity ease-in-out .2s;
     display: block;
 }
 
+.t670 .t-slds__caption__container.t670__caption__container_none {
+    margin-top: 0;
+}
+
+.t670 .t-slds__caption.t670__caption_margin {
+    margin-top: 16px;
+}
+
 @media screen and (max-width: 640px) {
     .t670 .t-slds__wrapper {
         padding: 0 !important;
