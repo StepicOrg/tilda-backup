@@ -3141,49 +3141,46 @@ img:not([src]) {
  
 /* T142A */
 
-/*.t142A {*/
-/*    overflow: hidden;*/
-/*}*/
-
-.t142A__wrapone{
-	position: relative; 
-	/*right: 50%; */
-	/*float: right;*/
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+.t142A__wrapone {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
-.t142A__wraptwo{
-	position: relative; 
-	z-index: 1; 
-	/*right: -50%;*/
+.t142A__wraptwo {
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
 }
 
 .t142A__wraptwo td {
-	vertical-align: middle;
+    vertical-align: middle;
 }
 
-.t142A__marginleft20px{
-	margin-left:20px;
+.t142A__btn {
+    margin: 0 10px;
+    margin-bottom: 20px;
 }
 
-@media screen and (max-width: 640px){
-.t142A{
-	padding: 0 20px; 
-}
-.t142A .t-btn{
-	width: 100%;
-	margin-bottom: 10px;
-}
-.t142A__marginleft20px{
-	margin-left:0px;
-}
-}
- 
+@media screen and (max-width: 640px) {
+    .t142A {
+        padding: 0 20px;
+    }
+    
+    .t142A__wraptwo {
+        padding: 0;
+    }
+    
+    .t142A__btn {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+} 
 /* T185 */
 
 .t185__butwrapper{
