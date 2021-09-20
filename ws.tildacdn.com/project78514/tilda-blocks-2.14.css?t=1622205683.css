@@ -6705,6 +6705,16 @@ transition: opacity ease-in-out .2s;
 	overflow:hidden;
 }
 
+.t396__artboard .t396__artboard_scale {
+  overflow: visible;
+}
+
+.t396__artboard_scale .t396__elem,
+.t396__artboard_scale .t396__carrier,
+.t396__artboard_scale .t396__filter {
+  transform-origin: top left;
+}
+
 .t396__artboard.rendering .tn-elem{
 	visibility: hidden;
 }
@@ -6746,6 +6756,11 @@ transition: opacity ease-in-out .2s;
 	-webkit-text-size-adjust:100%;
 	-moz-text-size-adjust:100%;
 	-ms-text-size-adjust:100%;
+}
+
+/* fix for disappearing elements in safari */
+.t396_safari .tn-atom {
+    transform: translateZ(0);
 }
 
 .t396 a.tn-atom{
@@ -11278,9 +11293,10 @@ transition: opacity ease-in-out .2s;
 }
 
 @media screen and (max-width: 960px){
-.t551__contacts {
-	word-break: break-all;
-}
+    .t551__contacts {
+	    overflow: hidden;
+        text-overflow: ellipsis;
+    }
 } 
 /* t557 */
 
