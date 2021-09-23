@@ -6709,7 +6709,11 @@ transition: opacity ease-in-out .2s;
   overflow: visible;
 }
 
-.t396__artboard_scale .t396__elem,
+.t396__artboard.t396__artboard_scale .t396__elem[data-elem-type="text"] .tn-atom {
+  word-break: normal;
+}
+
+.t396__artboard_scale .t396__elem .tn-atom,
 .t396__artboard_scale .t396__carrier,
 .t396__artboard_scale .t396__filter {
   transform-origin: top left;
