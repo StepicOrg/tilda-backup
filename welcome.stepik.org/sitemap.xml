@@ -85,8 +85,8 @@
 		<lastmod>2020-10-29T17:22:06+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/ru/careers</loc>
-		<lastmod>2021-09-30T14:06:14+00:00</lastmod>
+		<loc>https://welcome.stepik.org/ru/careers-old</loc>
+		<lastmod>2021-10-18T20:01:24+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/en/pricing</loc>
@@ -235,5 +235,9 @@
 	<url>
 		<loc>https://welcome.stepik.org/page11448105.html</loc>
 		<lastmod>2020-06-03T11:29:25+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/ru/careers</loc>
+		<lastmod>2021-10-18T20:02:35+00:00</lastmod>
 	</url>
 </urlset>
