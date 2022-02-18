@@ -459,4 +459,3 @@ function t860_unifyHeights(recId){var rec=document.getElementById('rec'+recId);i
 for(var j=0;j<cols.length;j++){cols[j].style.height=maxHeight+'px'}}}else{var cols=rec.querySelectorAll('.t860__inner-col');for(var i=0;i<cols.length;i++){cols[i].style.height='auto'}}}
 function t_getParents(element,className){var result=[];for(var p=element&&element.parentElement;p;p=p.parentElement){if(p.classList.contains(className)){result.push(p)}}
 return result}
-function t969_init(recid){var el_rec=$('#rec'+recid);var el_branches=el_rec.find('.t969');if($('#tildacopy').length>0){window.addEventListener('scroll',function(ev){if((window.innerHeight+window.pageYOffset+70)>=document.body.offsetHeight){var offsetBottom=70-(document.body.offsetHeight-(window.innerHeight+window.pageYOffset));el_branches.css('bottom',offsetBottom+'px')}else{el_branches.css('bottom','0px')}})}}
