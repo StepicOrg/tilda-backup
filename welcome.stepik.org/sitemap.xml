@@ -85,52 +85,8 @@
 		<lastmod>2022-02-21T16:15:34+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/ny-17</loc>
-		<lastmod>2020-01-24T15:50:26+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/en/pricing</loc>
-		<lastmod>2020-06-26T18:41:32+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/valentine-17</loc>
-		<lastmod>2020-01-24T15:50:33+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/en/subscribe2020-basic</loc>
-		<lastmod>2020-03-10T11:21:56+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/friends</loc>
-		<lastmod>2020-01-24T15:50:37+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/en/subscribe2020-pro</loc>
-		<lastmod>2020-03-10T11:22:08+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/ru/corporate</loc>
-		<lastmod>2020-01-24T15:50:40+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/en/subscribe2020-ent</loc>
-		<lastmod>2020-03-10T11:22:12+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/test-product-design-2018</loc>
-		<lastmod>2020-01-24T15:50:20+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/ru/pricing_archive</loc>
-		<lastmod>2020-10-05T14:56:09+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://welcome.stepik.org/en/about</loc>
 		<lastmod>2020-08-07T10:17:46+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/en/payment-terms</loc>
-		<lastmod>2020-01-24T15:45:58+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/class</loc>
@@ -141,64 +97,108 @@
 		<lastmod>2020-01-24T15:51:22+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/en/accessibility</loc>
-		<lastmod>2020-01-24T15:47:07+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/en/teach-with-stepik</loc>
-		<lastmod>2020-08-07T10:18:22+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/ru/payment-terms</loc>
-		<lastmod>2022-02-10T08:40:43+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/page12376439.html</loc>
-		<lastmod>2020-07-03T14:57:05+00:00</lastmod>
+		<loc>https://welcome.stepik.org/en/payment-terms</loc>
+		<lastmod>2020-01-24T15:45:58+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/paid-courses</loc>
 		<lastmod>2021-03-19T11:07:19+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/en/pricing/basic</loc>
-		<lastmod>2020-05-26T14:14:41+00:00</lastmod>
+		<loc>https://welcome.stepik.org/en/accessibility</loc>
+		<lastmod>2020-01-24T15:47:07+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/ru/payment-terms</loc>
+		<lastmod>2022-02-10T08:40:43+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/en/teach-with-stepik</loc>
+		<lastmod>2020-08-07T10:18:22+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/your-courses</loc>
 		<lastmod>2020-01-24T15:51:58+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/en/pricing/pro</loc>
-		<lastmod>2020-06-25T14:06:38+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/en/pricing/enterprise</loc>
-		<lastmod>2020-06-26T18:41:51+00:00</lastmod>
+		<loc>https://welcome.stepik.org/en/pricing</loc>
+		<lastmod>2020-06-26T18:41:32+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/sql-course-reguest</loc>
 		<lastmod>2019-07-11T03:57:06+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://welcome.stepik.org/en/subscribe2020-basic</loc>
+		<lastmod>2020-03-10T11:21:56+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/en/subscribe2020-pro</loc>
+		<lastmod>2020-03-10T11:22:08+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/ny-17</loc>
+		<lastmod>2020-01-24T15:50:26+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/ru/corporate</loc>
+		<lastmod>2020-01-24T15:50:40+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/en/subscribe2020-ent</loc>
+		<lastmod>2020-03-10T11:22:12+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/big-data</loc>
+		<lastmod>2021-12-13T12:38:26+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/ru/pricing_archive</loc>
+		<lastmod>2020-10-05T14:56:09+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/page12376439.html</loc>
+		<lastmod>2020-07-03T14:57:05+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://welcome.stepik.org/page8507650.html</loc>
 		<lastmod>2020-01-31T14:56:58+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/en/pricing/basic</loc>
+		<lastmod>2020-05-26T14:14:41+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/valentine-17</loc>
+		<lastmod>2020-01-24T15:50:33+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/page8507408.html</loc>
 		<lastmod>2020-01-31T14:56:51+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/ru/pricing-old</loc>
-		<lastmod>2020-08-28T23:18:48+00:00</lastmod>
+		<loc>https://welcome.stepik.org/en/pricing/pro</loc>
+		<lastmod>2020-06-25T14:06:38+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/friends</loc>
+		<lastmod>2020-01-24T15:50:37+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/page9754144.html</loc>
 		<lastmod>2020-03-03T15:08:38+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://welcome.stepik.org/en/pricing/enterprise</loc>
+		<lastmod>2020-06-26T18:41:51+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://welcome.stepik.org/teach-with-stepik</loc>
 		<lastmod>2020-07-08T12:25:48+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/test-product-design-2018</loc>
+		<lastmod>2020-01-24T15:50:20+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/pricing/basic</loc>
@@ -213,24 +213,8 @@
 		<lastmod>2022-02-14T14:12:27+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/reviewredesign</loc>
-		<lastmod>2019-04-13T19:55:36+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/ru/pricing/basic-old</loc>
-		<lastmod>2020-06-13T18:12:17+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/ru/pricing/pro-old</loc>
-		<lastmod>2020-06-13T18:13:20+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://welcome.stepik.org/ru/careers</loc>
 		<lastmod>2022-02-15T16:15:26+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/ru/pricing/enterprise-old</loc>
-		<lastmod>2020-06-13T18:14:01+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/ml-engineer</loc>
@@ -245,12 +229,12 @@
 		<lastmod>2021-10-26T15:07:38+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/ru/careers/math-expert</loc>
-		<lastmod>2022-01-26T14:54:03+00:00</lastmod>
+		<loc>https://welcome.stepik.org/reviewredesign</loc>
+		<lastmod>2019-04-13T19:55:36+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/page11448105.html</loc>
-		<lastmod>2020-06-03T11:29:25+00:00</lastmod>
+		<loc>https://welcome.stepik.org/ru/careers/math-expert</loc>
+		<lastmod>2022-01-26T14:54:03+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/frontend-developer</loc>
@@ -259,10 +243,6 @@
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/product-manager</loc>
 		<lastmod>2021-11-29T07:46:24+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/big-data</loc>
-		<lastmod>2021-12-13T12:38:26+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/bio-producer</loc>
@@ -278,7 +258,7 @@
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/pr-manager</loc>
-		<lastmod>2022-02-15T10:07:24+00:00</lastmod>
+		<lastmod>2022-02-22T06:32:45+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/coordinator</loc>
@@ -287,5 +267,25 @@
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/office</loc>
 		<lastmod>2022-02-16T11:53:31+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/ru/pricing-old</loc>
+		<lastmod>2020-08-28T23:18:48+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/page11448105.html</loc>
+		<lastmod>2020-06-03T11:29:25+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/ru/pricing/basic-old</loc>
+		<lastmod>2020-06-13T18:12:17+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/ru/pricing/pro-old</loc>
+		<lastmod>2020-06-13T18:13:20+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/ru/pricing/enterprise-old</loc>
+		<lastmod>2020-06-13T18:14:01+00:00</lastmod>
 	</url>
 </urlset>
