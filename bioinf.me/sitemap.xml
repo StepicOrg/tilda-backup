@@ -157,6 +157,10 @@
 		<lastmod>2021-04-15T10:56:03+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://bioinf.me/en/team</loc>
+		<lastmod>2022-04-21T22:49:51+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://bioinf.me/education/sbw/2019</loc>
 		<lastmod>2021-02-01T20:22:39+00:00</lastmod>
 	</url>
@@ -173,20 +177,12 @@
 		<lastmod>2021-11-23T11:12:00+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/en/itmo</loc>
-		<lastmod>2022-04-05T15:40:35+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://bioinf.me/education/workshops/ngs/2020</loc>
 		<lastmod>2022-03-16T10:47:07+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/en/sbw/2019</loc>
 		<lastmod>2021-02-01T14:14:08+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://bioinf.me/en/education/summer/2020</loc>
-		<lastmod>2020-12-08T14:18:32+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/graduates2015-16</loc>
@@ -201,8 +197,16 @@
 		<lastmod>2022-04-05T13:48:48+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://bioinf.me/en/itmo</loc>
+		<lastmod>2022-04-05T15:40:35+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://bioinf.me/education/sbw/2019/form</loc>
 		<lastmod>2019-03-04T21:01:38+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://bioinf.me/en/education/summer/2020</loc>
+		<lastmod>2020-12-08T14:18:32+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/projects</loc>
@@ -225,16 +229,8 @@
 		<lastmod>2022-03-16T10:47:30+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/en/education/summer/2019</loc>
-		<lastmod>2020-01-04T14:47:47+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://bioinf.me/education/mastersprogram/itmo</loc>
 		<lastmod>2018-11-30T13:49:03+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://bioinf.me/en/education/summer/2018</loc>
-		<lastmod>2019-02-28T15:23:10+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/en/contest/2018/results</loc>
@@ -265,6 +261,10 @@
 		<lastmod>2018-11-30T13:50:22+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://bioinf.me/en/education/summer/2019</loc>
+		<lastmod>2020-01-04T14:47:47+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://bioinf.me/en/education/sbw/2018</loc>
 		<lastmod>2021-02-01T20:45:18+00:00</lastmod>
 	</url>
@@ -273,8 +273,8 @@
 		<lastmod>2022-03-20T20:25:33+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://bioinf.me/en/education/summer/2017</loc>
-		<lastmod>2018-11-29T16:17:15+00:00</lastmod>
+		<loc>https://bioinf.me/en/education/summer/2018</loc>
+		<lastmod>2019-02-28T15:23:10+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/press</loc>
@@ -307,6 +307,10 @@
 	<url>
 		<loc>https://bioinf.me/education/summer/2021/faq</loc>
 		<lastmod>2021-08-10T06:12:30+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://bioinf.me/en/education/summer/2017</loc>
+		<lastmod>2018-11-29T16:17:15+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://bioinf.me/education/workshops/stat/2021</loc>
