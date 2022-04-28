@@ -9,10 +9,6 @@
 		<lastmod>2018-10-12T14:32:37+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/ru</loc>
-		<lastmod>2022-04-28T17:48:07+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://welcome.stepik.org/ru/teach</loc>
 		<lastmod>2022-03-21T18:04:41+00:00</lastmod>
 	</url>
@@ -351,5 +347,9 @@
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/math-editor</loc>
 		<lastmod>2022-04-20T13:36:48+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/ru/pricing</loc>
+		<lastmod>2022-03-23T15:48:24+00:00</lastmod>
 	</url>
 </urlset>
