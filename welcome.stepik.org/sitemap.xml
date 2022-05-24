@@ -10,7 +10,7 @@
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru</loc>
-		<lastmod>2022-04-28T17:59:29+00:00</lastmod>
+		<lastmod>2022-05-16T18:01:53+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/teach</loc>
@@ -218,7 +218,7 @@
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers</loc>
-		<lastmod>2022-05-11T06:57:38+00:00</lastmod>
+		<lastmod>2022-05-23T13:23:33+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/ml-engineer</loc>
@@ -353,11 +353,15 @@
 		<lastmod>2022-04-20T13:36:48+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://welcome.stepik.org/en/careers/sales</loc>
+		<lastmod>2022-05-11T06:55:28+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://welcome.stepik.org/ru/pricing</loc>
 		<lastmod>2022-03-23T15:48:24+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/en/careers/sales</loc>
-		<lastmod>2022-05-11T06:55:28+00:00</lastmod>
+		<loc>https://welcome.stepik.org/contentmarketing</loc>
+		<lastmod>2022-05-24T07:37:53+00:00</lastmod>
 	</url>
 </urlset>
