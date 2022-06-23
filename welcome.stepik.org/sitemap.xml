@@ -10,7 +10,7 @@
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru</loc>
-		<lastmod>2022-05-29T16:49:31+00:00</lastmod>
+		<lastmod>2022-06-21T09:07:25+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/teach</loc>
@@ -122,7 +122,7 @@
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/en/pricing</loc>
-		<lastmod>2020-06-26T18:41:32+00:00</lastmod>
+		<lastmod>2022-06-15T06:23:25+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/sql-course-reguest</loc>
@@ -162,7 +162,7 @@
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/page12376439.html</loc>
-		<lastmod>2020-07-03T14:57:05+00:00</lastmod>
+		<lastmod>2022-06-15T06:22:47+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/page8507650.html</loc>
@@ -218,15 +218,15 @@
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers</loc>
-		<lastmod>2022-06-01T19:50:10+00:00</lastmod>
+		<lastmod>2022-06-23T17:54:11+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/ml-engineer</loc>
-		<lastmod>2022-03-30T17:28:10+00:00</lastmod>
+		<lastmod>2022-06-16T09:25:20+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/qa-lead</loc>
-		<lastmod>2022-03-21T18:14:23+00:00</lastmod>
+		<lastmod>2022-06-23T17:52:43+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/projects-author</loc>
@@ -254,7 +254,7 @@
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/assistant</loc>
-		<lastmod>2022-04-08T14:44:41+00:00</lastmod>
+		<lastmod>2022-06-16T09:26:56+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/uxresearcher</loc>
@@ -270,7 +270,7 @@
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/office</loc>
-		<lastmod>2022-06-01T19:49:12+00:00</lastmod>
+		<lastmod>2022-06-16T09:25:41+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/math-coordinator</loc>
@@ -282,11 +282,11 @@
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/backend</loc>
-		<lastmod>2022-04-08T14:44:05+00:00</lastmod>
+		<lastmod>2022-06-16T09:26:04+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/devops-page</loc>
-		<lastmod>2022-04-08T14:44:21+00:00</lastmod>
+		<lastmod>2022-06-16T09:26:17+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/devops</loc>
@@ -314,7 +314,7 @@
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/hr</loc>
-		<lastmod>2022-04-08T14:43:12+00:00</lastmod>
+		<lastmod>2022-06-16T09:26:38+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/page11448105.html</loc>
@@ -322,7 +322,7 @@
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/de</loc>
-		<lastmod>2022-04-08T14:42:56+00:00</lastmod>
+		<lastmod>2022-06-16T09:24:21+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/intern</loc>
@@ -366,10 +366,14 @@
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/pythongeneration-webinar</loc>
-		<lastmod>2022-06-08T09:45:49+00:00</lastmod>
+		<lastmod>2022-06-16T11:23:37+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/webinar-math</loc>
-		<lastmod>2022-06-13T15:37:44+00:00</lastmod>
+		<lastmod>2022-06-14T12:33:55+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/ru/careers/qa-engineer</loc>
+		<lastmod>2022-06-23T17:52:08+00:00</lastmod>
 	</url>
 </urlset>
