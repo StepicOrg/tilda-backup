@@ -1,3 +1,2 @@
-User-agent: *
+User-Agent: *
 Disallow: /
-Host: https://stats.tilda.cc
