@@ -218,7 +218,7 @@
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers</loc>
-		<lastmod>2022-10-31T11:33:37+00:00</lastmod>
+		<lastmod>2022-10-31T11:41:35+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/ml-engineer</loc>
@@ -399,5 +399,9 @@
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/project-manager</loc>
 		<lastmod>2022-10-31T11:33:13+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/ru/careers/product-lead</loc>
+		<lastmod>2022-10-31T11:59:28+00:00</lastmod>
 	</url>
 </urlset>
