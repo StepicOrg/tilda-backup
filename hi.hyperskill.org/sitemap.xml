@@ -6,35 +6,15 @@
 	</url>
 	<url>
 		<loc>https://hi.hyperskill.org/careers</loc>
-		<lastmod>2022-11-08T14:46:21+00:00</lastmod>
+		<lastmod>2022-11-15T14:01:06+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://hi.hyperskill.org/my-hyperskill-app</loc>
 		<lastmod>2022-10-19T13:38:39+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://hi.hyperskill.org/about</loc>
-		<lastmod>2020-05-08T06:04:55+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://hi.hyperskill.org/terms</loc>
 		<lastmod>2022-11-01T01:53:51+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://hi.hyperskill.org/projects3</loc>
-		<lastmod>2019-12-10T11:27:17+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://hi.hyperskill.org/platform</loc>
-		<lastmod>2020-05-08T05:55:22+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://hi.hyperskill.org/page6852864.html</loc>
-		<lastmod>2019-12-10T11:26:00+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://hi.hyperskill.org/projects3-old</loc>
-		<lastmod>2019-12-10T11:27:54+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://hi.hyperskill.org/</loc>
@@ -53,8 +33,32 @@
 		<lastmod>2022-11-11T09:39:04+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://hi.hyperskill.org/for-single-user-organizations</loc>
+		<lastmod>2022-11-10T11:49:26+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://hi.hyperskill.org/design-guide</loc>
 		<lastmod>2022-07-26T18:19:23+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://hi.hyperskill.org/about</loc>
+		<lastmod>2020-05-08T06:04:55+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://hi.hyperskill.org/projects3</loc>
+		<lastmod>2019-12-10T11:27:17+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://hi.hyperskill.org/platform</loc>
+		<lastmod>2020-05-08T05:55:22+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://hi.hyperskill.org/page6852864.html</loc>
+		<lastmod>2019-12-10T11:26:00+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://hi.hyperskill.org/projects3-old</loc>
+		<lastmod>2019-12-10T11:27:54+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://hi.hyperskill.org/careers/qa-engineer</loc>
@@ -63,10 +67,6 @@
 	<url>
 		<loc>https://hi.hyperskill.org/careers/android-developer</loc>
 		<lastmod>2022-10-05T11:20:48+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://hi.hyperskill.org/for-single-user-organizations</loc>
-		<lastmod>2022-11-10T11:49:26+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://hi.hyperskill.org/careers/math-author</loc>
@@ -87,5 +87,9 @@
 	<url>
 		<loc>https://hi.hyperskill.org/careers/data-science-expert</loc>
 		<lastmod>2022-11-08T13:35:54+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://hi.hyperskill.org/careers/data-science-editor</loc>
+		<lastmod>2022-11-15T14:00:28+00:00</lastmod>
 	</url>
 </urlset>
