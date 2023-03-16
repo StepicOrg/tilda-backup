@@ -6,7 +6,7 @@
 	</url>
 	<url>
 		<loc>https://hi.hyperskill.org/careers</loc>
-		<lastmod>2023-03-13T08:25:28+00:00</lastmod>
+		<lastmod>2023-03-16T20:39:43+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://hi.hyperskill.org/my-hyperskill-app</loc>
@@ -159,5 +159,9 @@
 	<url>
 		<loc>https://hi.hyperskill.org/careers/kotlin-projects</loc>
 		<lastmod>2023-02-24T10:28:04+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://hi.hyperskill.org/careers/devops</loc>
+		<lastmod>2023-03-16T20:38:51+00:00</lastmod>
 	</url>
 </urlset>
