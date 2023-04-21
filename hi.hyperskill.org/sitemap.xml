@@ -45,10 +45,6 @@
 		<lastmod>2023-03-13T10:52:53+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://hi.hyperskill.org/</loc>
-		<lastmod>2023-03-16T15:13:38+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://hi.hyperskill.org/about</loc>
 		<lastmod>2020-05-08T06:04:55+00:00</lastmod>
 	</url>
@@ -143,6 +139,10 @@
 	<url>
 		<loc>https://hi.hyperskill.org/careers/java-topics</loc>
 		<lastmod>2023-02-09T17:15:42+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://hi.hyperskill.org/</loc>
+		<lastmod>2023-04-21T12:29:45+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://hi.hyperskill.org/careers/community-manager</loc>
