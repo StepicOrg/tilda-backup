@@ -6,7 +6,7 @@
 	</url>
 	<url>
 		<loc>https://hi.hyperskill.org/careers</loc>
-		<lastmod>2023-04-27T08:19:05+00:00</lastmod>
+		<lastmod>2023-04-27T08:24:59+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://hi.hyperskill.org/my-hyperskill-app</loc>
@@ -191,5 +191,9 @@
 	<url>
 		<loc>https://hi.hyperskill.org/careers/nodejs-topics-author</loc>
 		<lastmod>2023-04-27T07:54:41+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://hi.hyperskill.org/careers/content-expert-django</loc>
+		<lastmod>2023-04-27T08:24:55+00:00</lastmod>
 	</url>
 </urlset>
