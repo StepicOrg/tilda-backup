@@ -74,11 +74,11 @@
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/press</loc>
-		<lastmod>2023-05-25T08:30:07+00:00</lastmod>
+		<lastmod>2023-05-25T08:30:44+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/team</loc>
-		<lastmod>2023-05-25T08:03:22+00:00</lastmod>
+		<lastmod>2023-05-25T08:32:28+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/en/classroom</loc>
@@ -262,7 +262,7 @@
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/assistant</loc>
-		<lastmod>2023-05-25T08:03:23+00:00</lastmod>
+		<lastmod>2023-05-25T08:35:07+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/uxresearcher</loc>
@@ -287,10 +287,6 @@
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/junior_dev</loc>
 		<lastmod>2022-03-21T18:19:02+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/ru/careers/backend</loc>
-		<lastmod>2022-06-16T09:26:04+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/devops-page</loc>
@@ -415,9 +411,5 @@
 	<url>
 		<loc>https://welcome.stepik.org/webinar-math-data</loc>
 		<lastmod>2022-09-09T11:51:24+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/ru/careers/backend-developer</loc>
-		<lastmod>2023-03-30T17:33:44+00:00</lastmod>
 	</url>
 </urlset>
