@@ -21,16 +21,8 @@
 		<lastmod>2022-06-16T09:25:20+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/ru</loc>
-		<lastmod>2023-07-18T07:54:09+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://welcome.stepik.org/x/statistics</loc>
 		<lastmod>2022-01-28T10:24:33+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/courses-for-companies</loc>
-		<lastmod>2023-06-27T11:13:50+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/de</loc>
@@ -41,8 +33,16 @@
 		<lastmod>2020-12-28T14:43:12+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://welcome.stepik.org/ru</loc>
+		<lastmod>2023-07-18T07:54:09+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://welcome.stepik.org/en/terms</loc>
 		<lastmod>2022-03-22T17:47:45+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/courses-for-companies</loc>
+		<lastmod>2023-06-27T11:13:50+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/en/privacy</loc>
@@ -111,6 +111,14 @@
 	<url>
 		<loc>https://welcome.stepik.org/en/accessibility</loc>
 		<lastmod>2022-03-22T17:50:48+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/ru/careers</loc>
+		<lastmod>2023-07-26T05:19:38+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://welcome.stepik.org/ru/careers/assistant</loc>
+		<lastmod>2023-05-25T08:35:07+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/course-checklist</loc>
@@ -205,10 +213,6 @@
 		<lastmod>2022-02-14T14:12:27+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://welcome.stepik.org/ru/careers</loc>
-		<lastmod>2023-07-26T05:19:38+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://welcome.stepik.org/reviewredesign</loc>
 		<lastmod>2019-04-13T19:55:36+00:00</lastmod>
 	</url>
@@ -235,10 +239,6 @@
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/bio-producer</loc>
 		<lastmod>2022-03-21T18:16:19+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://welcome.stepik.org/ru/careers/assistant</loc>
-		<lastmod>2023-05-25T08:35:07+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://welcome.stepik.org/ru/careers/uxresearcher</loc>
