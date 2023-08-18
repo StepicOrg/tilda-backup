@@ -145,10 +145,6 @@
 		<lastmod>2023-02-09T17:15:42+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://hi.hyperskill.org/careers/frontend-developer</loc>
-		<lastmod>2023-08-15T07:50:52+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://hi.hyperskill.org/careers/jetpack-topics</loc>
 		<lastmod>2023-04-26T14:04:31+00:00</lastmod>
 	</url>
@@ -251,5 +247,9 @@
 	<url>
 		<loc>https://hi.hyperskill.org/careers/support-manager</loc>
 		<lastmod>2023-08-14T14:56:20+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://hi.hyperskill.org/careers/frontend-developer</loc>
+		<lastmod>2023-08-18T09:49:57+00:00</lastmod>
 	</url>
 </urlset>
