@@ -26,7 +26,7 @@
 	</url>
 	<url>
 		<loc>https://hi.hyperskill.org/contribution</loc>
-		<lastmod>2023-09-15T08:36:46+00:00</lastmod>
+		<lastmod>2023-09-15T08:44:45+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://hi.hyperskill.org/for-single-user-organizations</loc>
@@ -255,5 +255,13 @@
 	<url>
 		<loc>https://hi.hyperskill.org/careers/data-analytics-topics-author</loc>
 		<lastmod>2023-09-15T08:35:49+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://hi.hyperskill.org/careers/statistics-topic-author</loc>
+		<lastmod>2023-09-15T08:40:24+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://hi.hyperskill.org/careers/data-analytics-content-expert</loc>
+		<lastmod>2023-09-15T08:44:25+00:00</lastmod>
 	</url>
 </urlset>
