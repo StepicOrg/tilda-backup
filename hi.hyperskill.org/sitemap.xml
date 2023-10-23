@@ -26,7 +26,7 @@
 	</url>
 	<url>
 		<loc>https://hi.hyperskill.org/contribution</loc>
-		<lastmod>2023-10-18T06:37:10+00:00</lastmod>
+		<lastmod>2023-10-23T07:41:43+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://hi.hyperskill.org/for-single-user-organizations</loc>
@@ -279,5 +279,9 @@
 	<url>
 		<loc>https://hi.hyperskill.org/careers/nodejs-project-author</loc>
 		<lastmod>2023-10-18T06:37:03+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://hi.hyperskill.org/careers/spring-boot-expert</loc>
+		<lastmod>2023-10-23T07:41:30+00:00</lastmod>
 	</url>
 </urlset>
